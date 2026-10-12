@@ -1,0 +1,18 @@
+{
+  "document": {
+    "title": "Netrunner Comprehensive Rules v26.03 (Null Signal Games, effective 02 March 2026)",
+    "short": "Netrunner CR v26.03",
+    "url": "https://access.nullsignal.games/CompRules/Null_Signal_Games_Netrunner_Comprehensive_Rules_v26.03.pdf",
+    "sha256": "ffd36071034aeae240cb319b13be1dae1d265c4598b44fbbfb90c86297a4523e",
+    "accessed": "2026-10-12"
+  },
+  "body_pages": [
+    4,
+    98
+  ],
+  "chunk_max_tokens": 220,
+  "chunk_overlap_tokens": 40,
+  "tokenizer": "sentence-transformers/all-MiniLM-L6-v2",
+  "n_chunks": 602,
+  "chunks_sha256": "abc68239ba744f8090f0b65269e7f540f49ac9998622952a44a5707a79d247b0"
+}

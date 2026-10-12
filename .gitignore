@@ -31,3 +31,6 @@ hf_cache/
 *.log
 .pytest_cache/
 .ruff_cache/
+
+# Source PDF: not committed (licence unclear); the notebook downloads it and verifies its SHA-256
+data/*.pdf

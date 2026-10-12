@@ -1,0 +1,33 @@
+# Secrets
+.env
+.env.*
+!.env.example
+
+# Virtual environment
+.venv/
+venv/
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Model / HF caches (never commit weights)
+.cache/
+hf_cache/
+*.safetensors
+*.bin
+*.pt
+
+# OS / editor
+.DS_Store
+.vscode/
+.idea/
+
+# Logs / tool caches
+*.log
+.pytest_cache/
+.ruff_cache/

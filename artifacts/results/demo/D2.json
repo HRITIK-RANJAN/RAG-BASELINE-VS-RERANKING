@@ -1,0 +1,102 @@
+{
+  "qid": "D2",
+  "query": "What does it mean for the Corp to rez a card?",
+  "category": null,
+  "gold": null,
+  "corpus_sha256": "abc68239ba744f8090f0b65269e7f540f49ac9998622952a44a5707a79d247b0",
+  "candidates": [
+    {
+      "chunk_id": "C0353",
+      "bi_rank": 1,
+      "bi_score": 0.5453047156333923,
+      "ce_score": 5.925776481628418,
+      "ce_rank": 2
+    },
+    {
+      "chunk_id": "C0320",
+      "bi_rank": 2,
+      "bi_score": 0.5300443172454834,
+      "ce_score": 5.972408294677734,
+      "ce_rank": 1
+    },
+    {
+      "chunk_id": "C0319",
+      "bi_rank": 3,
+      "bi_score": 0.5253653526306152,
+      "ce_score": 5.789255142211914,
+      "ce_rank": 3
+    },
+    {
+      "chunk_id": "C0350",
+      "bi_rank": 4,
+      "bi_score": 0.5192909240722656,
+      "ce_score": 2.939605951309204,
+      "ce_rank": 5
+    },
+    {
+      "chunk_id": "C0312",
+      "bi_rank": 5,
+      "bi_score": 0.5039783716201782,
+      "ce_score": -1.6587104797363281,
+      "ce_rank": 9
+    },
+    {
+      "chunk_id": "C0168",
+      "bi_rank": 6,
+      "bi_score": 0.5013797879219055,
+      "ce_score": -1.2349103689193726,
+      "ce_rank": 8
+    },
+    {
+      "chunk_id": "C0332",
+      "bi_rank": 7,
+      "bi_score": 0.4905340075492859,
+      "ce_score": -0.7711144685745239,
+      "ce_rank": 7
+    },
+    {
+      "chunk_id": "C0351",
+      "bi_rank": 8,
+      "bi_score": 0.4761589467525482,
+      "ce_score": 4.6851677894592285,
+      "ce_rank": 4
+    },
+    {
+      "chunk_id": "C0335",
+      "bi_rank": 9,
+      "bi_score": 0.4741373658180237,
+      "ce_score": 0.7798861265182495,
+      "ce_rank": 6
+    },
+    {
+      "chunk_id": "C0036",
+      "bi_rank": 10,
+      "bi_score": 0.4670809805393219,
+      "ce_score": -3.242098808288574,
+      "ce_rank": 10
+    }
+  ],
+  "baseline": {
+    "top3": [
+      "C0353",
+      "C0320",
+      "C0319"
+    ],
+    "prompt": "You answer questions about the Netrunner Comprehensive Rules using ONLY the numbered passages below.\n- Put the passage id after every claim, like [S2].\n- If the passages do not contain the answer, reply exactly: \"The provided passages do not cover this.\"\n- If a passage states an exception, condition or restriction that is relevant to the question, include it.\n- Do not use outside knowledge.\n\nPASSAGES:\n[S1] (8 Card Manipulation > 8.5 Installing and Uninstalling Cards, p.59) 8.5.15. Some abilities instruct the Corp to “install and rez” a card. To resolve this instruction, the Corp first installs the card normally. After the installation is complete, the Corp rezzes the card. See also rule 8.5.13d.\na. Some “install and rez” abilities affect more than 1 card. In this case, each card is rezzed directly after it is installed, as part of the same instruction and before the next installation begins. See also rule 8.5.5.\n[S2] (8 Card Manipulation > 8.1 Faceup and Facedown Status, p.54) e. To resolve rezzing a card, the Corp pays its rez cost (accounting for any modifiers or additional costs), a checkpoint occurs (as required by rule 10.3.4), then the Corp turns the card faceup. For purposes of meeting trigger conditions, the card is considered to be rezzed at the conclusion of this process.\n[S3] (8 Card Manipulation > 8.1 Faceup and Facedown Status, p.54) 8.1.2. To REZ an unrezzed card is to turn it faceup.\na. Some paid ability windows allow the Corp to rez assets and upgrades. See section 9.2.7. The paid ability window at step 6.9.2b of a run allows the Corp to rez ice.\nb. Card abilities can direct or allow the Corp to rez cards at other times.\nc. Agendas cannot be rezzed.\nd. Before rezzing a card, the Corp must pay that card’s rez cost. This includes both rezzing in a paid ability window and rezzing through a card ability. Card abilities can modify or ignore rez costs, but must state this explicitly.\n\nQUESTION: What does it mean for the Corp to rez a card?\nANSWER:",
+    "answer": "To rez an unrezzed card means to turn it faceup [S3]."
+  },
+  "reranked": {
+    "top3": [
+      "C0320",
+      "C0353",
+      "C0319"
+    ],
+    "prompt": "You answer questions about the Netrunner Comprehensive Rules using ONLY the numbered passages below.\n- Put the passage id after every claim, like [S2].\n- If the passages do not contain the answer, reply exactly: \"The provided passages do not cover this.\"\n- If a passage states an exception, condition or restriction that is relevant to the question, include it.\n- Do not use outside knowledge.\n\nPASSAGES:\n[S1] (8 Card Manipulation > 8.1 Faceup and Facedown Status, p.54) e. To resolve rezzing a card, the Corp pays its rez cost (accounting for any modifiers or additional costs), a checkpoint occurs (as required by rule 10.3.4), then the Corp turns the card faceup. For purposes of meeting trigger conditions, the card is considered to be rezzed at the conclusion of this process.\n[S2] (8 Card Manipulation > 8.5 Installing and Uninstalling Cards, p.59) 8.5.15. Some abilities instruct the Corp to “install and rez” a card. To resolve this instruction, the Corp first installs the card normally. After the installation is complete, the Corp rezzes the card. See also rule 8.5.13d.\na. Some “install and rez” abilities affect more than 1 card. In this case, each card is rezzed directly after it is installed, as part of the same instruction and before the next installation begins. See also rule 8.5.5.\n[S3] (8 Card Manipulation > 8.1 Faceup and Facedown Status, p.54) 8.1.2. To REZ an unrezzed card is to turn it faceup.\na. Some paid ability windows allow the Corp to rez assets and upgrades. See section 9.2.7. The paid ability window at step 6.9.2b of a run allows the Corp to rez ice.\nb. Card abilities can direct or allow the Corp to rez cards at other times.\nc. Agendas cannot be rezzed.\nd. Before rezzing a card, the Corp must pay that card’s rez cost. This includes both rezzing in a paid ability window and rezzing through a card ability. Card abilities can modify or ignore rez costs, but must state this explicitly.\n\nQUESTION: What does it mean for the Corp to rez a card?\nANSWER:",
+    "answer": "To rez an unrezzed card means to turn it faceup [S3]."
+  },
+  "timings_ms": {
+    "encode_ms": 59.127540996996686,
+    "search_ms": 0.05370899452827871,
+    "ce_ms": 148.66420900216326
+  }
+}

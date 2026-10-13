@@ -1,0 +1,102 @@
+{
+  "qid": "D1",
+  "query": "Can the Runner jack out during an encounter with ice?",
+  "category": null,
+  "gold": null,
+  "corpus_sha256": "abc68239ba744f8090f0b65269e7f540f49ac9998622952a44a5707a79d247b0",
+  "candidates": [
+    {
+      "chunk_id": "C0236",
+      "bi_rank": 1,
+      "bi_score": 0.6603085398674011,
+      "ce_score": 4.790975093841553,
+      "ce_rank": 6
+    },
+    {
+      "chunk_id": "C0265",
+      "bi_rank": 2,
+      "bi_score": 0.6090127229690552,
+      "ce_score": 7.5673017501831055,
+      "ce_rank": 1
+    },
+    {
+      "chunk_id": "C0232",
+      "bi_rank": 3,
+      "bi_score": 0.5706534385681152,
+      "ce_score": 5.275043487548828,
+      "ce_rank": 4
+    },
+    {
+      "chunk_id": "C0260",
+      "bi_rank": 4,
+      "bi_score": 0.5481240153312683,
+      "ce_score": 5.213381290435791,
+      "ce_rank": 5
+    },
+    {
+      "chunk_id": "C0258",
+      "bi_rank": 5,
+      "bi_score": 0.5450499653816223,
+      "ce_score": 5.295647144317627,
+      "ce_rank": 3
+    },
+    {
+      "chunk_id": "C0143",
+      "bi_rank": 6,
+      "bi_score": 0.5348572134971619,
+      "ce_score": 3.8165712356567383,
+      "ce_rank": 9
+    },
+    {
+      "chunk_id": "C0264",
+      "bi_rank": 7,
+      "bi_score": 0.5274515151977539,
+      "ce_score": 4.3489532470703125,
+      "ce_rank": 8
+    },
+    {
+      "chunk_id": "C0266",
+      "bi_rank": 8,
+      "bi_score": 0.5218533873558044,
+      "ce_score": 6.245355606079102,
+      "ce_rank": 2
+    },
+    {
+      "chunk_id": "C0249",
+      "bi_rank": 9,
+      "bi_score": 0.5164664387702942,
+      "ce_score": 4.5529680252075195,
+      "ce_rank": 7
+    },
+    {
+      "chunk_id": "C0247",
+      "bi_rank": 10,
+      "bi_score": 0.5036582350730896,
+      "ce_score": 3.663358211517334,
+      "ce_rank": 10
+    }
+  ],
+  "baseline": {
+    "top3": [
+      "C0236",
+      "C0265",
+      "C0232"
+    ],
+    "prompt": "You answer questions about the Netrunner Comprehensive Rules using ONLY the numbered passages below.\n- Put the passage id after every claim, like [S2].\n- If the passages do not contain the answer, reply exactly: \"The provided passages do not cover this.\"\n- If a passage states an exception, condition or restriction that is relevant to the question, include it.\n- Do not use outside knowledge.\n\nPASSAGES:\n[S1] (6 Runs > 6.1 General, p.42) 6.1.5. JACKING OUT is the process by which a Runner voluntarily ends a run. Jacking out follows the usual process for ending the run as described in section 6.1.4, but some card abilities function differently depending on whether or not the Runner chose to end the run by jacking out.\na. The Runner has the opportunity to jack out after passing a piece of ice.\nb. If there is no ice protecting the server, the Runner has the opportunity to jack out before approaching the server.\n[S2] (6 Runs > 6.6 Movement, p.46-47) 6.6.1. The MOVEMENT PHASE handles the progression of the run between pieces of ice and after the innermost piece of ice, up to the point when the Runner approaches the attacked server.\n6.6.2. If the Movement Phase was reached from the Approach Ice Phase or the Encounter Ice Phase, the Runner passes the ice in their position.\n6.6.3. During each Movement Phase, the Runner has the opportunity to jack out. See section 6.1.5.\n6.6.4. If the Runner declines to jack out, their position moves to the next inward position if there is one.\n6.6.5. If the Runner moves to a new position, the run continues from the Movement Phase to the Approach Ice Phase, section 6.4. The Runner will approach the piece of ice in their new position.\n[S3] (6 Runs > 6.1 General, p.41) f. If a condition refers to passing a piece of ice “after” fully breaking it, then that condition is only met when the Runner passes that piece of ice after an encounter (as defined by rule 6.1.3e), and only if the Runner fully broke that ice during that encounter. See section 6.5.7.\n\nQUESTION: Can the Runner jack out during an encounter with ice?\nANSWER:",
+    "answer": "The provided passages do not cover this."
+  },
+  "reranked": {
+    "top3": [
+      "C0265",
+      "C0266",
+      "C0258"
+    ],
+    "prompt": "You answer questions about the Netrunner Comprehensive Rules using ONLY the numbered passages below.\n- Put the passage id after every claim, like [S2].\n- If the passages do not contain the answer, reply exactly: \"The provided passages do not cover this.\"\n- If a passage states an exception, condition or restriction that is relevant to the question, include it.\n- Do not use outside knowledge.\n\nPASSAGES:\n[S1] (6 Runs > 6.6 Movement, p.46-47) 6.6.1. The MOVEMENT PHASE handles the progression of the run between pieces of ice and after the innermost piece of ice, up to the point when the Runner approaches the attacked server.\n6.6.2. If the Movement Phase was reached from the Approach Ice Phase or the Encounter Ice Phase, the Runner passes the ice in their position.\n6.6.3. During each Movement Phase, the Runner has the opportunity to jack out. See section 6.1.5.\n6.6.4. If the Runner declines to jack out, their position moves to the next inward position if there is one.\n6.6.5. If the Runner moves to a new position, the run continues from the Movement Phase to the Approach Ice Phase, section 6.4. The Runner will approach the piece of ice in their new position.\n[S2] (6 Runs > 6.6 Movement, p.47) 6.6.6. If the Runner does not jack out or return to the Approach Ice Phase, they approach the server. This has no inherent effects, but is referred to by some card abilities. After the Runner approaches the server, the run continues to the Success Phase, section 6.7.\n[S3] (6 Runs > 6.5 Encounter Ice, p.45) 6.5.1. The ENCOUNTER ICE PHASE gives the Runner the opportunity to interact with the ice in their current position, then requires the Corp to resolve unbroken subroutines on that ice.\n6.5.2. For purposes of meeting trigger conditions, the Runner encountering a piece of ice is equivalent to the Encounter Ice Phase beginning at that ice’s position. Abilities with this trigger condition are subject to rule 9.2.8f.\n6.5.3. As each encounter begins, each subroutine on the encountered ice gains an “unbroken” status associated with that encounter. See section 9.8 for details.\n6.5.4. During the paid ability window in the Encounter Ice Phase (step 6.9.3b), the Runner can break subroutines on the ice. See rule 9.8.5.\n\nQUESTION: Can the Runner jack out during an encounter with ice?\nANSWER:",
+    "answer": "The provided passages do not cover this."
+  },
+  "timings_ms": {
+    "encode_ms": 46.96433299977798,
+    "search_ms": 0.052749994210898876,
+    "ce_ms": 61.426291009411216
+  }
+}

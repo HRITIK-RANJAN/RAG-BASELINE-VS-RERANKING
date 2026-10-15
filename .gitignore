@@ -34,3 +34,6 @@ hf_cache/
 
 # Source PDF: not committed (licence unclear); the notebook downloads it and verifies its SHA-256
 data/*.pdf
+
+# Working documents (the review sheet for the query labels)
+queries/REVIEW_SHEET.md

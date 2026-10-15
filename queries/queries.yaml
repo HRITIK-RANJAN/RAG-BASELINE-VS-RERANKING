@@ -1,0 +1,474 @@
+# Candidate queries for Stage 6 (failure mining).
+# - category is the failure type each query was DESIGNED to test (keyword_trap | exception | negation | buried | control).
+# - gold_essential: chunks that answer the question, found by searching the rules text for the rule itself,
+#   NOT by looking at what either retriever returns. When several are listed, any one of them is enough.
+# - verified: false = labels are provisional (proposed by Claude). The student checks the final set and sets this to true.
+# - expected_answer is added to the final queries by the student, in their own words.
+# - final: true = part of the final evaluation set (selection rule explained in the notebook, Section 7.2).
+- qid: Q01
+  query: How many agenda points does a player need to win the game?
+  category: control
+  verified: false
+  gold_essential:
+  - C0021
+  - C0096
+  - C0552
+  gold_supporting: []
+  notes: '1.7.2a; alternate gold added in the label audit: C0552 (10.3.1c also states the 7-point win); pooled judgement:
+    1.17.2 also states the 7-point win'
+  final: true
+- qid: Q02
+  query: What basic actions can the Corp always take during their turn?
+  category: control
+  verified: false
+  gold_essential:
+  - C0210
+  gold_supporting: []
+  notes: 5.2.6
+  final: true
+- qid: Q03
+  query: What is the limit on region upgrades in one server?
+  category: control
+  verified: false
+  gold_essential:
+  - C0149
+  gold_supporting: []
+  notes: 3.6.5a
+  final: true
+- qid: Q04
+  query: At what point during a run can the Corp rez a piece of ice?
+  category: control
+  verified: false
+  gold_essential:
+  - C0256
+  - C0281
+  - C0319
+  - C0597
+  gold_supporting: []
+  notes: '8.1.2a; appendix 11.4 repeats it; pooled judgement: 6.4.3, 6.9.2b and appendix 11.4 also answer it'
+  final: false
+- qid: Q05
+  query: How much total influence can out-of-faction cards have in a deck?
+  category: control
+  verified: false
+  gold_essential:
+  - C0007
+  gold_supporting: []
+  notes: 1.4.5
+  final: true
+- qid: Q06
+  query: How many credits does each player take from the bank at the start of the game?
+  category: control
+  verified: false
+  gold_essential:
+  - C0018
+  gold_supporting: []
+  notes: 1.6.4
+  final: false
+- qid: Q07
+  query: Can a player take a mulligan after drawing their starting hand?
+  category: control
+  verified: false
+  gold_essential:
+  - C0019
+  gold_supporting: []
+  notes: 1.6.6a
+  final: true
+- qid: Q08
+  query: What does it mean when an instruction says 'if able'?
+  category: control
+  verified: false
+  gold_essential:
+  - C0002
+  gold_supporting: []
+  notes: 1.2.3
+  final: false
+- qid: Q09
+  query: What happens when the Runner has more programs installed than their memory limit allows?
+  category: control
+  verified: false
+  gold_essential:
+  - C0156
+  gold_supporting: []
+  notes: 3.9.3c
+  final: true
+- qid: Q10
+  query: What happens to an operation after it finishes resolving?
+  category: control
+  verified: false
+  gold_essential:
+  - C0145
+  gold_supporting:
+  - C0357
+  notes: '3.5.1; pooled judgement: 8.6.4 only partly (supporting)'
+  final: false
+- qid: Q11
+  query: Can the Runner pay to trash a piece of ice they are encountering?
+  category: exception
+  verified: false
+  gold_essential:
+  - C0144
+  gold_supporting: []
+  notes: 3.4.5a exception to 3.4.5
+  final: false
+- qid: Q12
+  query: What happens to cards hosted on a card that moves from the Corp's score area to the Runner's score area?
+  category: exception
+  verified: false
+  gold_essential:
+  - C0057
+  gold_supporting: []
+  notes: 1.13.13 exception inside the rule
+  final: true
+- qid: Q13
+  query: Does an agenda in the Runner's score area keep working?
+  category: exception
+  verified: false
+  gold_essential:
+  - C0178
+  gold_supporting:
+  - C0062
+  - C0139
+  notes: 4.5.4 / 3.2.3 / 1.14.4a
+  final: false
+- qid: Q14
+  query: Can the Runner pay a trash cost to trash a card that is in the Corp's discard pile?
+  category: exception
+  verified: false
+  gold_essential:
+  - C0287
+  - C0288
+  gold_supporting: []
+  notes: 7.1.5 and its exception 7.1.5b; both are in C0287, C0288 repeats b. because of the chunk overlap
+  final: true
+- qid: Q15
+  query: Can a condition operation be put into play by an install effect?
+  category: exception
+  verified: false
+  gold_essential:
+  - C0053
+  - C0145
+  gold_supporting:
+  - C0150
+  notes: '3.5.1a (Runner version 3.7.1a); pooled judgement: 1.13.6d also says operations/events are never installed by an
+    install effect'
+  final: true
+- qid: Q16
+  query: If an effect makes the Corp install a card that has an additional cost, does the Corp have to pay that additional
+    cost?
+  category: exception
+  verified: false
+  gold_essential:
+  - C0085
+  gold_supporting: []
+  notes: 1.16.4c
+  final: false
+- qid: Q17
+  query: Can the Runner pay just one of several additional costs on their own?
+  category: exception
+  verified: false
+  gold_essential:
+  - C0091
+  gold_supporting: []
+  notes: 1.16.10b
+  final: false
+- qid: Q18
+  query: If one effect says a player must do something and another effect says they cannot, which one applies?
+  category: negation
+  verified: false
+  gold_essential:
+  - C0002
+  gold_supporting: []
+  notes: 1.2.2
+  final: true
+- qid: Q19
+  query: Is a player allowed to look through the cards in their own deck during the game?
+  category: negation
+  verified: false
+  gold_essential:
+  - C0167
+  gold_supporting: []
+  notes: 4.2.2
+  final: true
+- qid: Q20
+  query: Which kinds of cards are not allowed in a deck?
+  category: negation
+  verified: false
+  gold_essential:
+  - C0007
+  gold_supporting:
+  - C0006
+  notes: '1.4.4; pooled judgement: 1.4.3a only partly (supporting)'
+  final: false
+- qid: Q21
+  query: Does the Corp have to score an agenda as soon as it has enough advancement counters?
+  category: negation
+  verified: false
+  gold_essential:
+  - C0097
+  gold_supporting: []
+  notes: 1.17.3b
+  final: false
+- qid: Q22
+  query: Can assets be installed in the root of a central server?
+  category: negation
+  verified: false
+  gold_essential:
+  - C0185
+  gold_supporting: []
+  notes: 4.6.6e
+  final: false
+- qid: Q23
+  query: Can the Runner have two consoles installed at the same time?
+  category: negation
+  verified: false
+  gold_essential:
+  - C0153
+  - C0552
+  gold_supporting: []
+  notes: '3.8.5; alternate gold added in the label audit: C0552 (10.3.1d also trashes extra consoles)'
+  final: true
+- qid: Q24
+  query: Can a player bid credits they do not have in a Psi Game?
+  category: negation
+  verified: false
+  gold_essential:
+  - C0588
+  gold_supporting: []
+  notes: 10.14.3
+  final: false
+- qid: Q25
+  query: Can the Corp make a remote server disappear by installing cards?
+  category: negation
+  verified: false
+  gold_essential:
+  - C0343
+  gold_supporting: []
+  notes: 8.5.9
+  final: false
+- qid: Q26
+  query: Can agendas be rezzed?
+  category: negation
+  verified: false
+  gold_essential:
+  - C0139
+  - C0319
+  gold_supporting: []
+  notes: 8.1.2c / 3.2.3
+  final: false
+- qid: Q27
+  query: Can the Runner be forced to lose credits that are hosted on their cards?
+  category: negation
+  verified: false
+  gold_essential:
+  - C0032
+  - C0049
+  gold_supporting: []
+  notes: '1.13.3 / 1.10.3b; pooled judgement: 1.10.3b ''Players cannot lose credits from cards'' fully answers it'
+  final: true
+- qid: Q28
+  query: How much does it cost the Corp to put a new piece of ice on a server?
+  category: keyword_trap
+  verified: false
+  gold_essential:
+  - C0088
+  - C0345
+  gold_supporting:
+  - C0144
+  notes: '8.5.11a / 3.4.6; alternate gold added in the label audit: C0088 (1.16.6b also gives the ice install cost)'
+  final: true
+- qid: Q29
+  query: How does the Corp flip an installed card face up so that it starts working?
+  category: keyword_trap
+  verified: false
+  gold_essential:
+  - C0319
+  - C0320
+  gold_supporting:
+  - C0023
+  - C0338
+  notes: '8.1.2 / 1.8.3c; pooled judgement: 8.1.2e describes rezzing (pay the rez cost, then turn the card faceup)'
+  final: true
+- qid: Q30
+  query: How do you win the game by hurting the Runner?
+  category: keyword_trap
+  verified: false
+  gold_essential:
+  - C0021
+  gold_supporting: []
+  notes: 1.7.2b
+  final: false
+- qid: Q31
+  query: Is losing clicks the same thing as spending clicks?
+  category: keyword_trap
+  verified: false
+  gold_essential:
+  - C0039
+  gold_supporting: []
+  notes: 1.11.3b
+  final: true
+- qid: Q32
+  query: What happens when the Corp runs out of cards in their deck and has to draw?
+  category: keyword_trap
+  verified: false
+  gold_essential:
+  - C0021
+  - C0168
+  gold_supporting: []
+  notes: '4.2.7b; alternate gold added in the label audit: C0021 (1.7.2c also says the Runner wins)'
+  final: true
+- qid: Q33
+  query: What happens if the Runner is holding too many cards at the end of their turn?
+  category: keyword_trap
+  verified: false
+  gold_essential:
+  - C0171
+  - C0202
+  - C0218
+  - C0225
+  gold_supporting: []
+  notes: '4.3.6 / 5.5; pooled judgement: 5.5.4c, 5.7.2a and 5.1.3 (discard down to maximum hand size) answer it'
+  final: false
+- qid: Q34
+  query: While the Runner is breaching HQ, a new card enters the Corp's hand. Can the Runner access it?
+  category: buried
+  verified: false
+  gold_essential:
+  - C0311
+  gold_supporting: []
+  notes: 7.4.6b
+  final: true
+- qid: Q35
+  query: In what order are cards from the Corp's deck offered to the Runner when R&D is breached?
+  category: buried
+  verified: false
+  gold_essential:
+  - C0313
+  gold_supporting: []
+  notes: 7.4.7
+  final: true
+- qid: Q36
+  query: What does the Runner do in a breach when there are no more cards left to choose from?
+  category: buried
+  verified: false
+  gold_essential:
+  - C0317
+  - C0600
+  gold_supporting:
+  - C0295
+  notes: '7.5.4; appendix 11.5 repeats it; alternate gold added in the label audit: C0600 (appendix 11.5 repeats the breach
+    steps); pooled judgement: 7.3.4 implies it only partly (supporting)'
+  final: true
+- qid: Q37
+  query: Who decides the order when two replacement effects apply to the same card?
+  category: buried
+  verified: false
+  gold_essential:
+  - C0500
+  gold_supporting: []
+  notes: 9.9.11
+  final: false
+- qid: Q38
+  query: When does a remote server stop existing?
+  category: buried
+  verified: false
+  gold_essential:
+  - C0193
+  gold_supporting:
+  - C0343
+  notes: 4.6.8d-e / 8.5.8
+  final: true
+- qid: Q39
+  query: Can an effect stop the Runner from starting a run on a particular server?
+  category: buried
+  verified: false
+  gold_essential:
+  - C0253
+  gold_supporting: []
+  notes: 6.3.2a
+  final: false
+- qid: Q40
+  query: Is a played event still trashed if it was turned into a condition counter while it resolved?
+  category: buried
+  verified: false
+  gold_essential:
+  - C0358
+  gold_supporting: []
+  notes: 8.6.6b
+  final: false
+- qid: Q41
+  query: If stealing an agenda would cause a breach of the same server during an ongoing breach, when does the second breach
+    happen?
+  category: buried
+  verified: false
+  gold_essential:
+  - C0301
+  gold_supporting: []
+  notes: 7.3.8
+  final: true
+- qid: Q42
+  query: What happens if I have two copies of a card with the diamond symbol in play?
+  category: keyword_trap
+  verified: false
+  gold_essential:
+  - C0543
+  - C0552
+  gold_supporting:
+  - C0112
+  notes: '10.1.1; alternate gold added in the label audit: C0552 (10.3.1d also trashes duplicate unique cards); pooled judgement:
+    2.2.1 only partly (supporting)'
+  final: true
+- qid: Q43
+  query: Do the cards in my hand have any effect on the game?
+  category: keyword_trap
+  verified: false
+  gold_essential:
+  - C0170
+  gold_supporting: []
+  notes: 4.3.5
+  final: false
+- qid: Q44
+  query: Is avoiding damage any different from preventing it?
+  category: keyword_trap
+  verified: false
+  gold_essential:
+  - C0484
+  gold_supporting: []
+  notes: 9.9.5
+  final: false
+- qid: Q45
+  query: Is a counter something different from a token?
+  category: keyword_trap
+  verified: false
+  gold_essential:
+  - C0026
+  gold_supporting: []
+  notes: 1.9.1a
+  final: false
+- qid: Q46
+  query: Does it matter whether I say arrange or rearrange the cards?
+  category: keyword_trap
+  verified: false
+  gold_essential:
+  - C0330
+  gold_supporting: []
+  notes: 8.3.1
+  final: false
+- qid: Q47
+  query: Is a card that gets discarded the same as a card that gets trashed?
+  category: keyword_trap
+  verified: false
+  gold_essential:
+  - C0103
+  gold_supporting: []
+  notes: 1.19.3
+  final: false
+- qid: Q48
+  query: If a card is revealed while it is facedown, is it now faceup?
+  category: keyword_trap
+  verified: false
+  gold_essential:
+  - C0108
+  gold_supporting: []
+  notes: 1.21.3a
+  final: false

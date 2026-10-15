@@ -1,0 +1,49 @@
+qid,category,gold_bi_rank,gold_ce_rank,result,query
+Q01,control,1,2,both_ok,How many agenda points does a player need to win the game?
+Q02,control,7,1,fixed_by_rerank,What basic actions can the Corp always take during their turn?
+Q03,control,1,1,both_ok,What is the limit on region upgrades in one server?
+Q04,control,2,1,both_ok,At what point during a run can the Corp rez a piece of ice?
+Q05,control,1,1,both_ok,How much total influence can out-of-faction cards have in a deck?
+Q06,control,1,1,both_ok,How many credits does each player take from the bank at the start of the game?
+Q07,control,1,1,both_ok,Can a player take a mulligan after drawing their starting hand?
+Q08,control,1,1,both_ok,What does it mean when an instruction says 'if able'?
+Q09,control,1,1,both_ok,What happens when the Runner has more programs installed than their memory limit allows?
+Q10,control,,,recall_ceiling,What happens to an operation after it finishes resolving?
+Q11,exception,1,1,both_ok,Can the Runner pay to trash a piece of ice they are encountering?
+Q12,exception,,,recall_ceiling,What happens to cards hosted on a card that moves from the Corp's score area to the Runner's score area?
+Q13,exception,1,1,both_ok,Does an agenda in the Runner's score area keep working?
+Q14,exception,1,1,both_ok,Can the Runner pay a trash cost to trash a card that is in the Corp's discard pile?
+Q15,exception,2,1,both_ok,Can a condition operation be put into play by an install effect?
+Q16,exception,2,2,both_ok,"If an effect makes the Corp install a card that has an additional cost, does the Corp have to pay that additional cost?"
+Q17,exception,1,1,both_ok,Can the Runner pay just one of several additional costs on their own?
+Q18,negation,6,6,both_fail,"If one effect says a player must do something and another effect says they cannot, which one applies?"
+Q19,negation,1,1,both_ok,Is a player allowed to look through the cards in their own deck during the game?
+Q20,negation,,,recall_ceiling,Which kinds of cards are not allowed in a deck?
+Q21,negation,2,2,both_ok,Does the Corp have to score an agenda as soon as it has enough advancement counters?
+Q22,negation,1,1,both_ok,Can assets be installed in the root of a central server?
+Q23,negation,1,4,hurt_by_rerank,Can the Runner have two consoles installed at the same time?
+Q24,negation,3,1,both_ok,Can a player bid credits they do not have in a Psi Game?
+Q25,negation,1,1,both_ok,Can the Corp make a remote server disappear by installing cards?
+Q26,negation,1,1,both_ok,Can agendas be rezzed?
+Q27,negation,1,1,both_ok,Can the Runner be forced to lose credits that are hosted on their cards?
+Q28,keyword_trap,2,3,both_ok,How much does it cost the Corp to put a new piece of ice on a server?
+Q29,keyword_trap,4,1,fixed_by_rerank,How does the Corp flip an installed card face up so that it starts working?
+Q30,keyword_trap,1,1,both_ok,How do you win the game by hurting the Runner?
+Q31,keyword_trap,1,1,both_ok,Is losing clicks the same thing as spending clicks?
+Q32,keyword_trap,3,4,hurt_by_rerank,What happens when the Corp runs out of cards in their deck and has to draw?
+Q33,keyword_trap,1,3,both_ok,What happens if the Runner is holding too many cards at the end of their turn?
+Q34,buried,4,5,both_fail,"While the Runner is breaching HQ, a new card enters the Corp's hand. Can the Runner access it?"
+Q35,buried,4,1,fixed_by_rerank,In what order are cards from the Corp's deck offered to the Runner when R&D is breached?
+Q36,buried,1,9,hurt_by_rerank,What does the Runner do in a breach when there are no more cards left to choose from?
+Q37,buried,1,1,both_ok,Who decides the order when two replacement effects apply to the same card?
+Q38,buried,1,1,both_ok,When does a remote server stop existing?
+Q39,buried,1,2,both_ok,Can an effect stop the Runner from starting a run on a particular server?
+Q40,buried,1,1,both_ok,Is a played event still trashed if it was turned into a condition counter while it resolved?
+Q41,buried,4,1,fixed_by_rerank,"If stealing an agenda would cause a breach of the same server during an ongoing breach, when does the second breach happen?"
+Q42,keyword_trap,,,recall_ceiling,What happens if I have two copies of a card with the diamond symbol in play?
+Q43,keyword_trap,1,2,both_ok,Do the cards in my hand have any effect on the game?
+Q44,keyword_trap,1,1,both_ok,Is avoiding damage any different from preventing it?
+Q45,keyword_trap,1,1,both_ok,Is a counter something different from a token?
+Q46,keyword_trap,1,1,both_ok,Does it matter whether I say arrange or rearrange the cards?
+Q47,keyword_trap,1,1,both_ok,Is a card that gets discarded the same as a card that gets trashed?
+Q48,keyword_trap,1,1,both_ok,"If a card is revealed while it is facedown, is it now faceup?"

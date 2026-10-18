@@ -2,13 +2,17 @@
 # - category is the failure type each query was DESIGNED to test (keyword_trap | exception | negation | buried | control).
 # - gold_essential: chunks that answer the question, found by searching the rules text for the rule itself,
 #   NOT by looking at what either retriever returns. When several are listed, any one of them is enough.
-# - verified: false = labels are provisional (proposed by Claude). The student checks the final set and sets this to true.
-# - expected_answer is added to the final queries by the student, in their own words.
+# - verified: true = the gold labels and expected_answer of this final query were checked against the rule text (reviewer in verified_by).
+#   verified: false = labels are provisional (proposed by Claude); only used for candidates outside the final set.
+# - expected_answer: the reference answer for a final query, written from its gold rule text.
 # - final: true = part of the final evaluation set (selection rule explained in the notebook, Section 7.2).
 - qid: Q01
   query: How many agenda points does a player need to win the game?
   category: control
-  verified: false
+  verified: true
+  verified_by: Claude (review done at the student's request)
+  expected_answer: 7 agenda points. A player whose score (the agenda points in their score area, from scored or stolen agendas)
+    is 7 or more wins at the next checkpoint; if both players get there at the same time, the game is a draw.
   gold_essential:
   - C0021
   - C0096
@@ -20,7 +24,11 @@
 - qid: Q02
   query: What basic actions can the Corp always take during their turn?
   category: control
-  verified: false
+  verified: true
+  verified_by: Claude (review done at the student's request)
+  expected_answer: 'Seven basic actions, each costing one click: gain 1 credit; draw 1 card; install an agenda, asset, upgrade
+    or piece of ice from HQ; play an operation from HQ; advance an installed card (also 1 credit); trash a resource if the
+    Runner is tagged (also 2 credits); purge virus counters (3 clicks in total).'
   gold_essential:
   - C0210
   gold_supporting: []
@@ -29,7 +37,11 @@
 - qid: Q03
   query: What is the limit on region upgrades in one server?
   category: control
-  verified: false
+  verified: true
+  verified_by: Claude (review done at the student's request)
+  expected_answer: One region per server. Only 1 region can be in the root of a server (central or remote); if the Corp installs
+    a second one there, the old region must be trashed. Region cards in HQ, R&D or Archives do not count, and the limit does
+    not apply to ice.
   gold_essential:
   - C0149
   gold_supporting: []
@@ -50,7 +62,10 @@
 - qid: Q05
   query: How much total influence can out-of-faction cards have in a deck?
   category: control
-  verified: false
+  verified: true
+  verified_by: Claude (review done at the student's request)
+  expected_answer: 'At most the identity''s influence limit: the influence costs of all out-of-faction cards (neutral cards
+    included) are added up per copy, and the total must not exceed that limit.'
   gold_essential:
   - C0007
   gold_supporting: []
@@ -68,7 +83,10 @@
 - qid: Q07
   query: Can a player take a mulligan after drawing their starting hand?
   category: control
-  verified: false
+  verified: true
+  verified_by: Claude (review done at the student's request)
+  expected_answer: Yes, once. After both starting hands are drawn, the Corp decides first and then the Runner; a player who
+    mulligans shuffles the hand back into the deck, draws a new starting hand and must keep it.
   gold_essential:
   - C0019
   gold_supporting: []
@@ -86,7 +104,10 @@
 - qid: Q09
   query: What happens when the Runner has more programs installed than their memory limit allows?
   category: control
-  verified: false
+  verified: true
+  verified_by: Claude (review done at the student's request)
+  expected_answer: At the next checkpoint the Runner must trash installed programs until the total memory cost of the programs
+    left is within the memory limit.
   gold_essential:
   - C0156
   gold_supporting: []
@@ -114,7 +135,10 @@
 - qid: Q12
   query: What happens to cards hosted on a card that moves from the Corp's score area to the Runner's score area?
   category: exception
-  verified: false
+  verified: true
+  verified_by: Claude (review done at the student's request)
+  expected_answer: They are not trashed. Hosted objects are normally trashed when their host changes zones, but moving from
+    one player's score area to the other player's score area is the exception.
   gold_essential:
   - C0057
   gold_supporting: []
@@ -134,7 +158,10 @@
 - qid: Q14
   query: Can the Runner pay a trash cost to trash a card that is in the Corp's discard pile?
   category: exception
-  verified: false
+  verified: true
+  verified_by: Claude (review done at the student's request)
+  expected_answer: No. The Runner cannot trash, or pay the trash cost of, a card in the Corp's discard pile (Archives), either
+    with the basic trash ability or with any other mid-access ability.
   gold_essential:
   - C0287
   - C0288
@@ -144,7 +171,10 @@
 - qid: Q15
   query: Can a condition operation be put into play by an install effect?
   category: exception
-  verified: false
+  verified: true
+  verified_by: Claude (review done at the student's request)
+  expected_answer: No. A condition operation can never be installed by an install effect; it only becomes installed (as a
+    condition counter) through its own conversion ability.
   gold_essential:
   - C0053
   - C0145
@@ -175,7 +205,10 @@
 - qid: Q18
   query: If one effect says a player must do something and another effect says they cannot, which one applies?
   category: negation
-  verified: false
+  verified: true
+  verified_by: Claude (review done at the student's request)
+  expected_answer: 'The ''cannot'' effect wins: if a rule or ability says something happens but another effect says it cannot
+    happen, it does not happen.'
   gold_essential:
   - C0002
   gold_supporting: []
@@ -184,7 +217,10 @@
 - qid: Q19
   query: Is a player allowed to look through the cards in their own deck during the game?
   category: negation
-  verified: false
+  verified: true
+  verified_by: Claude (review done at the student's request)
+  expected_answer: No. Decks are kept facedown and hidden, and neither player may look at the cards in any deck, their own
+    included, unless a rule or card ability explicitly tells them to.
   gold_essential:
   - C0167
   gold_supporting: []
@@ -221,7 +257,11 @@
 - qid: Q23
   query: Can the Runner have two consoles installed at the same time?
   category: negation
-  verified: false
+  verified: true
+  verified_by: Claude (review done at the student's request)
+  expected_answer: 'No. Consoles are ''Limit 1 console per player'': if the Runner ever controls more than one installed console,
+    all but the most recently active one are trashed, and this cannot be prevented. Having several consoles in the deck is
+    allowed.'
   gold_essential:
   - C0153
   - C0552
@@ -259,7 +299,10 @@
 - qid: Q27
   query: Can the Runner be forced to lose credits that are hosted on their cards?
   category: negation
-  verified: false
+  verified: true
+  verified_by: Claude (review done at the student's request)
+  expected_answer: No. Losing credits only takes credits from the player's credit pool; credits hosted on their cards are
+    not 'on' the player, so they cannot be lost, even if the pool holds fewer credits than required.
   gold_essential:
   - C0032
   - C0049
@@ -269,7 +312,10 @@
 - qid: Q28
   query: How much does it cost the Corp to put a new piece of ice on a server?
   category: keyword_trap
-  verified: false
+  verified: true
+  verified_by: Claude (review done at the student's request)
+  expected_answer: 1 credit for each piece of ice already protecting that server, so the first piece of ice on a server costs
+    nothing.
   gold_essential:
   - C0088
   - C0345
@@ -280,7 +326,11 @@
 - qid: Q29
   query: How does the Corp flip an installed card face up so that it starts working?
   category: keyword_trap
-  verified: false
+  verified: true
+  verified_by: Claude (review done at the student's request)
+  expected_answer: 'By rezzing it: the Corp pays the card''s rez cost and turns it faceup. Assets and upgrades can be rezzed
+    in paid ability windows, ice in the run''s paid ability window at step 6.9.2b, and any card when a card ability allows
+    it. Agendas cannot be rezzed.'
   gold_essential:
   - C0319
   - C0320
@@ -301,7 +351,10 @@
 - qid: Q31
   query: Is losing clicks the same thing as spending clicks?
   category: keyword_trap
-  verified: false
+  verified: true
+  verified_by: Claude (review done at the student's request)
+  expected_answer: No. Both reduce the number of clicks a player has, but 'lose' and 'spend' are not the same when card conditions
+    and restrictions are checked; for example, losing clicks does not stop a player from playing a priority card.
   gold_essential:
   - C0039
   gold_supporting: []
@@ -310,7 +363,9 @@
 - qid: Q32
   query: What happens when the Corp runs out of cards in their deck and has to draw?
   category: keyword_trap
-  verified: false
+  verified: true
+  verified_by: Claude (review done at the student's request)
+  expected_answer: 'The Runner wins the game: if the Corp must draw from R&D while it is empty, the Runner wins.'
   gold_essential:
   - C0021
   - C0168
@@ -332,7 +387,10 @@
 - qid: Q34
   query: While the Runner is breaching HQ, a new card enters the Corp's hand. Can the Runner access it?
   category: buried
-  verified: false
+  verified: true
+  verified_by: Claude (review done at the student's request)
+  expected_answer: 'Yes, as long as the random access limit has not been reached yet: the new card becomes a candidate the
+    Runner can access.'
   gold_essential:
   - C0311
   gold_supporting: []
@@ -341,7 +399,10 @@
 - qid: Q35
   query: In what order are cards from the Corp's deck offered to the Runner when R&D is breached?
   category: buried
-  verified: false
+  verified: true
+  verified_by: Claude (review done at the student's request)
+  expected_answer: From the top of the deck down, one card at a time, until the access limit is reached. If the deck changes
+    during the breach, the topmost eligible card becomes the next candidate.
   gold_essential:
   - C0313
   gold_supporting: []
@@ -350,7 +411,9 @@
 - qid: Q36
   query: What does the Runner do in a breach when there are no more cards left to choose from?
   category: buried
-  verified: false
+  verified: true
+  verified_by: Claude (review done at the student's request)
+  expected_answer: 'They skip to the end of the breach: if the Runner cannot choose a candidate, the breach is complete.'
   gold_essential:
   - C0317
   - C0600
@@ -371,7 +434,10 @@
 - qid: Q38
   query: When does a remote server stop existing?
   category: buried
-  verified: false
+  verified: true
+  verified_by: Claude (review done at the student's request)
+  expected_answer: During a checkpoint, as soon as it has no cards installed in its root and no ice protecting it. If this
+    happens during a run on it, the run ends after any open paid ability window closes.
   gold_essential:
   - C0193
   gold_supporting:
@@ -400,7 +466,9 @@
   query: If stealing an agenda would cause a breach of the same server during an ongoing breach, when does the second breach
     happen?
   category: buried
-  verified: false
+  verified: true
+  verified_by: Claude (review done at the student's request)
+  expected_answer: 'After the current breach ends: the new breach is delayed and takes place once the current breach is finished.'
   gold_essential:
   - C0301
   gold_supporting: []
@@ -409,7 +477,10 @@
 - qid: Q42
   query: What happens if I have two copies of a card with the diamond symbol in play?
   category: keyword_trap
-  verified: false
+  verified: true
+  verified_by: Claude (review done at the student's request)
+  expected_answer: Only one copy can be active at a time. When the newer copy becomes active, the other copy is trashed during
+    the next checkpoint, and this cannot be prevented; the most recently active copy stays.
   gold_essential:
   - C0543
   - C0552

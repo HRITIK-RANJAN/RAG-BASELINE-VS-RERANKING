@@ -1,0 +1,104 @@
+{
+  "qid": "Q07",
+  "query": "Can a player take a mulligan after drawing their starting hand?",
+  "category": "control",
+  "gold": [
+    "C0019"
+  ],
+  "corpus_sha256": "abc68239ba744f8090f0b65269e7f540f49ac9998622952a44a5707a79d247b0",
+  "candidates": [
+    {
+      "chunk_id": "C0019",
+      "bi_rank": 1,
+      "bi_score": 0.6289404034614563,
+      "ce_score": 9.238016128540039,
+      "ce_rank": 1
+    },
+    {
+      "chunk_id": "C0333",
+      "bi_rank": 2,
+      "bi_score": 0.41435736417770386,
+      "ce_score": -3.6425185203552246,
+      "ce_rank": 3
+    },
+    {
+      "chunk_id": "C0170",
+      "bi_rank": 3,
+      "bi_score": 0.39746397733688354,
+      "ce_score": -0.546167254447937,
+      "ce_rank": 2
+    },
+    {
+      "chunk_id": "C0336",
+      "bi_rank": 4,
+      "bi_score": 0.3742256462574005,
+      "ce_score": -4.4554362297058105,
+      "ce_rank": 4
+    },
+    {
+      "chunk_id": "C0334",
+      "bi_rank": 5,
+      "bi_score": 0.3436931371688843,
+      "ce_score": -8.407600402832031,
+      "ce_rank": 7
+    },
+    {
+      "chunk_id": "C0171",
+      "bi_rank": 6,
+      "bi_score": 0.31086796522140503,
+      "ce_score": -8.83586311340332,
+      "ce_rank": 8
+    },
+    {
+      "chunk_id": "C0024",
+      "bi_rank": 7,
+      "bi_score": 0.28126785159111023,
+      "ce_score": -8.304158210754395,
+      "ce_rank": 6
+    },
+    {
+      "chunk_id": "C0212",
+      "bi_rank": 8,
+      "bi_score": 0.26902827620506287,
+      "ce_score": -11.189671516418457,
+      "ce_rank": 10
+    },
+    {
+      "chunk_id": "C0420",
+      "bi_rank": 9,
+      "bi_score": 0.26582127809524536,
+      "ce_score": -10.952781677246094,
+      "ce_rank": 9
+    },
+    {
+      "chunk_id": "C0021",
+      "bi_rank": 10,
+      "bi_score": 0.26325446367263794,
+      "ce_score": -7.9059271812438965,
+      "ce_rank": 5
+    }
+  ],
+  "baseline": {
+    "top3": [
+      "C0019",
+      "C0333",
+      "C0170"
+    ],
+    "prompt": "You answer questions about the Netrunner Comprehensive Rules using ONLY the numbered passages below.\n- Put the passage id after every claim, like [S2].\n- If the passages do not contain the answer, reply exactly: \"The provided passages do not cover this.\"\n- If a passage states an exception, condition or restriction that is relevant to the question, include it.\n- Do not use outside knowledge.\n\nPASSAGES:\n[S1] (1 Game Concepts > 1.6 Starting the Game, p.7) 1.6.6. Each player draws 5 cards from the top of their deck to form their starting hand.\na. After drawing starting hands, the Corp may choose to take a mulligan; then, the Runner may choose to take a mulligan. To take a mulligan, the player shuffles their starting hand back into their deck, then draws a new starting hand. They must keep the second hand as their starting hand.\n1.6.7. The game begins and the Corp takes their first turn.\na. If the Corp’s identity has an ability with instructions for “before taking your first turn,” the Corp resolves that ability immediately before taking their first turn, and thus before the game starts.\n[S2] (8 Card Manipulation > 8.4 Drawing Cards, p.56) 8.4.1. DRAWING cards is a process that moves cards from a player’s deck to their hand.\n8.4.2. To draw 1 or more cards, a player sets aside that many cards from the top of their deck facedown. The cards are then considered drawn, and abilities with trigger conditions related to cards being drawn can act on them. When resolving any such abilities is complete, the set-aside cards are added to their owner’s hand.\na. Abilities with a trigger condition that refers to cards being drawn can see the drawn cards in the set-aside zone. This is an exception to rule 4.8.3.\nb. Abilities that do not refer specifically to cards a player has drawn are subject to rule 4.8.3, and only see the drawn cards move directly from the player’s deck to their hand.\n[S3] (4 Game Zones > 4.3 Hand, p.31) 4.3.1. A player’s HAND is the zone in which they hold the cards they have drawn from their deck. Cards can be added to a player’s hand by other rules and card abilities as well. During setup, each player draws a starting hand. See section 1.6.\n4.3.2. A player’s hand is kept secret from their opponent. A player may look at the cards in their own hand, but not at any of the cards in their opponent’s hands.\n4.3.3. Hands are not ordered. A player may freely arrange the cards in their hand in any order at any time.\n4.3.4. The number of cards in a hand is open information to all players. Any player may count the number of cards in a hand at any time.\n4.3.5. Cards in a hand are inactive.\n\nQUESTION: Can a player take a mulligan after drawing their starting hand?\nANSWER:",
+    "answer": "Yes, after drawing starting hands, the Corp may choose to take a mulligan, followed by the Runner [S1]. To take a mulligan, the player shuffles their starting hand back into their deck and draws a new starting hand, which they must keep [S1]."
+  },
+  "reranked": {
+    "top3": [
+      "C0019",
+      "C0170",
+      "C0333"
+    ],
+    "prompt": "You answer questions about the Netrunner Comprehensive Rules using ONLY the numbered passages below.\n- Put the passage id after every claim, like [S2].\n- If the passages do not contain the answer, reply exactly: \"The provided passages do not cover this.\"\n- If a passage states an exception, condition or restriction that is relevant to the question, include it.\n- Do not use outside knowledge.\n\nPASSAGES:\n[S1] (1 Game Concepts > 1.6 Starting the Game, p.7) 1.6.6. Each player draws 5 cards from the top of their deck to form their starting hand.\na. After drawing starting hands, the Corp may choose to take a mulligan; then, the Runner may choose to take a mulligan. To take a mulligan, the player shuffles their starting hand back into their deck, then draws a new starting hand. They must keep the second hand as their starting hand.\n1.6.7. The game begins and the Corp takes their first turn.\na. If the Corp’s identity has an ability with instructions for “before taking your first turn,” the Corp resolves that ability immediately before taking their first turn, and thus before the game starts.\n[S2] (4 Game Zones > 4.3 Hand, p.31) 4.3.1. A player’s HAND is the zone in which they hold the cards they have drawn from their deck. Cards can be added to a player’s hand by other rules and card abilities as well. During setup, each player draws a starting hand. See section 1.6.\n4.3.2. A player’s hand is kept secret from their opponent. A player may look at the cards in their own hand, but not at any of the cards in their opponent’s hands.\n4.3.3. Hands are not ordered. A player may freely arrange the cards in their hand in any order at any time.\n4.3.4. The number of cards in a hand is open information to all players. Any player may count the number of cards in a hand at any time.\n4.3.5. Cards in a hand are inactive.\n[S3] (8 Card Manipulation > 8.4 Drawing Cards, p.56) 8.4.1. DRAWING cards is a process that moves cards from a player’s deck to their hand.\n8.4.2. To draw 1 or more cards, a player sets aside that many cards from the top of their deck facedown. The cards are then considered drawn, and abilities with trigger conditions related to cards being drawn can act on them. When resolving any such abilities is complete, the set-aside cards are added to their owner’s hand.\na. Abilities with a trigger condition that refers to cards being drawn can see the drawn cards in the set-aside zone. This is an exception to rule 4.8.3.\nb. Abilities that do not refer specifically to cards a player has drawn are subject to rule 4.8.3, and only see the drawn cards move directly from the player’s deck to their hand.\n\nQUESTION: Can a player take a mulligan after drawing their starting hand?\nANSWER:",
+    "answer": "Yes, after drawing their starting hand, the Corp may choose to take a mulligan, followed by the Runner [S1]. To take a mulligan, the player shuffles their starting hand back into their deck and draws a new starting hand, which they must keep [S1]."
+  },
+  "timings_ms": {
+    "encode_ms": 3.888542007189244,
+    "search_ms": 0.025999994250014424,
+    "ce_ms": 34.655541996471584
+  }
+}

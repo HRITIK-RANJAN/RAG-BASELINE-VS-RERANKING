@@ -1,0 +1,105 @@
+{
+  "qid": "Q36",
+  "query": "What does the Runner do in a breach when there are no more cards left to choose from?",
+  "category": "buried",
+  "gold": [
+    "C0317",
+    "C0600"
+  ],
+  "corpus_sha256": "abc68239ba744f8090f0b65269e7f540f49ac9998622952a44a5707a79d247b0",
+  "candidates": [
+    {
+      "chunk_id": "C0317",
+      "bi_rank": 1,
+      "bi_score": 0.6692532896995544,
+      "ce_score": 4.087981224060059,
+      "ce_rank": 9
+    },
+    {
+      "chunk_id": "C0313",
+      "bi_rank": 2,
+      "bi_score": 0.6686582565307617,
+      "ce_score": 6.260983467102051,
+      "ce_rank": 3
+    },
+    {
+      "chunk_id": "C0307",
+      "bi_rank": 3,
+      "bi_score": 0.6595197319984436,
+      "ce_score": 3.854548215866089,
+      "ce_rank": 10
+    },
+    {
+      "chunk_id": "C0295",
+      "bi_rank": 4,
+      "bi_score": 0.656315803527832,
+      "ce_score": 6.821676254272461,
+      "ce_rank": 1
+    },
+    {
+      "chunk_id": "C0297",
+      "bi_rank": 5,
+      "bi_score": 0.6500840783119202,
+      "ce_score": 5.952411651611328,
+      "ce_rank": 4
+    },
+    {
+      "chunk_id": "C0308",
+      "bi_rank": 6,
+      "bi_score": 0.6495231986045837,
+      "ce_score": 6.61034631729126,
+      "ce_rank": 2
+    },
+    {
+      "chunk_id": "C0556",
+      "bi_rank": 7,
+      "bi_score": 0.6469529867172241,
+      "ce_score": 5.271276950836182,
+      "ce_rank": 6
+    },
+    {
+      "chunk_id": "C0310",
+      "bi_rank": 8,
+      "bi_score": 0.6424398422241211,
+      "ce_score": 5.255139350891113,
+      "ce_rank": 7
+    },
+    {
+      "chunk_id": "C0306",
+      "bi_rank": 9,
+      "bi_score": 0.6322396397590637,
+      "ce_score": 4.995668888092041,
+      "ce_rank": 8
+    },
+    {
+      "chunk_id": "C0291",
+      "bi_rank": 10,
+      "bi_score": 0.6240563988685608,
+      "ce_score": 5.394826889038086,
+      "ce_rank": 5
+    }
+  ],
+  "baseline": {
+    "top3": [
+      "C0317",
+      "C0313",
+      "C0307"
+    ],
+    "prompt": "You answer questions about the Netrunner Comprehensive Rules using ONLY the numbered passages below.\n- Put the passage id after every claim, like [S2].\n- If the passages do not contain the answer, reply exactly: \"The provided passages do not cover this.\"\n- If a passage states an exception, condition or restriction that is relevant to the question, include it.\n- Do not use outside knowledge.\n\nPASSAGES:\n[S1] (7 Accessing Cards and Breaching Servers > 7.5 Steps of Breaching a Server, p.54) 7.5.1. Breaching the server formally begins. Conditions related to breaching this server are met.\n7.5.2. If the breached server is Archives, turn all cards in the Corp’s discard pile faceup.\n7.5.3. If the breached server is HQ or R&D, determine the limit to how many times the Runner can choose a candidate from the Corp’s hand or deck.\n7.5.4. The Runner chooses a candidate. If they cannot, skip to step 7.5.7.\n7.5.5. The Runner accesses the chosen card.\n7.5.6. Return to step 7.5.4.\n7.5.7. The breach is complete. Conditions related to the breach ending are met.\n[S2] (7 Accessing Cards and Breaching Servers > 7.4 Determining Candidates, p.53-54) 7.4.7. During a breach of R&D, the Runner is presented with 1 candidate from the Corp’s deck at a time in turn, working down from the top of the deck. Cards are made candidates 1 at a time until the access limit is reached.\na. After the Runner chooses a candidate from the Corp’s deck and whenever any cards enter, leave, or are reordered within the Corp’s deck, all cards in the Corp’s deck cease to be candidates. Then, if the random access limit has not been reached, the topmost eligible card in the deck becomes a candidate. A card is eligible for this purpose if the Runner has not already chosen to access that object and is not prohibited from accessing that object in this breach.\n[S3] (7 Accessing Cards and Breaching Servers > 7.4 Determining Candidates, p.52-53) Example: The Runner breaches HQ during a run on HQ while Flagship is rezzed in the root of HQ, and they have an installed copy of Docklands Pass, but they have previously accessed a card during that run because of Otoroshi’s ability. The random access limit is still set to 2, but since the Runner is not allowed to access any cards other than Flagship, none of the cards in the Corp’s hand will be candidates. If Flagship’s ability becomes inactive before the breach ends, the cards in the Corp’s hand will become candidates and the Runner will be able to access 2 of them.\n\nQUESTION: What does the Runner do in a breach when there are no more cards left to choose from?\nANSWER:",
+    "answer": "If the Runner cannot choose a candidate, they skip to step 7.5.7 [S1]. At step 7.5.7, the breach is complete and conditions related to the breach ending are met [S1]."
+  },
+  "reranked": {
+    "top3": [
+      "C0295",
+      "C0308",
+      "C0313"
+    ],
+    "prompt": "You answer questions about the Netrunner Comprehensive Rules using ONLY the numbered passages below.\n- Put the passage id after every claim, like [S2].\n- If the passages do not contain the answer, reply exactly: \"The provided passages do not cover this.\"\n- If a passage states an exception, condition or restriction that is relevant to the question, include it.\n- Do not use outside knowledge.\n\nPASSAGES:\n[S1] (7 Accessing Cards and Breaching Servers > 7.3 Breaching Servers, p.51) 7.3.4. During a breach, the Runner is presented with the current candidates. They choose 1 of those cards and access it. This process repeats until there are no longer any candidates.\na. When presented with candidates during a breach of HQ, the Runner chooses either a specific candidate that is not in the Corp’s hand or to access a random candidate from among the ones in the Corp’s hand. A card randomly chosen this way is treated as though the Runner had chosen it.\n[S2] (7 Accessing Cards and Breaching Servers > 7.4 Determining Candidates, p.53) 7.4.3. Once the Runner chooses a candidate for access, it ceases to be a candidate for the remainder of that breach. It does not matter whether the chosen candidate is actually accessed. As long as the card is chosen, it ceases to be a candidate.\nExample: The Runner is breaching Archives during a run made with Immolation Script. They choose a piece of ice from the set of candidates, and apply Immolation Script’s replacement effect to trash another card instead of accessing the chosen ice. After resolving this, the chosen ice is no longer a candidate and cannot be accessed again this breach. (The newly-trashed card, however, could be a candidate.)\n[S3] (7 Accessing Cards and Breaching Servers > 7.4 Determining Candidates, p.53-54) 7.4.7. During a breach of R&D, the Runner is presented with 1 candidate from the Corp’s deck at a time in turn, working down from the top of the deck. Cards are made candidates 1 at a time until the access limit is reached.\na. After the Runner chooses a candidate from the Corp’s deck and whenever any cards enter, leave, or are reordered within the Corp’s deck, all cards in the Corp’s deck cease to be candidates. Then, if the random access limit has not been reached, the topmost eligible card in the deck becomes a candidate. A card is eligible for this purpose if the Runner has not already chosen to access that object and is not prohibited from accessing that object in this breach.\n\nQUESTION: What does the Runner do in a breach when there are no more cards left to choose from?\nANSWER:",
+    "answer": "The provided passages do not cover this."
+  },
+  "timings_ms": {
+    "encode_ms": 3.983582981163636,
+    "search_ms": 0.027583999326452613,
+    "ce_ms": 34.46679201442748
+  }
+}

@@ -1,0 +1,105 @@
+{
+  "qid": "Q29",
+  "query": "How does the Corp flip an installed card face up so that it starts working?",
+  "category": "keyword_trap",
+  "gold": [
+    "C0319",
+    "C0320"
+  ],
+  "corpus_sha256": "abc68239ba744f8090f0b65269e7f540f49ac9998622952a44a5707a79d247b0",
+  "candidates": [
+    {
+      "chunk_id": "C0353",
+      "bi_rank": 1,
+      "bi_score": 0.5512676239013672,
+      "ce_score": 3.2988593578338623,
+      "ce_rank": 2
+    },
+    {
+      "chunk_id": "C0054",
+      "bi_rank": 2,
+      "bi_score": 0.5398156046867371,
+      "ce_score": -3.197984218597412,
+      "ce_rank": 9
+    },
+    {
+      "chunk_id": "C0323",
+      "bi_rank": 3,
+      "bi_score": 0.5206032991409302,
+      "ce_score": 0.20929497480392456,
+      "ce_rank": 7
+    },
+    {
+      "chunk_id": "C0320",
+      "bi_rank": 4,
+      "bi_score": 0.5043919086456299,
+      "ce_score": 4.3474273681640625,
+      "ce_rank": 1
+    },
+    {
+      "chunk_id": "C0354",
+      "bi_rank": 5,
+      "bi_score": 0.5030772686004639,
+      "ce_score": 0.4092161953449249,
+      "ce_rank": 6
+    },
+    {
+      "chunk_id": "C0348",
+      "bi_rank": 6,
+      "bi_score": 0.49975425004959106,
+      "ce_score": -0.21465931832790375,
+      "ce_rank": 8
+    },
+    {
+      "chunk_id": "C0339",
+      "bi_rank": 7,
+      "bi_score": 0.49247854948043823,
+      "ce_score": 1.0569109916687012,
+      "ce_rank": 5
+    },
+    {
+      "chunk_id": "C0370",
+      "bi_rank": 8,
+      "bi_score": 0.4922493100166321,
+      "ce_score": -4.596802234649658,
+      "ce_rank": 10
+    },
+    {
+      "chunk_id": "C0338",
+      "bi_rank": 9,
+      "bi_score": 0.4914886951446533,
+      "ce_score": 2.1555891036987305,
+      "ce_rank": 3
+    },
+    {
+      "chunk_id": "C0017",
+      "bi_rank": 10,
+      "bi_score": 0.4893072247505188,
+      "ce_score": 1.0640724897384644,
+      "ce_rank": 4
+    }
+  ],
+  "baseline": {
+    "top3": [
+      "C0353",
+      "C0054",
+      "C0323"
+    ],
+    "prompt": "You answer questions about the Netrunner Comprehensive Rules using ONLY the numbered passages below.\n- Put the passage id after every claim, like [S2].\n- If the passages do not contain the answer, reply exactly: \"The provided passages do not cover this.\"\n- If a passage states an exception, condition or restriction that is relevant to the question, include it.\n- Do not use outside knowledge.\n\nPASSAGES:\n[S1] (8 Card Manipulation > 8.5 Installing and Uninstalling Cards, p.59) 8.5.15. Some abilities instruct the Corp to “install and rez” a card. To resolve this instruction, the Corp first installs the card normally. After the installation is complete, the Corp rezzes the card. See also rule 8.5.13d.\na. Some “install and rez” abilities affect more than 1 card. In this case, each card is rezzed directly after it is installed, as part of the same instruction and before the next installation begins. See also rule 8.5.5.\n[S2] (1 Game Concepts > 1.13 Host, Hosted, and Hosting, p.12) 1.13.7. Cards can be hosted faceup or facedown.\na. Unless otherwise specified, a card that is hosted while it is being installed is hosted onto the destination card in the same faceup or facedown status it would normally be installed in.\nb. Unless otherwise specified, a card that is hosted without being installed is hosted faceup.\nc. Like other facedown installed cards, installed cards hosted facedown are distinct. The order in which they were installed (or turned facedown) is open information.\nd. Cards hosted facedown without being installed must be kept in distinct groups according to their host. Cards within such a group are not ordered and can be freely arranged by their controller.\n1.13.8. Once a card is installed, hosted or not, a player cannot change that card’s hosted status unless a card ability explicitly directs it to be hosted onto a new card.\n[S3] (8 Card Manipulation > 8.1 Faceup and Facedown Status, p.54-55) d. A Runner card turned facedown is not considered to be uninstalled and simply remains in the play area.\ne. If an installed facedown Runner card is turned faceup, the card regains its printed characteristics and it becomes active. Turning an installed facedown Runner card faceup does not meet the trigger conditions of “when installed” abilities.\nf. Runner cards are never considered rezzed or unrezzed.\n\nQUESTION: How does the Corp flip an installed card face up so that it starts working?\nANSWER:",
+    "answer": "The provided passages do not cover this."
+  },
+  "reranked": {
+    "top3": [
+      "C0320",
+      "C0353",
+      "C0338"
+    ],
+    "prompt": "You answer questions about the Netrunner Comprehensive Rules using ONLY the numbered passages below.\n- Put the passage id after every claim, like [S2].\n- If the passages do not contain the answer, reply exactly: \"The provided passages do not cover this.\"\n- If a passage states an exception, condition or restriction that is relevant to the question, include it.\n- Do not use outside knowledge.\n\nPASSAGES:\n[S1] (8 Card Manipulation > 8.1 Faceup and Facedown Status, p.54) e. To resolve rezzing a card, the Corp pays its rez cost (accounting for any modifiers or additional costs), a checkpoint occurs (as required by rule 10.3.4), then the Corp turns the card faceup. For purposes of meeting trigger conditions, the card is considered to be rezzed at the conclusion of this process.\n[S2] (8 Card Manipulation > 8.5 Installing and Uninstalling Cards, p.59) 8.5.15. Some abilities instruct the Corp to “install and rez” a card. To resolve this instruction, the Corp first installs the card normally. After the installation is complete, the Corp rezzes the card. See also rule 8.5.13d.\na. Some “install and rez” abilities affect more than 1 card. In this case, each card is rezzed directly after it is installed, as part of the same instruction and before the next installation begins. See also rule 8.5.5.\n[S3] (8 Card Manipulation > 8.5 Installing and Uninstalling Cards, p.57) 8.5.2. Corp cards are installed facedown, unrezzed, and remain inactive until rezzed. Corp cards are installed into specific locations. See section 4.6.6 for more information on servers and the locations of installed Corp cards.\na. As part of installing a card, the Corp chooses which server will be the destination for that card. The Corp can either choose an already existing server as the destination or announces that the card will create a new remote server.\nb. The Corp always installs an agenda or asset into the root of a remote server.\nc. The Corp always installs an upgrade into the root of a central or remote server.\nd. Unless otherwise indicated, the Corp always installs ice to the outermost position protecting the destination server. See section 6.2.2.\n\nQUESTION: How does the Corp flip an installed card face up so that it starts working?\nANSWER:",
+    "answer": "To resolve rezzing a card, the Corp pays its rez cost (accounting for any modifiers or additional costs), a checkpoint occurs, then the Corp turns the card faceup [S1]. For purposes of meeting trigger conditions, the card is considered to be rezzed at the conclusion of this process [S1]."
+  },
+  "timings_ms": {
+    "encode_ms": 3.9172499964479357,
+    "search_ms": 0.023582979338243604,
+    "ce_ms": 35.19166700425558
+  }
+}

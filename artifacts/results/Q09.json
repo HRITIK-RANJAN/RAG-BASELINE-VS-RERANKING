@@ -1,0 +1,104 @@
+{
+  "qid": "Q09",
+  "query": "What happens when the Runner has more programs installed than their memory limit allows?",
+  "category": "control",
+  "gold": [
+    "C0156"
+  ],
+  "corpus_sha256": "abc68239ba744f8090f0b65269e7f540f49ac9998622952a44a5707a79d247b0",
+  "candidates": [
+    {
+      "chunk_id": "C0156",
+      "bi_rank": 1,
+      "bi_score": 0.8029372692108154,
+      "ce_score": 8.061076164245605,
+      "ce_rank": 1
+    },
+    {
+      "chunk_id": "C0155",
+      "bi_rank": 2,
+      "bi_score": 0.7472814917564392,
+      "ce_score": 5.820228576660156,
+      "ce_rank": 2
+    },
+    {
+      "chunk_id": "C0105",
+      "bi_rank": 3,
+      "bi_score": 0.7008804678916931,
+      "ce_score": 4.716341018676758,
+      "ce_rank": 4
+    },
+    {
+      "chunk_id": "C0106",
+      "bi_rank": 4,
+      "bi_score": 0.6651588678359985,
+      "ce_score": 3.556002140045166,
+      "ce_rank": 6
+    },
+    {
+      "chunk_id": "C0342",
+      "bi_rank": 5,
+      "bi_score": 0.6441987156867981,
+      "ce_score": 5.661287307739258,
+      "ce_rank": 3
+    },
+    {
+      "chunk_id": "C0554",
+      "bi_rank": 6,
+      "bi_score": 0.6131953001022339,
+      "ce_score": 4.135473251342773,
+      "ce_rank": 5
+    },
+    {
+      "chunk_id": "C0121",
+      "bi_rank": 7,
+      "bi_score": 0.6067817211151123,
+      "ce_score": 1.6450834274291992,
+      "ce_rank": 7
+    },
+    {
+      "chunk_id": "C0119",
+      "bi_rank": 8,
+      "bi_score": 0.5945672988891602,
+      "ce_score": 0.850314736366272,
+      "ce_rank": 8
+    },
+    {
+      "chunk_id": "C0154",
+      "bi_rank": 9,
+      "bi_score": 0.5228582620620728,
+      "ce_score": -1.665846586227417,
+      "ce_rank": 9
+    },
+    {
+      "chunk_id": "C0162",
+      "bi_rank": 10,
+      "bi_score": 0.5105232000350952,
+      "ce_score": -3.9299216270446777,
+      "ce_rank": 10
+    }
+  ],
+  "baseline": {
+    "top3": [
+      "C0156",
+      "C0155",
+      "C0105"
+    ],
+    "prompt": "You answer questions about the Netrunner Comprehensive Rules using ONLY the numbered passages below.\n- Put the passage id after every claim, like [S2].\n- If the passages do not contain the answer, reply exactly: \"The provided passages do not cover this.\"\n- If a passage states an exception, condition or restriction that is relevant to the question, include it.\n- Do not use outside knowledge.\n\nPASSAGES:\n[S1] (3 Card Types > 3.9 Programs, p.28-29) c. If the Runner’s memory limit decreases below the total memory cost of installed programs, or if the total memory cost of installed programs increases above the memory limit for any reason other than installing another program, the Runner must trash one or more installed programs such that the total memory cost of the remaining programs does not exceed their memory limit. This occurs during the next checkpoint after the memory limit is exceeded. See section 10.3.\nd. A program’s memory cost is not a cost. It cannot be increased, lowered, ignored, or otherwise modified by abilities that affect costs to install programs.\n[S2] (3 Card Types > 3.9 Programs, p.28-29) 3.9.3. Programs are the only card type that have a memory cost. A program’s memory cost is the number of memory units that program requires while it is installed.\na. Installing a program does not permanently consume memory. The program claims its designated quantity of memory units until it becomes uninstalled, at which point those memory units become available for use by other programs.\nb. When the Runner installs a program that would increase the total memory cost of installed programs over their memory limit, they must trash one or more installed programs such that the total memory cost of installed programs including the new program will not exceed their memory limit. See section 8.5.\n[S3] (1 Game Concepts > 1.20 Memory, p.20) 1.20.1. A MEMORY UNIT ( mu) is a space available to the Runner to install programs.\n1.20.2. The Runner’s MEMORY LIMIT is the total amount of mu the Runner has. If the Runner’s identity card does not specify a starting memory limit, their starting memory limit is 4 mu. An ability of the form “+N mu ” increases the Runner’s memory limit by N mu.\nExample: The Runner is playing an identity with a starting memory limit of 4 mu. They have an installed copy of T400 Memory Diamond, which has the ability “+1 mu ”. The Runner can therefore have up to 5 mu worth of programs installed.\n1.20.3. Programs have a MEMORY COST that is continually applied against the memory limit. Section 3.9.3 details how the Runner’s installed programs are constrained by the memory limit.\n\nQUESTION: What happens when the Runner has more programs installed than their memory limit allows?\nANSWER:",
+    "answer": "If the Runner installs a program that causes the total memory cost to exceed their memory limit, they must trash one or more installed programs so that the total memory cost of the installed programs, including the new one, does not exceed the limit [S2b].\n\nIf the memory limit decreases or the total memory cost increases for any reason other than installing a new program, the Runner must trash one or more installed programs so that the total memory cost of the remaining programs does not exceed the limit [S1c]. This action occurs during the next checkpoint after the memory limit is exceeded [S1c]."
+  },
+  "reranked": {
+    "top3": [
+      "C0156",
+      "C0155",
+      "C0342"
+    ],
+    "prompt": "You answer questions about the Netrunner Comprehensive Rules using ONLY the numbered passages below.\n- Put the passage id after every claim, like [S2].\n- If the passages do not contain the answer, reply exactly: \"The provided passages do not cover this.\"\n- If a passage states an exception, condition or restriction that is relevant to the question, include it.\n- Do not use outside knowledge.\n\nPASSAGES:\n[S1] (3 Card Types > 3.9 Programs, p.28-29) c. If the Runner’s memory limit decreases below the total memory cost of installed programs, or if the total memory cost of installed programs increases above the memory limit for any reason other than installing another program, the Runner must trash one or more installed programs such that the total memory cost of the remaining programs does not exceed their memory limit. This occurs during the next checkpoint after the memory limit is exceeded. See section 10.3.\nd. A program’s memory cost is not a cost. It cannot be increased, lowered, ignored, or otherwise modified by abilities that affect costs to install programs.\n[S2] (3 Card Types > 3.9 Programs, p.28-29) 3.9.3. Programs are the only card type that have a memory cost. A program’s memory cost is the number of memory units that program requires while it is installed.\na. Installing a program does not permanently consume memory. The program claims its designated quantity of memory units until it becomes uninstalled, at which point those memory units become available for use by other programs.\nb. When the Runner installs a program that would increase the total memory cost of installed programs over their memory limit, they must trash one or more installed programs such that the total memory cost of installed programs including the new program will not exceed their memory limit. See section 8.5.\n[S3] (8 Card Manipulation > 8.5 Installing and Uninstalling Cards, p.58) c. When installing a program, the Runner may first trash any number of programs already installed. They must do so if installing the new program would exceed their memory limit.\n\nQUESTION: What happens when the Runner has more programs installed than their memory limit allows?\nANSWER:",
+    "answer": "If the Runner’s memory limit decreases below the total memory cost of installed programs, or if the total memory cost of installed programs increases above the memory limit for any reason other than installing another program, the Runner must trash one or more installed programs such that the total memory cost of the remaining programs does not exceed their memory limit [S1]. This occurs during the next checkpoint after the memory limit is exceeded [S1]. \n\nIf the Runner is installing a program that would cause the total memory cost to exceed the memory limit, they must trash one or more installed programs such that the total memory cost including the new program does not exceed the limit [S2, S3]."
+  },
+  "timings_ms": {
+    "encode_ms": 4.00212500244379,
+    "search_ms": 0.021334009943529963,
+    "ce_ms": 34.517374995630234
+  }
+}

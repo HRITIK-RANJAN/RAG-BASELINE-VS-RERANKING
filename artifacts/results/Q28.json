@@ -1,0 +1,105 @@
+{
+  "qid": "Q28",
+  "query": "How much does it cost the Corp to put a new piece of ice on a server?",
+  "category": "keyword_trap",
+  "gold": [
+    "C0088",
+    "C0345"
+  ],
+  "corpus_sha256": "abc68239ba744f8090f0b65269e7f540f49ac9998622952a44a5707a79d247b0",
+  "candidates": [
+    {
+      "chunk_id": "C0144",
+      "bi_rank": 1,
+      "bi_score": 0.5688937306404114,
+      "ce_score": 1.6847727298736572,
+      "ce_rank": 2
+    },
+    {
+      "chunk_id": "C0088",
+      "bi_rank": 2,
+      "bi_score": 0.5073109269142151,
+      "ce_score": 1.07356595993042,
+      "ce_rank": 3
+    },
+    {
+      "chunk_id": "C0345",
+      "bi_rank": 3,
+      "bi_score": 0.43793052434921265,
+      "ce_score": 0.916017472743988,
+      "ce_rank": 4
+    },
+    {
+      "chunk_id": "C0082",
+      "bi_rank": 4,
+      "bi_score": 0.42208924889564514,
+      "ce_score": 3.302987575531006,
+      "ce_rank": 1
+    },
+    {
+      "chunk_id": "C0142",
+      "bi_rank": 5,
+      "bi_score": 0.418621689081192,
+      "ce_score": -2.2251155376434326,
+      "ce_rank": 7
+    },
+    {
+      "chunk_id": "C0113",
+      "bi_rank": 6,
+      "bi_score": 0.4160747528076172,
+      "ce_score": -7.569370746612549,
+      "ce_rank": 10
+    },
+    {
+      "chunk_id": "C0141",
+      "bi_rank": 7,
+      "bi_score": 0.40423575043678284,
+      "ce_score": -1.393630027770996,
+      "ce_rank": 6
+    },
+    {
+      "chunk_id": "C0192",
+      "bi_rank": 8,
+      "bi_score": 0.39653927087783813,
+      "ce_score": -3.0325734615325928,
+      "ce_rank": 9
+    },
+    {
+      "chunk_id": "C0184",
+      "bi_rank": 9,
+      "bi_score": 0.39437273144721985,
+      "ce_score": -2.683504581451416,
+      "ce_rank": 8
+    },
+    {
+      "chunk_id": "C0341",
+      "bi_rank": 10,
+      "bi_score": 0.36688509583473206,
+      "ce_score": -1.377012014389038,
+      "ce_rank": 5
+    }
+  ],
+  "baseline": {
+    "top3": [
+      "C0144",
+      "C0088",
+      "C0345"
+    ],
+    "prompt": "You answer questions about the Netrunner Comprehensive Rules using ONLY the numbered passages below.\n- Put the passage id after every claim, like [S2].\n- If the passages do not contain the answer, reply exactly: \"The provided passages do not cover this.\"\n- If a passage states an exception, condition or restriction that is relevant to the question, include it.\n- Do not use outside knowledge.\n\nPASSAGES:\n[S1] (3 Card Types > 3.4 Ice, p.27) 3.4.5. Some ice have trash costs. If the Runner accesses an ice with a trash cost, they may pay the trash cost to trash that ice. See section 7.1.5.\na. Unlike assets, upgrades, and agendas, ice are not normally accessed while installed. Encountering a piece of ice does not entail accessing that ice and does not give the Runner an opportunity to pay its trash cost.\n3.4.6. Ice are the only Corp cards with install costs. The install cost of a piece of ice is not a printed value but instead a calculated value based on the number of other ice already protecting the relevant server. See section 1.16.6.\n3.4.7. Ice are the only cards with subroutines. See section 9.8.\n[S2] (1 Game Concepts > 1.16 Costs, p.17) 1.16.6. The INSTALL COST of a card must be paid to install that card.\na. The install cost of a program, resource, or piece of hardware is listed on the card itself.\nb. The install cost of a piece of ice is a number of credits equal to the number of pieces of ice already protecting the server that ice will be installed protecting.\nc. There is no cost to install an asset, upgrade, or agenda.\n1.16.7. The PLAY COST of an operation or event must be paid to play that card. It is listed on the card itself.\n1.16.8. The REZ COST of an asset, upgrade, or piece of ice must be paid in order to rez that card. It is listed on the card itself.\n[S3] (8 Card Manipulation > 8.5 Installing and Uninstalling Cards, p.58) 8.5.11. Some types of cards have an install cost, which must be paid before the card can become installed, unless an ability indicates that this cost should be ignored.\na. The install cost of a piece of ice is 1 credit for each piece of ice already installed protecting the destination server at the time the cost is to be paid. The install cost of a piece of hardware, program, or resource is indicated on the card. Assets, agendas, upgrades, and facedown Runner cards have no install cost. See also rule 1.16.6b.\nb. If a card has an install cost of X, the value for X is chosen by the player at the time the cost would normally be paid, according to any stipulations indicated in the card’s text box. This value of X is maintained until the install effect is complete.\n\nQUESTION: How much does it cost the Corp to put a new piece of ice on a server?\nANSWER:",
+    "answer": "The install cost of a piece of ice is a number of credits equal to the number of pieces of ice already protecting the server that the ice will be installed protecting [S2, S3]. Specifically, it is 1 credit for each piece of ice already installed protecting the destination server at the time the cost is to be paid [S3]."
+  },
+  "reranked": {
+    "top3": [
+      "C0082",
+      "C0144",
+      "C0088"
+    ],
+    "prompt": "You answer questions about the Netrunner Comprehensive Rules using ONLY the numbered passages below.\n- Put the passage id after every claim, like [S2].\n- If the passages do not contain the answer, reply exactly: \"The provided passages do not cover this.\"\n- If a passage states an exception, condition or restriction that is relevant to the question, include it.\n- Do not use outside knowledge.\n\nPASSAGES:\n[S1] (1 Game Concepts > 1.16 Costs, p.16) Example: The Corp uses the ability on Tucana to install and rez a copy of Logjam from R&D, paying a total of 3 credit less. They install the Logjam protecting a server that already has 1 piece of ice protecting it, meaning that without the “total of 3 credit less” modifier, the install cost would be 1 credit and the rez cost would be 6 credit. The Corp applies 1 credit of the discount to the install cost and 2 credit to the rez cost, leaving a final install cost of 0 credit and a final rez cost of 4 credit.\n[S2] (3 Card Types > 3.4 Ice, p.27) 3.4.5. Some ice have trash costs. If the Runner accesses an ice with a trash cost, they may pay the trash cost to trash that ice. See section 7.1.5.\na. Unlike assets, upgrades, and agendas, ice are not normally accessed while installed. Encountering a piece of ice does not entail accessing that ice and does not give the Runner an opportunity to pay its trash cost.\n3.4.6. Ice are the only Corp cards with install costs. The install cost of a piece of ice is not a printed value but instead a calculated value based on the number of other ice already protecting the relevant server. See section 1.16.6.\n3.4.7. Ice are the only cards with subroutines. See section 9.8.\n[S3] (1 Game Concepts > 1.16 Costs, p.17) 1.16.6. The INSTALL COST of a card must be paid to install that card.\na. The install cost of a program, resource, or piece of hardware is listed on the card itself.\nb. The install cost of a piece of ice is a number of credits equal to the number of pieces of ice already protecting the server that ice will be installed protecting.\nc. There is no cost to install an asset, upgrade, or agenda.\n1.16.7. The PLAY COST of an operation or event must be paid to play that card. It is listed on the card itself.\n1.16.8. The REZ COST of an asset, upgrade, or piece of ice must be paid in order to rez that card. It is listed on the card itself.\n\nQUESTION: How much does it cost the Corp to put a new piece of ice on a server?\nANSWER:",
+    "answer": "The install cost of a piece of ice is a number of credits equal to the number of pieces of ice already protecting the server that ice will be installed protecting [S3]. This install cost must be paid to install the card [S3]."
+  },
+  "timings_ms": {
+    "encode_ms": 3.9964159950613976,
+    "search_ms": 0.023874978069216013,
+    "ce_ms": 33.1644999969285
+  }
+}

@@ -1,0 +1,105 @@
+{
+  "qid": "Q15",
+  "query": "Can a condition operation be put into play by an install effect?",
+  "category": "exception",
+  "gold": [
+    "C0053",
+    "C0145"
+  ],
+  "corpus_sha256": "abc68239ba744f8090f0b65269e7f540f49ac9998622952a44a5707a79d247b0",
+  "candidates": [
+    {
+      "chunk_id": "C0405",
+      "bi_rank": 1,
+      "bi_score": 0.4595904052257538,
+      "ce_score": -7.184236526489258,
+      "ce_rank": 7
+    },
+    {
+      "chunk_id": "C0053",
+      "bi_rank": 2,
+      "bi_score": 0.45542699098587036,
+      "ce_score": 3.3795838356018066,
+      "ce_rank": 2
+    },
+    {
+      "chunk_id": "C0085",
+      "bi_rank": 3,
+      "bi_score": 0.4477827847003937,
+      "ce_score": 0.14427562057971954,
+      "ce_rank": 3
+    },
+    {
+      "chunk_id": "C0442",
+      "bi_rank": 4,
+      "bi_score": 0.4390726089477539,
+      "ce_score": -6.308969974517822,
+      "ce_rank": 6
+    },
+    {
+      "chunk_id": "C0443",
+      "bi_rank": 5,
+      "bi_score": 0.4378393292427063,
+      "ce_score": -9.893178939819336,
+      "ce_rank": 9
+    },
+    {
+      "chunk_id": "C0447",
+      "bi_rank": 6,
+      "bi_score": 0.4280427396297455,
+      "ce_score": -10.835845947265625,
+      "ce_rank": 10
+    },
+    {
+      "chunk_id": "C0452",
+      "bi_rank": 7,
+      "bi_score": 0.4267243444919586,
+      "ce_score": -4.851630210876465,
+      "ce_rank": 5
+    },
+    {
+      "chunk_id": "C0145",
+      "bi_rank": 8,
+      "bi_score": 0.4226139187812805,
+      "ce_score": 7.903709411621094,
+      "ce_rank": 1
+    },
+    {
+      "chunk_id": "C0439",
+      "bi_rank": 9,
+      "bi_score": 0.4186455309391022,
+      "ce_score": -4.141130447387695,
+      "ce_rank": 4
+    },
+    {
+      "chunk_id": "C0432",
+      "bi_rank": 10,
+      "bi_score": 0.4114416837692261,
+      "ce_score": -9.850473403930664,
+      "ce_rank": 8
+    }
+  ],
+  "baseline": {
+    "top3": [
+      "C0405",
+      "C0053",
+      "C0085"
+    ],
+    "prompt": "You answer questions about the Netrunner Comprehensive Rules using ONLY the numbered passages below.\n- Put the passage id after every claim, like [S2].\n- If the passages do not contain the answer, reply exactly: \"The provided passages do not cover this.\"\n- If a passage states an exception, condition or restriction that is relevant to the question, include it.\n- Do not use outside knowledge.\n\nPASSAGES:\n[S1] (9 Abilities > 9.3 Interpreting Card Text, p.67-68) 9.3.2. A CONDITION is a unit of text that stipulates a requirement for when an ability’s effects are allowed to apply.\na. A COST CONDITION describes a cost (either a nested cost or a trigger cost) that a player must pay to apply an effect. Costs are discussed in detail in section 1.16.\nb. A TRIGGER CONDITION describes a change in game state that must occur for an effect to apply. Trigger conditions often begin with words such as “if”, “when”, “whenever”, or “after”, or with ordinal phrases such as “the first time”.\nc. A STATIC CONDITION describes a property of the game state that must be true for an effect to apply. Static conditions often begin with words such as “if”, “during”, or “while”.\n[S2] (1 Game Concepts > 1.13 Host, Hosted, and Hosting, p.12) Example: Egret states, “Install only on a rezzed piece of ice.” The Runner can only install Egret if there is an installed, rezzed piece of ice available before the installation process begins; otherwise, it is illegal for the Runner to install Egret.\nd. Some operations and events convert themselves into condition counters and install themselves hosted onto other cards. An operation or event can never be installed through an install effect; it can only become an installed counter through its conversion ability. See rule 10.1.4.\n[S3] (1 Game Concepts > 1.16 Costs, p.17) b. The presence of an install cost, rez cost, or play cost does not change the optional or mandatory status of an ability. If an effect directs a player to install, rez, or play a card, they must pay the associated cost if able. If they cannot, the card is not installed, rezzed, or played.\nc. If an effect directs a player to install, rez, or play a card, but doing so has an additional cost, the player is not forced to pay the additional cost. If they decline to do so, they do not pay the install, rez, or play cost either, and the card is not installed, rezzed, or played.\n\nQUESTION: Can a condition operation be put into play by an install effect?\nANSWER:",
+    "answer": "No. An operation can never be installed through an install effect; it can only become an installed counter through its conversion ability [S2]."
+  },
+  "reranked": {
+    "top3": [
+      "C0145",
+      "C0053",
+      "C0085"
+    ],
+    "prompt": "You answer questions about the Netrunner Comprehensive Rules using ONLY the numbered passages below.\n- Put the passage id after every claim, like [S2].\n- If the passages do not contain the answer, reply exactly: \"The provided passages do not cover this.\"\n- If a passage states an exception, condition or restriction that is relevant to the question, include it.\n- Do not use outside knowledge.\n\nPASSAGES:\n[S1] (3 Card Types > 3.5 Operations, p.27) 3.5.1. Operations are the only Corp cards that are played. Operations are never installed. Playing an operation causes its abilities to become active, and once those abilities are fully resolved the operation is trashed. See section 8.6.\na. Some operations have the subtype condition. As part of their abilities, condition operations convert themselves into condition counters and install themselves. A condition operation cannot be installed by an install effect; it can only be installed through its own conversion ability. See rule 10.1.4.\nb. Some operations have the subtype current. As part of their abilities, current operations prevent themselves from being trashed until another current operation or event is played or the Runner steals an agenda. When one of these occurs, the active current is trashed during the next checkpoint. See rule 8.6.6c.\n[S2] (1 Game Concepts > 1.13 Host, Hosted, and Hosting, p.12) Example: Egret states, “Install only on a rezzed piece of ice.” The Runner can only install Egret if there is an installed, rezzed piece of ice available before the installation process begins; otherwise, it is illegal for the Runner to install Egret.\nd. Some operations and events convert themselves into condition counters and install themselves hosted onto other cards. An operation or event can never be installed through an install effect; it can only become an installed counter through its conversion ability. See rule 10.1.4.\n[S3] (1 Game Concepts > 1.16 Costs, p.17) b. The presence of an install cost, rez cost, or play cost does not change the optional or mandatory status of an ability. If an effect directs a player to install, rez, or play a card, they must pay the associated cost if able. If they cannot, the card is not installed, rezzed, or played.\nc. If an effect directs a player to install, rez, or play a card, but doing so has an additional cost, the player is not forced to pay the additional cost. If they decline to do so, they do not pay the install, rez, or play cost either, and the card is not installed, rezzed, or played.\n\nQUESTION: Can a condition operation be put into play by an install effect?\nANSWER:",
+    "answer": "No. A condition operation cannot be installed by an install effect; it can only be installed through its own conversion ability [S1a]."
+  },
+  "timings_ms": {
+    "encode_ms": 4.589499993016943,
+    "search_ms": 0.022459018509835005,
+    "ce_ms": 35.00770899700001
+  }
+}

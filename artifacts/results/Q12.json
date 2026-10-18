@@ -1,0 +1,104 @@
+{
+  "qid": "Q12",
+  "query": "What happens to cards hosted on a card that moves from the Corp's score area to the Runner's score area?",
+  "category": "exception",
+  "gold": [
+    "C0057"
+  ],
+  "corpus_sha256": "abc68239ba744f8090f0b65269e7f540f49ac9998622952a44a5707a79d247b0",
+  "candidates": [
+    {
+      "chunk_id": "C0200",
+      "bi_rank": 1,
+      "bi_score": 0.5760564804077148,
+      "ce_score": 0.03508748114109039,
+      "ce_rank": 8
+    },
+    {
+      "chunk_id": "C0182",
+      "bi_rank": 2,
+      "bi_score": 0.5729419589042664,
+      "ce_score": 1.0258753299713135,
+      "ce_rank": 5
+    },
+    {
+      "chunk_id": "C0180",
+      "bi_rank": 3,
+      "bi_score": 0.5723688006401062,
+      "ce_score": 0.2524658441543579,
+      "ce_rank": 7
+    },
+    {
+      "chunk_id": "C0023",
+      "bi_rank": 4,
+      "bi_score": 0.5680534839630127,
+      "ce_score": 2.740046262741089,
+      "ce_rank": 3
+    },
+    {
+      "chunk_id": "C0048",
+      "bi_rank": 5,
+      "bi_score": 0.5602172613143921,
+      "ce_score": 3.9205164909362793,
+      "ce_rank": 2
+    },
+    {
+      "chunk_id": "C0332",
+      "bi_rank": 6,
+      "bi_score": 0.5572751760482788,
+      "ce_score": -0.7635385990142822,
+      "ce_rank": 10
+    },
+    {
+      "chunk_id": "C0024",
+      "bi_rank": 7,
+      "bi_score": 0.5531911849975586,
+      "ce_score": -0.07499674707651138,
+      "ce_rank": 9
+    },
+    {
+      "chunk_id": "C0328",
+      "bi_rank": 8,
+      "bi_score": 0.5525055527687073,
+      "ce_score": 5.108985424041748,
+      "ce_rank": 1
+    },
+    {
+      "chunk_id": "C0310",
+      "bi_rank": 9,
+      "bi_score": 0.5515447854995728,
+      "ce_score": 0.907490074634552,
+      "ce_rank": 6
+    },
+    {
+      "chunk_id": "C0021",
+      "bi_rank": 10,
+      "bi_score": 0.5485357046127319,
+      "ce_score": 1.550487756729126,
+      "ce_rank": 4
+    }
+  ],
+  "baseline": {
+    "top3": [
+      "C0200",
+      "C0182",
+      "C0180"
+    ],
+    "prompt": "You answer questions about the Netrunner Comprehensive Rules using ONLY the numbered passages below.\n- Put the passage id after every claim, like [S2].\n- If the passages do not contain the answer, reply exactly: \"The provided passages do not cover this.\"\n- If a passage states an exception, condition or restriction that is relevant to the question, include it.\n- Do not use outside knowledge.\n\nPASSAGES:\n[S1] (4 Game Zones > 4.8 Set Aside, p.36) 4.8.7. Facedown cards in the set-aside zone must be kept in distinct groups according to the effect that sets them aside. Cards within such a group are not ordered and can be freely arranged by their controller.\nExample: The Runner accesses the top card of R&D and does not steal or trash it. On the next turn, the Corp uses Daily Business Show to draw that card and 1 other card simultaneously, but must put 1 of the drawn cards on the bottom of R&D. While resolving the draw, the cards are set aside facedown, so the Corp can shuffle them. They do not have to tell the Runner whether the previously-accessed card ends up in HQ or on the bottom of R&D.\n[S2] (4 Game Zones > 4.6 Play Area, p.33-34) e. Credits in the play area are always placed in a designated location: the Corp’s credit pool, the Runner’s credit pool, the bad publicity fund, or hosted on a card. See section 1.10 for information about credit pools, and see section 10.6 for information about the bad publicity fund.\nf. Tag counters and bad publicity counters have no specific location in the play area unless hosted on a card. Other types of counters are either nonfunctional gameplay aids or appear only in host relationships. See also section 1.9.\n[S3] (4 Game Zones > 4.6 Play Area, p.33) 4.6.4. Whether or not a card is active while in the play area is determined by the card’s status.\na. Identities start the game in the play area and are always active.\nb. Generally, Corp agendas, assets, ice, and upgrades are installed into the play area unrezzed and thus inactive. They are active while rezzed. See section 8.5.\nc. Generally, Runner hardware, programs, and resources are installed into the play area faceup and active. See section 8.5.\nd. Some Runner cards are installed facedown or turned facedown through card abilities. This is distinct from the status of rezzed/unrezzed that Corp cards can have. Facedown Runner cards are not active. See section 8.1.4.\ne. Operations and events are played into the play area faceup and are active for the duration of their resolution before being trashed. See section 8.6.\n\nQUESTION: What happens to cards hosted on a card that moves from the Corp's score area to the Runner's score area?\nANSWER:",
+    "answer": "The provided passages do not cover this."
+  },
+  "reranked": {
+    "top3": [
+      "C0328",
+      "C0048",
+      "C0023"
+    ],
+    "prompt": "You answer questions about the Netrunner Comprehensive Rules using ONLY the numbered passages below.\n- Put the passage id after every claim, like [S2].\n- If the passages do not contain the answer, reply exactly: \"The provided passages do not cover this.\"\n- If a passage states an exception, condition or restriction that is relevant to the question, include it.\n- Do not use outside knowledge.\n\nPASSAGES:\n[S1] (8 Card Manipulation > 8.2 Card Movements, p.55-56) 8.2.7. To PLAY an event or operation is to move it from its current zone to the play area, resolve its play abilities, and then trash it. The full rules for playing events and operations are detailed in section 8.6.\n8.2.8. To SEARCH is to look at a specified zone and potentially set aside cards from that zone. The full rules for searching are detailed in section 8.7.\n8.2.9. To SCORE an agenda is to move it from its current zone to the Corp’s score area. The full rules for scoring are detailed in section 1.17.\n8.2.10. To STEAL an agenda is to move it from its current zone to the Runner’s score area. The full rules for stealing are detailed in section 1.17.\n[S2] (1 Game Concepts > 1.13 Host, Hosted, and Hosting, p.11-12) 1.13.1. Whenever an object is “placed” or “loaded” onto a card, a host relationship is created between those two objects. The object placed on top of a card is HOSTED on that card. The card onto which the other object is placed is the HOST.\na. Only cards in score areas and the play area can host objects.\n1.13.2. The state of being hosted is distinct, but not exclusive from, the state of being installed.\na. If an ability instructs a player to host a card that is not installed without reference to installing it, the hosted card does not become installed.\nb. If an installed Corp card becomes hosted on a Runner card, the Corp card becomes uninstalled.\nc. If a card is installed from a hosted state, it ceases to be hosted. The hosting relationship ends at step step 8.5.16a of the installation.\n[S3] (1 Game Concepts > 1.8 Cards, p.7) 1.8.3. Cards that are ACTIVE are able to affect the game through their abilities.\na. Runner cards that are installed and faceup in the play area, Corp cards that are installed and rezzed, events and operations in the play area, agendas in the Corp’s score area, and both players’ identities are active.\nb. Unless otherwise stated, Runner cards become active as part of the process of playing or installing them.\nc. Unless otherwise stated, Corp cards other than operations are installed unrezzed, and thus inactive, into the play area. Assets, ice, and upgrades become active when they are rezzed; agendas become active when they are scored. Operations become active as part of the process of playing them.\nd. Identity cards become active when the game begins.\n\nQUESTION: What happens to cards hosted on a card that moves from the Corp's score area to the Runner's score area?\nANSWER:",
+    "answer": "The provided passages do not cover this."
+  },
+  "timings_ms": {
+    "encode_ms": 4.14099998306483,
+    "search_ms": 0.027750007575377822,
+    "ce_ms": 36.71062501962297
+  }
+}

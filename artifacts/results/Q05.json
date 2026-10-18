@@ -1,0 +1,104 @@
+{
+  "qid": "Q05",
+  "query": "How much total influence can out-of-faction cards have in a deck?",
+  "category": "control",
+  "gold": [
+    "C0007"
+  ],
+  "corpus_sha256": "abc68239ba744f8090f0b65269e7f540f49ac9998622952a44a5707a79d247b0",
+  "candidates": [
+    {
+      "chunk_id": "C0007",
+      "bi_rank": 1,
+      "bi_score": 0.6273356676101685,
+      "ce_score": 6.609160423278809,
+      "ce_rank": 1
+    },
+    {
+      "chunk_id": "C0123",
+      "bi_rank": 2,
+      "bi_score": 0.602281928062439,
+      "ce_score": 4.946041107177734,
+      "ce_rank": 2
+    },
+    {
+      "chunk_id": "C0125",
+      "bi_rank": 3,
+      "bi_score": 0.5994590520858765,
+      "ce_score": 3.7169508934020996,
+      "ce_rank": 3
+    },
+    {
+      "chunk_id": "C0126",
+      "bi_rank": 4,
+      "bi_score": 0.4342682957649231,
+      "ce_score": -1.215118646621704,
+      "ce_rank": 6
+    },
+    {
+      "chunk_id": "C0124",
+      "bi_rank": 5,
+      "bi_score": 0.393463671207428,
+      "ce_score": 0.709532618522644,
+      "ce_rank": 4
+    },
+    {
+      "chunk_id": "C0006",
+      "bi_rank": 6,
+      "bi_score": 0.35593557357788086,
+      "ce_score": 0.32881659269332886,
+      "ce_rank": 5
+    },
+    {
+      "chunk_id": "C0333",
+      "bi_rank": 7,
+      "bi_score": 0.34598633646965027,
+      "ce_score": -9.219048500061035,
+      "ce_rank": 9
+    },
+    {
+      "chunk_id": "C0137",
+      "bi_rank": 8,
+      "bi_score": 0.3375193178653717,
+      "ce_score": -4.065033912658691,
+      "ce_rank": 7
+    },
+    {
+      "chunk_id": "C0582",
+      "bi_rank": 9,
+      "bi_score": 0.3332013785839081,
+      "ce_score": -9.157123565673828,
+      "ce_rank": 8
+    },
+    {
+      "chunk_id": "C0583",
+      "bi_rank": 10,
+      "bi_score": 0.3271791338920593,
+      "ce_score": -9.459259033203125,
+      "ce_rank": 10
+    }
+  ],
+  "baseline": {
+    "top3": [
+      "C0007",
+      "C0123",
+      "C0125"
+    ],
+    "prompt": "You answer questions about the Netrunner Comprehensive Rules using ONLY the numbered passages below.\n- Put the passage id after every claim, like [S2].\n- If the passages do not contain the answer, reply exactly: \"The provided passages do not cover this.\"\n- If a passage states an exception, condition or restriction that is relevant to the question, include it.\n- Do not use outside knowledge.\n\nPASSAGES:\n[S1] (1 Game Concepts > 1.4 Deck Construction, p.5) 1.4.4. Decks cannot contain identity cards, player aid cards, cards from the wrong side (Corp cards in a Runner deck or vice-versa), or out-of-faction cards that lack influence costs.\n1.4.5. Neutral cards and cards that belong to a faction other than the corresponding identity’s faction are all considered out-of-faction. The total influence cost of out-of-faction cards in the deck must not exceed the influence limit of that identity.\na. The total influence cost of out-of-faction cards is counted by copy and not by name.\nExample: Including a single copy of Diesel in a non-Shaper deck adds 2 to the total influence in that deck, while including two copies of Diesel in a non-Shaper deck adds 4 to the total influence in that deck.\n[S2] (2 Parts of a Card > 2.12 Influence Limit, p.23) 2.12.1. The influence limit is a number shown as the lowermost of two small boxes in the lower-left of Corp identities and the lower-right of Runner identities.\n2.12.2. Section 1.4 details the rules for building a deck, including the requirement that out-of-faction cards in the deck adhere to the influence limit of the associated identity.\n[S3] (2 Parts of a Card > 2.14 Influence Cost, p.23) 2.14.1. A card’s influence cost, or influence value, is represented in a bar with 5 circular slots near the bottom of most cards. The influence cost is the number of slots that are filled with a blue circle, and can range from 0 to 5.\n2.14.2. Some cards cannot be played out of faction, and therefore do not have an influence value, which is different from an influence cost of “0”. These cards do not have the influence bar at all.\n2.14.3. Some Corp cards have the subtype alliance and text defining adjustments to their influence costs. The ability adjusting the influence cost of an alliance card applies only when determining the legality of an already constructed deck and does not have any effect during gameplay. The ability references other cards included in the deck to determine whether the card should apply its printed influence cost or 0 against the deck’s influence limit.\n\nQUESTION: How much total influence can out-of-faction cards have in a deck?\nANSWER:",
+    "answer": "The total influence cost of out-of-faction cards in a deck must not exceed the influence limit of that identity [S1]. The influence limit is a number shown as the lowermost of two small boxes in the lower-left of Corp identities and the lower-right of Runner identities [S2]."
+  },
+  "reranked": {
+    "top3": [
+      "C0007",
+      "C0123",
+      "C0125"
+    ],
+    "prompt": "You answer questions about the Netrunner Comprehensive Rules using ONLY the numbered passages below.\n- Put the passage id after every claim, like [S2].\n- If the passages do not contain the answer, reply exactly: \"The provided passages do not cover this.\"\n- If a passage states an exception, condition or restriction that is relevant to the question, include it.\n- Do not use outside knowledge.\n\nPASSAGES:\n[S1] (1 Game Concepts > 1.4 Deck Construction, p.5) 1.4.4. Decks cannot contain identity cards, player aid cards, cards from the wrong side (Corp cards in a Runner deck or vice-versa), or out-of-faction cards that lack influence costs.\n1.4.5. Neutral cards and cards that belong to a faction other than the corresponding identity’s faction are all considered out-of-faction. The total influence cost of out-of-faction cards in the deck must not exceed the influence limit of that identity.\na. The total influence cost of out-of-faction cards is counted by copy and not by name.\nExample: Including a single copy of Diesel in a non-Shaper deck adds 2 to the total influence in that deck, while including two copies of Diesel in a non-Shaper deck adds 4 to the total influence in that deck.\n[S2] (2 Parts of a Card > 2.12 Influence Limit, p.23) 2.12.1. The influence limit is a number shown as the lowermost of two small boxes in the lower-left of Corp identities and the lower-right of Runner identities.\n2.12.2. Section 1.4 details the rules for building a deck, including the requirement that out-of-faction cards in the deck adhere to the influence limit of the associated identity.\n[S3] (2 Parts of a Card > 2.14 Influence Cost, p.23) 2.14.1. A card’s influence cost, or influence value, is represented in a bar with 5 circular slots near the bottom of most cards. The influence cost is the number of slots that are filled with a blue circle, and can range from 0 to 5.\n2.14.2. Some cards cannot be played out of faction, and therefore do not have an influence value, which is different from an influence cost of “0”. These cards do not have the influence bar at all.\n2.14.3. Some Corp cards have the subtype alliance and text defining adjustments to their influence costs. The ability adjusting the influence cost of an alliance card applies only when determining the legality of an already constructed deck and does not have any effect during gameplay. The ability references other cards included in the deck to determine whether the card should apply its printed influence cost or 0 against the deck’s influence limit.\n\nQUESTION: How much total influence can out-of-faction cards have in a deck?\nANSWER:",
+    "answer": "The total influence cost of out-of-faction cards in a deck must not exceed the influence limit of that identity [S1]. The influence limit is a number shown as the lowermost of two small boxes in the lower-left of Corp identities and the lower-right of Runner identities [S2]."
+  },
+  "timings_ms": {
+    "encode_ms": 4.7481670044362545,
+    "search_ms": 0.0295409990940243,
+    "ce_ms": 35.269832995254546
+  }
+}

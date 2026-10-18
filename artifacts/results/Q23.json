@@ -1,0 +1,105 @@
+{
+  "qid": "Q23",
+  "query": "Can the Runner have two consoles installed at the same time?",
+  "category": "negation",
+  "gold": [
+    "C0153",
+    "C0552"
+  ],
+  "corpus_sha256": "abc68239ba744f8090f0b65269e7f540f49ac9998622952a44a5707a79d247b0",
+  "candidates": [
+    {
+      "chunk_id": "C0153",
+      "bi_rank": 1,
+      "bi_score": 0.4647025465965271,
+      "ce_score": -3.3158812522888184,
+      "ce_rank": 7
+    },
+    {
+      "chunk_id": "C0340",
+      "bi_rank": 2,
+      "bi_score": 0.41263437271118164,
+      "ce_score": 0.09617528319358826,
+      "ce_rank": 2
+    },
+    {
+      "chunk_id": "C0069",
+      "bi_rank": 3,
+      "bi_score": 0.3795457184314728,
+      "ce_score": 2.1804091930389404,
+      "ce_rank": 1
+    },
+    {
+      "chunk_id": "C0152",
+      "bi_rank": 4,
+      "bi_score": 0.37255018949508667,
+      "ce_score": -1.7440775632858276,
+      "ce_rank": 3
+    },
+    {
+      "chunk_id": "C0322",
+      "bi_rank": 5,
+      "bi_score": 0.36426132917404175,
+      "ce_score": -4.072183132171631,
+      "ce_rank": 8
+    },
+    {
+      "chunk_id": "C0339",
+      "bi_rank": 6,
+      "bi_score": 0.3639613091945648,
+      "ce_score": -3.1851837635040283,
+      "ce_rank": 6
+    },
+    {
+      "chunk_id": "C0053",
+      "bi_rank": 7,
+      "bi_score": 0.35294705629348755,
+      "ce_score": -2.7161498069763184,
+      "ce_rank": 5
+    },
+    {
+      "chunk_id": "C0552",
+      "bi_rank": 8,
+      "bi_score": 0.3436391353607178,
+      "ce_score": -1.824182391166687,
+      "ce_rank": 4
+    },
+    {
+      "chunk_id": "C0540",
+      "bi_rank": 9,
+      "bi_score": 0.3430142402648926,
+      "ce_score": -10.699319839477539,
+      "ce_rank": 10
+    },
+    {
+      "chunk_id": "C0575",
+      "bi_rank": 10,
+      "bi_score": 0.33579954504966736,
+      "ce_score": -9.057229042053223,
+      "ce_rank": 9
+    }
+  ],
+  "baseline": {
+    "top3": [
+      "C0153",
+      "C0340",
+      "C0069"
+    ],
+    "prompt": "You answer questions about the Netrunner Comprehensive Rules using ONLY the numbered passages below.\n- Put the passage id after every claim, like [S2].\n- If the passages do not contain the answer, reply exactly: \"The provided passages do not cover this.\"\n- If a passage states an exception, condition or restriction that is relevant to the question, include it.\n- Do not use outside knowledge.\n\nPASSAGES:\n[S1] (3 Card Types > 3.8 Hardware, p.28) 3.8.5. Consoles\na. Some hardware have the subtype console. All consoles have the text “Limit 1 console per player.”\nb. If a player ever controls more than one installed console, all but the most recently active console are trashed. Trashing cards this way cannot be prevented.\nc. This limitation applies only to hardware with the subtype console.\nd. This limitation applies only to active console. A player can have multiple copies of a console, and even different consoles, in their deck.\n[S2] (8 Card Manipulation > 8.5 Installing and Uninstalling Cards, p.58) 8.5.5. Installing cards is an exception to rule 9.12.2a. If an effect would install more than one card, then those cards are chosen and installed one at a time, following all of the steps of the installation process (step 8.5.16) for each card before choosing and installing the next. Each such installation is performed as a separate instruction. See rule 9.11.4b.\nExample: The Runner uses Mass Install to install three programs. The Runner can install Dhegdheer first, and then host one of the other two programs on Dhegdheer in order to reduce the install cost.\n[S3] (1 Game Concepts > 1.15 Targets, p.14-15) Example: The Runner accesses an Aggressive Secretary with three advancement counters on it. The Runner only has two installed programs, so the Corp chooses both of those programs for Aggressive Secretary. After the programs have been chosen, they are both trashed simultaneously.\nf. Targets cannot be chosen for an instruction at any other time. Even if the game state changes due to interrupt abilities while the instruction is imminent, unannounced targets remain unchosen.\n\nQUESTION: Can the Runner have two consoles installed at the same time?\nANSWER:",
+    "answer": "No. If a player ever controls more than one installed console, all but the most recently active console are trashed [S1b]. All consoles have the text \"Limit 1 console per player,\" and this limitation applies to active consoles [S1a, S1d]. Trashing cards this way cannot be prevented [S1b]."
+  },
+  "reranked": {
+    "top3": [
+      "C0069",
+      "C0340",
+      "C0152"
+    ],
+    "prompt": "You answer questions about the Netrunner Comprehensive Rules using ONLY the numbered passages below.\n- Put the passage id after every claim, like [S2].\n- If the passages do not contain the answer, reply exactly: \"The provided passages do not cover this.\"\n- If a passage states an exception, condition or restriction that is relevant to the question, include it.\n- Do not use outside knowledge.\n\nPASSAGES:\n[S1] (1 Game Concepts > 1.15 Targets, p.14-15) Example: The Runner accesses an Aggressive Secretary with three advancement counters on it. The Runner only has two installed programs, so the Corp chooses both of those programs for Aggressive Secretary. After the programs have been chosen, they are both trashed simultaneously.\nf. Targets cannot be chosen for an instruction at any other time. Even if the game state changes due to interrupt abilities while the instruction is imminent, unannounced targets remain unchosen.\n[S2] (8 Card Manipulation > 8.5 Installing and Uninstalling Cards, p.58) 8.5.5. Installing cards is an exception to rule 9.12.2a. If an effect would install more than one card, then those cards are chosen and installed one at a time, following all of the steps of the installation process (step 8.5.16) for each card before choosing and installing the next. Each such installation is performed as a separate instruction. See rule 9.11.4b.\nExample: The Runner uses Mass Install to install three programs. The Runner can install Dhegdheer first, and then host one of the other two programs on Dhegdheer in order to reduce the install cost.\n[S3] (3 Card Types > 3.8 Hardware, p.28) The Runner’s hardware are the physical tools at their disposal: the computers, chips, and other machinery that make up their rig.\n3.8.1. “Hardware” and “piece of hardware” are synonymous.\n3.8.2. The Runner installs hardware into the play area.\n3.8.3. Hardware are among the types of cards with install costs. The Runner installs a hardware faceup and active by paying its install cost. See section 8.5.\n3.8.4. There is no limit to the number of hardware the Runner can have installed.\n\nQUESTION: Can the Runner have two consoles installed at the same time?\nANSWER:",
+    "answer": "The provided passages do not cover this."
+  },
+  "timings_ms": {
+    "encode_ms": 4.458375013200566,
+    "search_ms": 0.020374980522319674,
+    "ce_ms": 33.300875016720966
+  }
+}

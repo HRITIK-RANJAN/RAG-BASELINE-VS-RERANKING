@@ -1,0 +1,105 @@
+{
+  "qid": "Q42",
+  "query": "What happens if I have two copies of a card with the diamond symbol in play?",
+  "category": "keyword_trap",
+  "gold": [
+    "C0543",
+    "C0552"
+  ],
+  "corpus_sha256": "abc68239ba744f8090f0b65269e7f540f49ac9998622952a44a5707a79d247b0",
+  "candidates": [
+    {
+      "chunk_id": "C0015",
+      "bi_rank": 1,
+      "bi_score": 0.4055400490760803,
+      "ce_score": -7.375309944152832,
+      "ce_rank": 6
+    },
+    {
+      "chunk_id": "C0112",
+      "bi_rank": 2,
+      "bi_score": 0.40199294686317444,
+      "ce_score": -6.058547019958496,
+      "ce_rank": 4
+    },
+    {
+      "chunk_id": "C0012",
+      "bi_rank": 3,
+      "bi_score": 0.3885449767112732,
+      "ce_score": -3.6213526725769043,
+      "ce_rank": 1
+    },
+    {
+      "chunk_id": "C0545",
+      "bi_rank": 4,
+      "bi_score": 0.38706207275390625,
+      "ce_score": -7.213824272155762,
+      "ce_rank": 5
+    },
+    {
+      "chunk_id": "C0368",
+      "bi_rank": 5,
+      "bi_score": 0.36862432956695557,
+      "ce_score": -5.238481044769287,
+      "ce_rank": 3
+    },
+    {
+      "chunk_id": "C0369",
+      "bi_rank": 6,
+      "bi_score": 0.3644084930419922,
+      "ce_score": -4.268442153930664,
+      "ce_rank": 2
+    },
+    {
+      "chunk_id": "C0016",
+      "bi_rank": 7,
+      "bi_score": 0.36421841382980347,
+      "ce_score": -8.069568634033203,
+      "ce_rank": 7
+    },
+    {
+      "chunk_id": "C0054",
+      "bi_rank": 8,
+      "bi_score": 0.36259377002716064,
+      "ce_score": -10.991508483886719,
+      "ce_rank": 10
+    },
+    {
+      "chunk_id": "C0048",
+      "bi_rank": 9,
+      "bi_score": 0.3594461977481842,
+      "ce_score": -8.951898574829102,
+      "ce_rank": 8
+    },
+    {
+      "chunk_id": "C0024",
+      "bi_rank": 10,
+      "bi_score": 0.3585193157196045,
+      "ce_score": -9.691864967346191,
+      "ce_rank": 9
+    }
+  ],
+  "baseline": {
+    "top3": [
+      "C0015",
+      "C0112",
+      "C0012"
+    ],
+    "prompt": "You answer questions about the Netrunner Comprehensive Rules using ONLY the numbered passages below.\n- Put the passage id after every claim, like [S2].\n- If the passages do not contain the answer, reply exactly: \"The provided passages do not cover this.\"\n- If a passage states an exception, condition or restriction that is relevant to the question, include it.\n- Do not use outside knowledge.\n\nPASSAGES:\n[S1] (1 Game Concepts > 1.5 Extra Cards, p.6) 1.5.4. Two cards, Rebirth and DJ Fenris, make use of identity cards other than the one selected by the player during deck construction.\na. A player may bring any number of additional Runner identity cards along with their deck. These cards are kept in a pile outside the game. The Runner may look at these cards at any time.\nb. When an ability refers to an identity other than the Runner’s current identity, it refers to the cards provided this way. If an identity card leaves the play area, it must be returned to the pile outside the game.\nc. In a tournament, all identities brought to the game this way must be legal for players to use as their actual identity in that tournament.\n[S2] (2 Parts of a Card > 2.2 Unique Symbol, p.21) 2.2.1. Some cards are UNIQUE, and have a unique symbol (♦) before their name to designate this. See rule 10.1.1.\n[S3] (1 Game Concepts > 1.5 Extra Cards, p.5-6) b. A player playing Méliès U as their identity may bring any number of copies of that identity along with their deck. At the start of the game, 1 copy will be their active identity, and all other copies are placed outside the game. Whenever the first ability on Méliès U: Only the Brightest resolves, that player is instructed to “secretly set” their identity. To complete this instruction, the player secretly chooses either their current identity card or 1 of the Méliès U identity cards outside the game, and the chosen copy becomes their active identity. The player can shuffle their current identity card into the set of copies outside the game in order to obscure whether they choose to keep the same copy or switch to another copy. The chosen identity card always enters the play area with its Méliès U: Only the Brightest side faceup. All other copies are placed outside the game until the ability resolves again.\n\nQUESTION: What happens if I have two copies of a card with the diamond symbol in play?\nANSWER:",
+    "answer": "The provided passages do not cover this."
+  },
+  "reranked": {
+    "top3": [
+      "C0012",
+      "C0369",
+      "C0368"
+    ],
+    "prompt": "You answer questions about the Netrunner Comprehensive Rules using ONLY the numbered passages below.\n- Put the passage id after every claim, like [S2].\n- If the passages do not contain the answer, reply exactly: \"The provided passages do not cover this.\"\n- If a passage states an exception, condition or restriction that is relevant to the question, include it.\n- Do not use outside knowledge.\n\nPASSAGES:\n[S1] (1 Game Concepts > 1.5 Extra Cards, p.5-6) b. A player playing Méliès U as their identity may bring any number of copies of that identity along with their deck. At the start of the game, 1 copy will be their active identity, and all other copies are placed outside the game. Whenever the first ability on Méliès U: Only the Brightest resolves, that player is instructed to “secretly set” their identity. To complete this instruction, the player secretly chooses either their current identity card or 1 of the Méliès U identity cards outside the game, and the chosen copy becomes their active identity. The player can shuffle their current identity card into the set of copies outside the game in order to obscure whether they choose to keep the same copy or switch to another copy. The chosen identity card always enters the play area with its Méliès U: Only the Brightest side faceup. All other copies are placed outside the game until the ability resolves again.\n[S2] (8 Card Manipulation > 8.8 Swapping Cards, p.62) 8.8.4. If two cards are swapped between zones, each card moves to the zone the other is in simultaneously.\na. Each of the swapped cards enters its destination zone in the same state that a card would normally enter that zone. A card swapped into Archives enters Archives facedown unless it was visible to the Runner at the time of the swap, a Corp card swapped into the play area enters unrezzed, etc.\n[S3] (8 Card Manipulation > 8.8 Swapping Cards, p.62) 8.8.3. If two installed cards are swapped, each card moves to the other’s location simultaneously. The two cards remain installed throughout the process of swapping, and do not otherwise affect any other part of the game state.\na. When swapping installed cards, any cards or counters hosted on either of the swapped cards maintain their hosting relationships.\nExample: The Corp uses Thimblerig’s ability to swap it with a Palisade hosting Botulus. The Botulus remains hosted on the Palisade throughout this process.\n\nQUESTION: What happens if I have two copies of a card with the diamond symbol in play?\nANSWER:",
+    "answer": "The provided passages do not cover this."
+  },
+  "timings_ms": {
+    "encode_ms": 4.232458974001929,
+    "search_ms": 0.02820801455527544,
+    "ce_ms": 35.287041013361886
+  }
+}

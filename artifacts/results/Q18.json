@@ -1,0 +1,104 @@
+{
+  "qid": "Q18",
+  "query": "If one effect says a player must do something and another effect says they cannot, which one applies?",
+  "category": "negation",
+  "gold": [
+    "C0002"
+  ],
+  "corpus_sha256": "abc68239ba744f8090f0b65269e7f540f49ac9998622952a44a5707a79d247b0",
+  "candidates": [
+    {
+      "chunk_id": "C0521",
+      "bi_rank": 1,
+      "bi_score": 0.48871201276779175,
+      "ce_score": 2.0758020877838135,
+      "ce_rank": 4
+    },
+    {
+      "chunk_id": "C0085",
+      "bi_rank": 2,
+      "bi_score": 0.46697771549224854,
+      "ce_score": 1.7737776041030884,
+      "ce_rank": 5
+    },
+    {
+      "chunk_id": "C0208",
+      "bi_rank": 3,
+      "bi_score": 0.4499019980430603,
+      "ce_score": -0.18121276795864105,
+      "ce_rank": 7
+    },
+    {
+      "chunk_id": "C0534",
+      "bi_rank": 4,
+      "bi_score": 0.4479241967201233,
+      "ce_score": 2.530230760574341,
+      "ce_rank": 3
+    },
+    {
+      "chunk_id": "C0535",
+      "bi_rank": 5,
+      "bi_score": 0.43664321303367615,
+      "ce_score": 2.8826937675476074,
+      "ce_rank": 2
+    },
+    {
+      "chunk_id": "C0002",
+      "bi_rank": 6,
+      "bi_score": 0.43220990896224976,
+      "ce_score": 0.37323132157325745,
+      "ce_rank": 6
+    },
+    {
+      "chunk_id": "C0063",
+      "bi_rank": 7,
+      "bi_score": 0.4314277768135071,
+      "ce_score": -0.6183032393455505,
+      "ce_rank": 8
+    },
+    {
+      "chunk_id": "C0209",
+      "bi_rank": 8,
+      "bi_score": 0.42997506260871887,
+      "ce_score": -5.832277297973633,
+      "ce_rank": 10
+    },
+    {
+      "chunk_id": "C0381",
+      "bi_rank": 9,
+      "bi_score": 0.42483770847320557,
+      "ce_score": -3.1944150924682617,
+      "ce_rank": 9
+    },
+    {
+      "chunk_id": "C0500",
+      "bi_rank": 10,
+      "bi_score": 0.42233806848526,
+      "ce_score": 3.6346263885498047,
+      "ce_rank": 1
+    }
+  ],
+  "baseline": {
+    "top3": [
+      "C0521",
+      "C0085",
+      "C0208"
+    ],
+    "prompt": "You answer questions about the Netrunner Comprehensive Rules using ONLY the numbered passages below.\n- Put the passage id after every claim, like [S2].\n- If the passages do not contain the answer, reply exactly: \"The provided passages do not cover this.\"\n- If a passage states an exception, condition or restriction that is relevant to the question, include it.\n- Do not use outside knowledge.\n\nPASSAGES:\n[S1] (9 Abilities > 9.12 Other Rules and Terminology, p.84-85) c. If more than one effect gives a player a choice of how to resolve an ability or game rule such that both players are instructed to make a choice that can only be made once, the active player makes that choice. The effects that granted the players the choice otherwise resolve as normal.\nExample: If Chronos Protocol and Titanium Ribs are both active, both players are instructed to choose the card trashed by the first net damage each turn. Since this is impossible, only the active player chooses that card. Since Chronos Protocol also instructs the Corp to look at the Runner’s grip and this is not prevented or contradicted by any other ability, this part of the effect happens on either player’s turn.\n[S2] (1 Game Concepts > 1.16 Costs, p.17) b. The presence of an install cost, rez cost, or play cost does not change the optional or mandatory status of an ability. If an effect directs a player to install, rez, or play a card, they must pay the associated cost if able. If they cannot, the card is not installed, rezzed, or played.\nc. If an effect directs a player to install, rez, or play a card, but doing so has an additional cost, the player is not forced to pay the additional cost. If they decline to do so, they do not pay the install, rez, or play cost either, and the card is not installed, rezzed, or played.\n[S3] (5 Turns > 5.2 Actions, p.38) 5.2.3. Each player has several basic actions they can always perform. The Corp’s basic actions are listed in section 5.2.6, and the Runner’s basic actions are listed in section 5.2.7.\na. If an ability has a trigger condition related to an effect being performed “with the basic action”, that trigger condition is met by any basic action that performs the indicated effect. If an ability imposes a cost on performing an effect “with the basic action”, that cost applies to any instance of the indicated effect that would occur as part of resolving a basic action.\n5.2.4. A player can only take actions during the action phase of their turn. If an effect directs a player to take an action outside of that player’s action phase, instead that player does nothing.\n\nQUESTION: If one effect says a player must do something and another effect says they cannot, which one applies?\nANSWER:",
+    "answer": "The provided passages do not cover this."
+  },
+  "reranked": {
+    "top3": [
+      "C0500",
+      "C0535",
+      "C0534"
+    ],
+    "prompt": "You answer questions about the Netrunner Comprehensive Rules using ONLY the numbered passages below.\n- Put the passage id after every claim, like [S2].\n- If the passages do not contain the answer, reply exactly: \"The provided passages do not cover this.\"\n- If a passage states an exception, condition or restriction that is relevant to the question, include it.\n- Do not use outside knowledge.\n\nPASSAGES:\n[S1] (9 Abilities > 9.9 Interrupts and Replacement Effects, p.82) 9.9.11. If multiple replacement effects would apply to an effect acting on a targeted card, that card’s controller chooses the order in which the replacement effects apply. If multiple replacement effects would apply to any other effect, the controller of the base effect chooses the order in which the replacement effects apply.\na. After applying one replacement effect, a subsequent replacement effect can only be applied if the effect it was to replace is still expected. A replacement effect cannot apply without something to replace.\n[S2] (9 Abilities > 9.12 Other Rules and Terminology, p.86-87) Example: The Runner has Imp and Neutralize All Threats installed when they access a card with a trash cost greater than the number of credits they have available to spend. Because they are unable to trash the card by paying its trash cost, they are not required to spend a counter from Imp in order to trash it.\nc. If the “must” ability presents a player with a choice between two or more effects, that player must choose an effect that can be fully resolved. If none of the choices can be fully resolved, then the “must” ability does nothing.\nExample: If the first subroutine on Fairchild 2.0 resolves while the Runner has no installed cards but 3 credit, then the Runner must choose to pay 2 credit. When the second subroutine on Fairchild 2.0 resolves, the Runner can neither pay 2 credit nor trash an installed card, so nothing happens.\n[S3] (9 Abilities > 9.12 Other Rules and Terminology, p.86-87) 9.12.3. Must\na. If a card ability states that a player “must” do something without stipulating how that player must do so, then that player is forced to make any decisions necessary to satisfy the requirement, even if it requires the use of other card abilities.\nExample: The Runner has an Imp and a Scrubber installed and accesses Mumbad Virtual Tour. If the Runner only has 4 credit, they must still choose to either spend a counter from Imp to trash Mumbad Virtual Tour if they are able to do so or spend recurring credits on Scrubber to help pay the trash cost of the Mumbad Virtual Tour.\nb. If a card ability states that a player “must” do something and specifies the means by which that player must do so, then that player is not required to carry out the effect except by the means specified, even if it would be possible through the use of other card abilities.\n\nQUESTION: If one effect says a player must do something and another effect says they cannot, which one applies?\nANSWER:",
+    "answer": "The provided passages do not cover this."
+  },
+  "timings_ms": {
+    "encode_ms": 4.138207994401455,
+    "search_ms": 0.03320799442008138,
+    "ce_ms": 35.72012501535937
+  }
+}

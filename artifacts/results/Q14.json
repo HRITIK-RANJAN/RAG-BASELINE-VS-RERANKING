@@ -1,0 +1,105 @@
+{
+  "qid": "Q14",
+  "query": "Can the Runner pay a trash cost to trash a card that is in the Corp's discard pile?",
+  "category": "exception",
+  "gold": [
+    "C0287",
+    "C0288"
+  ],
+  "corpus_sha256": "abc68239ba744f8090f0b65269e7f540f49ac9998622952a44a5707a79d247b0",
+  "candidates": [
+    {
+      "chunk_id": "C0287",
+      "bi_rank": 1,
+      "bi_score": 0.7682226896286011,
+      "ce_score": 8.467646598815918,
+      "ce_rank": 2
+    },
+    {
+      "chunk_id": "C0103",
+      "bi_rank": 2,
+      "bi_score": 0.7456754446029663,
+      "ce_score": 6.598934650421143,
+      "ce_rank": 3
+    },
+    {
+      "chunk_id": "C0288",
+      "bi_rank": 3,
+      "bi_score": 0.7113510370254517,
+      "ce_score": 9.127248764038086,
+      "ce_rank": 1
+    },
+    {
+      "chunk_id": "C0117",
+      "bi_rank": 4,
+      "bi_score": 0.7071652412414551,
+      "ce_score": 5.296860694885254,
+      "ce_rank": 5
+    },
+    {
+      "chunk_id": "C0289",
+      "bi_rank": 5,
+      "bi_score": 0.6379637718200684,
+      "ce_score": 4.909034729003906,
+      "ce_rank": 6
+    },
+    {
+      "chunk_id": "C0427",
+      "bi_rank": 6,
+      "bi_score": 0.5919477343559265,
+      "ce_score": 3.7297451496124268,
+      "ce_rank": 7
+    },
+    {
+      "chunk_id": "C0104",
+      "bi_rank": 7,
+      "bi_score": 0.5702646374702454,
+      "ce_score": -3.5297093391418457,
+      "ce_rank": 10
+    },
+    {
+      "chunk_id": "C0147",
+      "bi_rank": 8,
+      "bi_score": 0.5608649253845215,
+      "ce_score": 5.94696569442749,
+      "ce_rank": 4
+    },
+    {
+      "chunk_id": "C0216",
+      "bi_rank": 9,
+      "bi_score": 0.55332350730896,
+      "ce_score": 0.17794743180274963,
+      "ce_rank": 9
+    },
+    {
+      "chunk_id": "C0174",
+      "bi_rank": 10,
+      "bi_score": 0.5450282096862793,
+      "ce_score": 3.663538932800293,
+      "ce_rank": 8
+    }
+  ],
+  "baseline": {
+    "top3": [
+      "C0287",
+      "C0103",
+      "C0288"
+    ],
+    "prompt": "You answer questions about the Netrunner Comprehensive Rules using ONLY the numbered passages below.\n- Put the passage id after every claim, like [S2].\n- If the passages do not contain the answer, reply exactly: \"The provided passages do not cover this.\"\n- If a passage states an exception, condition or restriction that is relevant to the question, include it.\n- Do not use outside knowledge.\n\nPASSAGES:\n[S1] (7 Accessing Cards and Breaching Servers > 7.1 Accessing Cards, p.50) 7.1.5. The Runner always has the ability “Access → Pay the trash cost of the accessed card: Trash it.” This is the BASIC TRASH ABILITY.\na. All assets and upgrades have trash costs, as do some ice and operations. If a card does not have a trash cost, the Runner cannot pay its trash cost, and therefore the Runner cannot use the basic trash ability during that access.\nb. The Runner cannot trash or pay the trash cost of a card in the Corp’s discard pile, either with the basic trash ability or with other mid-access abilities.\n[S2] (1 Game Concepts > 1.19 Trashing, p.20) 1.19.1. TRASHING is the act of moving an object to its owner’s discard pile.\n1.19.2. During access, the Runner has the opportunity to pay the trash cost of the accessed card to trash it. See section 7.1.5.\n1.19.3. A trashed card is not considered to have been discarded, and vice versa. Cards that prevent a card from being trashed cannot prevent a card from being discarded.\n[S3] (7 Accessing Cards and Breaching Servers > 7.1 Accessing Cards, p.50) b. The Runner cannot trash or pay the trash cost of a card in the Corp’s discard pile, either with the basic trash ability or with other mid-access abilities.\nc. One card, Mumbad Virtual Tour, has the ability “If the Runner accesses this upgrade while it is installed, they must trash it, if able.” When this ability applies, the Runner can use any mid-access ability they have available that trashes the card, but they cannot decline to use a mid-access ability or use one that would not trash the accessed card unless they are unable to pay the cost of any ability that would trash it.\n\nQUESTION: Can the Runner pay a trash cost to trash a card that is in the Corp's discard pile?\nANSWER:",
+    "answer": "No, the Runner cannot trash or pay the trash cost of a card in the Corp’s discard pile, either with the basic trash ability or with other mid-access abilities [S1, S3]."
+  },
+  "reranked": {
+    "top3": [
+      "C0288",
+      "C0287",
+      "C0103"
+    ],
+    "prompt": "You answer questions about the Netrunner Comprehensive Rules using ONLY the numbered passages below.\n- Put the passage id after every claim, like [S2].\n- If the passages do not contain the answer, reply exactly: \"The provided passages do not cover this.\"\n- If a passage states an exception, condition or restriction that is relevant to the question, include it.\n- Do not use outside knowledge.\n\nPASSAGES:\n[S1] (7 Accessing Cards and Breaching Servers > 7.1 Accessing Cards, p.50) b. The Runner cannot trash or pay the trash cost of a card in the Corp’s discard pile, either with the basic trash ability or with other mid-access abilities.\nc. One card, Mumbad Virtual Tour, has the ability “If the Runner accesses this upgrade while it is installed, they must trash it, if able.” When this ability applies, the Runner can use any mid-access ability they have available that trashes the card, but they cannot decline to use a mid-access ability or use one that would not trash the accessed card unless they are unable to pay the cost of any ability that would trash it.\n[S2] (7 Accessing Cards and Breaching Servers > 7.1 Accessing Cards, p.50) 7.1.5. The Runner always has the ability “Access → Pay the trash cost of the accessed card: Trash it.” This is the BASIC TRASH ABILITY.\na. All assets and upgrades have trash costs, as do some ice and operations. If a card does not have a trash cost, the Runner cannot pay its trash cost, and therefore the Runner cannot use the basic trash ability during that access.\nb. The Runner cannot trash or pay the trash cost of a card in the Corp’s discard pile, either with the basic trash ability or with other mid-access abilities.\n[S3] (1 Game Concepts > 1.19 Trashing, p.20) 1.19.1. TRASHING is the act of moving an object to its owner’s discard pile.\n1.19.2. During access, the Runner has the opportunity to pay the trash cost of the accessed card to trash it. See section 7.1.5.\n1.19.3. A trashed card is not considered to have been discarded, and vice versa. Cards that prevent a card from being trashed cannot prevent a card from being discarded.\n\nQUESTION: Can the Runner pay a trash cost to trash a card that is in the Corp's discard pile?\nANSWER:",
+    "answer": "No, the Runner cannot trash or pay the trash cost of a card in the Corp’s discard pile, either with the basic trash ability or with other mid-access abilities [S1, S2]."
+  },
+  "timings_ms": {
+    "encode_ms": 3.882832999806851,
+    "search_ms": 0.022541993530467153,
+    "ce_ms": 30.5019999796059
+  }
+}

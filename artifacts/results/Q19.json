@@ -1,0 +1,104 @@
+{
+  "qid": "Q19",
+  "query": "Is a player allowed to look through the cards in their own deck during the game?",
+  "category": "negation",
+  "gold": [
+    "C0167"
+  ],
+  "corpus_sha256": "abc68239ba744f8090f0b65269e7f540f49ac9998622952a44a5707a79d247b0",
+  "candidates": [
+    {
+      "chunk_id": "C0167",
+      "bi_rank": 1,
+      "bi_score": 0.5611890554428101,
+      "ce_score": 6.01876163482666,
+      "ce_rank": 1
+    },
+    {
+      "chunk_id": "C0108",
+      "bi_rank": 2,
+      "bi_score": 0.5525327920913696,
+      "ce_score": 5.324765682220459,
+      "ce_rank": 3
+    },
+    {
+      "chunk_id": "C0361",
+      "bi_rank": 3,
+      "bi_score": 0.5366432070732117,
+      "ce_score": 4.345986843109131,
+      "ce_rank": 4
+    },
+    {
+      "chunk_id": "C0364",
+      "bi_rank": 4,
+      "bi_score": 0.4805893003940582,
+      "ce_score": -0.524569571018219,
+      "ce_rank": 8
+    },
+    {
+      "chunk_id": "C0179",
+      "bi_rank": 5,
+      "bi_score": 0.4755125641822815,
+      "ce_score": -3.2576630115509033,
+      "ce_rank": 10
+    },
+    {
+      "chunk_id": "C0548",
+      "bi_rank": 6,
+      "bi_score": 0.46895983815193176,
+      "ce_score": 0.27540430426597595,
+      "ce_rank": 7
+    },
+    {
+      "chunk_id": "C0109",
+      "bi_rank": 7,
+      "bi_score": 0.4665497839450836,
+      "ce_score": 0.5928823351860046,
+      "ce_rank": 6
+    },
+    {
+      "chunk_id": "C0107",
+      "bi_rank": 8,
+      "bi_score": 0.4649718999862671,
+      "ce_score": -2.527442693710327,
+      "ce_rank": 9
+    },
+    {
+      "chunk_id": "C0333",
+      "bi_rank": 9,
+      "bi_score": 0.45520806312561035,
+      "ce_score": 0.6643544435501099,
+      "ce_rank": 5
+    },
+    {
+      "chunk_id": "C0170",
+      "bi_rank": 10,
+      "bi_score": 0.4534451961517334,
+      "ce_score": 5.817803382873535,
+      "ce_rank": 2
+    }
+  ],
+  "baseline": {
+    "top3": [
+      "C0167",
+      "C0108",
+      "C0361"
+    ],
+    "prompt": "You answer questions about the Netrunner Comprehensive Rules using ONLY the numbered passages below.\n- Put the passage id after every claim, like [S2].\n- If the passages do not contain the answer, reply exactly: \"The provided passages do not cover this.\"\n- If a passage states an exception, condition or restriction that is relevant to the question, include it.\n- Do not use outside knowledge.\n\nPASSAGES:\n[S1] (4 Game Zones > 4.2 Deck, p.31) 4.2.1. When the game begins, each player’s deck presented during setup becomes their in-game draw deck.\n4.2.2. Decks must be kept facedown with their cards hidden from both players. Neither player may look at the cards in any deck without being explicitly directed to do so by a rule or card ability.\n4.2.3. Decks are ordered. The location of each card in a deck must be maintained except when a player is explicitly directed to manipulate the cards in a deck by a rule or card ability. See rule 4.1.7a.\na. While searching a deck, a player is not required to maintain the order of the searched cards or indicate the previous location of any card found by the search. Note that the deck is always shuffled upon completion of the search, as required by rule 8.7.3.\n[S2] (1 Game Concepts > 1.21 Card Visibility, p.20-21) 1.21.2. When a player LOOKS at a card, they are allowed to see the front face of the card even if the front face would not normally be visible to them. A player should look at that card without showing it to the other player if it is not normally visible to that player.\na. A player may look at facedown cards they control at any time.\n1.21.3. To REVEAL a card is to show its front face to all players, then return it to its previous state.\na. Revealing a facedown card does not count as turning it faceup.\n1.21.4. Some abilities instruct the Runner to EXPOSE one or more cards. To expose a card is to reveal it, except that only installed, unrezzed cards can be exposed.\n[S3] (8 Card Manipulation > 8.7 Searching for Cards, p.61) 8.7.1. If a player is instructed to SEARCH a zone for one or more cards, they look at all the cards in that zone for cards matching the criteria of the search.\na. If a player is instructed to search a hidden or secret zone, they are temporarily allowed to look at those cards until the search is complete, so long as they maintain that zone as hidden or secret as necessary to the other player.\n\nQUESTION: Is a player allowed to look through the cards in their own deck during the game?\nANSWER:",
+    "answer": "A player may not look at the cards in their deck unless they are explicitly directed to do so by a rule or card ability [S1]. If a player is instructed to search their deck, they are temporarily allowed to look at the cards until the search is complete, provided they maintain the deck as a hidden zone to the other player [S3]."
+  },
+  "reranked": {
+    "top3": [
+      "C0167",
+      "C0170",
+      "C0108"
+    ],
+    "prompt": "You answer questions about the Netrunner Comprehensive Rules using ONLY the numbered passages below.\n- Put the passage id after every claim, like [S2].\n- If the passages do not contain the answer, reply exactly: \"The provided passages do not cover this.\"\n- If a passage states an exception, condition or restriction that is relevant to the question, include it.\n- Do not use outside knowledge.\n\nPASSAGES:\n[S1] (4 Game Zones > 4.2 Deck, p.31) 4.2.1. When the game begins, each player’s deck presented during setup becomes their in-game draw deck.\n4.2.2. Decks must be kept facedown with their cards hidden from both players. Neither player may look at the cards in any deck without being explicitly directed to do so by a rule or card ability.\n4.2.3. Decks are ordered. The location of each card in a deck must be maintained except when a player is explicitly directed to manipulate the cards in a deck by a rule or card ability. See rule 4.1.7a.\na. While searching a deck, a player is not required to maintain the order of the searched cards or indicate the previous location of any card found by the search. Note that the deck is always shuffled upon completion of the search, as required by rule 8.7.3.\n[S2] (4 Game Zones > 4.3 Hand, p.31) 4.3.1. A player’s HAND is the zone in which they hold the cards they have drawn from their deck. Cards can be added to a player’s hand by other rules and card abilities as well. During setup, each player draws a starting hand. See section 1.6.\n4.3.2. A player’s hand is kept secret from their opponent. A player may look at the cards in their own hand, but not at any of the cards in their opponent’s hands.\n4.3.3. Hands are not ordered. A player may freely arrange the cards in their hand in any order at any time.\n4.3.4. The number of cards in a hand is open information to all players. Any player may count the number of cards in a hand at any time.\n4.3.5. Cards in a hand are inactive.\n[S3] (1 Game Concepts > 1.21 Card Visibility, p.20-21) 1.21.2. When a player LOOKS at a card, they are allowed to see the front face of the card even if the front face would not normally be visible to them. A player should look at that card without showing it to the other player if it is not normally visible to that player.\na. A player may look at facedown cards they control at any time.\n1.21.3. To REVEAL a card is to show its front face to all players, then return it to its previous state.\na. Revealing a facedown card does not count as turning it faceup.\n1.21.4. Some abilities instruct the Runner to EXPOSE one or more cards. To expose a card is to reveal it, except that only installed, unrezzed cards can be exposed.\n\nQUESTION: Is a player allowed to look through the cards in their own deck during the game?\nANSWER:",
+    "answer": "No. Decks must be kept facedown with their cards hidden, and neither player may look at the cards in any deck without being explicitly directed to do so by a rule or card ability [S1]."
+  },
+  "timings_ms": {
+    "encode_ms": 3.9861659752205014,
+    "search_ms": 0.02300000051036477,
+    "ce_ms": 34.69816700089723
+  }
+}

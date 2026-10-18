@@ -1,0 +1,104 @@
+{
+  "qid": "Q41",
+  "query": "If stealing an agenda would cause a breach of the same server during an ongoing breach, when does the second breach happen?",
+  "category": "buried",
+  "gold": [
+    "C0301"
+  ],
+  "corpus_sha256": "abc68239ba744f8090f0b65269e7f540f49ac9998622952a44a5707a79d247b0",
+  "candidates": [
+    {
+      "chunk_id": "C0138",
+      "bi_rank": 1,
+      "bi_score": 0.5080703496932983,
+      "ce_score": -3.0986173152923584,
+      "ce_rank": 7
+    },
+    {
+      "chunk_id": "C0098",
+      "bi_rank": 2,
+      "bi_score": 0.496550977230072,
+      "ce_score": -2.7218613624572754,
+      "ce_rank": 6
+    },
+    {
+      "chunk_id": "C0099",
+      "bi_rank": 3,
+      "bi_score": 0.4961385726928711,
+      "ce_score": -2.689548969268799,
+      "ce_rank": 5
+    },
+    {
+      "chunk_id": "C0301",
+      "bi_rank": 4,
+      "bi_score": 0.48720526695251465,
+      "ce_score": 2.369091510772705,
+      "ce_rank": 1
+    },
+    {
+      "chunk_id": "C0290",
+      "bi_rank": 5,
+      "bi_score": 0.4489867091178894,
+      "ce_score": 0.6875019669532776,
+      "ce_rank": 2
+    },
+    {
+      "chunk_id": "C0100",
+      "bi_rank": 6,
+      "bi_score": 0.4371468722820282,
+      "ce_score": -1.565208911895752,
+      "ce_rank": 3
+    },
+    {
+      "chunk_id": "C0097",
+      "bi_rank": 7,
+      "bi_score": 0.43613067269325256,
+      "ce_score": -5.134471893310547,
+      "ce_rank": 9
+    },
+    {
+      "chunk_id": "C0600",
+      "bi_rank": 8,
+      "bi_score": 0.42850571870803833,
+      "ce_score": -3.5014076232910156,
+      "ce_rank": 8
+    },
+    {
+      "chunk_id": "C0328",
+      "bi_rank": 9,
+      "bi_score": 0.42738786339759827,
+      "ce_score": -6.986263751983643,
+      "ce_rank": 10
+    },
+    {
+      "chunk_id": "C0311",
+      "bi_rank": 10,
+      "bi_score": 0.40168657898902893,
+      "ce_score": -2.270847797393799,
+      "ce_rank": 4
+    }
+  ],
+  "baseline": {
+    "top3": [
+      "C0138",
+      "C0098",
+      "C0099"
+    ],
+    "prompt": "You answer questions about the Netrunner Comprehensive Rules using ONLY the numbered passages below.\n- Put the passage id after every claim, like [S2].\n- If the passages do not contain the answer, reply exactly: \"The provided passages do not cover this.\"\n- If a passage states an exception, condition or restriction that is relevant to the question, include it.\n- Do not use outside knowledge.\n\nPASSAGES:\n[S1] (3 Card Types > 3.2 Agendas, p.25) Agendas represent valuable pieces of Corporate data. When the Corp advances and scores agendas, it represents completion of critical Corporate projects. When the Runner steals agendas, it represents their acquisition of secret Corporate data.\n3.2.1. The Corp may install agendas only in the roots of remote servers. There can be only one agenda or one asset installed in the root of any given remote server at a time. See section 4.6.8.\n3.2.2. Only agendas have advancement requirements and agenda points. See section 1.17.\na. An agenda’s advancement requirement is the minimum number of advancement counters that must be on that agenda for the Corp to score it.\nb. The agenda points on an agenda contribute to a player’s score while the agenda is in their score area.\n[S2] (1 Game Concepts > 1.17 Score, Scoring and Stealing, p.19) e. If an effect directly adds an agenda to a score area or otherwise moves an agenda from any zone to a score area, that agenda is not considered scored or stolen.\nf. If an effect causes another card to be added to a score area “as an agenda”, the newly converted agenda is not considered scored or stolen. See rule 10.1.3.\n[S3] (1 Game Concepts > 1.17 Score, Scoring and Stealing, p.19) 1.17.4. Agendas are always added to the score area faceup, regardless of their previous faceup/facedown status.\n1.17.5. If an installed agenda is scored or stolen, it becomes uninstalled. Any advancement counters on the scored or stolen agenda are returned to the bank. See rule 1.13.13.\n1.17.6. Some agendas and other cards have abilities with a trigger condition related to an agenda being scored. These abilities become pending after the Corp moves the agenda from its current zone to their score area.\n1.17.7. Some agendas and other cards have abilities with a trigger condition related to an agenda being stolen. These abilities become pending after the Runner moves the agenda from its current zone to their score area.\n\nQUESTION: If stealing an agenda would cause a breach of the same server during an ongoing breach, when does the second breach happen?\nANSWER:",
+    "answer": "The provided passages do not cover this."
+  },
+  "reranked": {
+    "top3": [
+      "C0301",
+      "C0290",
+      "C0100"
+    ],
+    "prompt": "You answer questions about the Netrunner Comprehensive Rules using ONLY the numbered passages below.\n- Put the passage id after every claim, like [S2].\n- If the passages do not contain the answer, reply exactly: \"The provided passages do not cover this.\"\n- If a passage states an exception, condition or restriction that is relevant to the question, include it.\n- Do not use outside knowledge.\n\nPASSAGES:\n[S1] (7 Accessing Cards and Breaching Servers > 7.3 Breaching Servers, p.52) 7.3.7. An “end the run” effect that resolves while a server is being breached can sometimes end that breach. See section 6.1.4.\n7.3.8. If a server would be breached while a breach is already in progress, instead the new breach takes place when the current breach ends. The effect creating the delayed breach is treated as a conditional ability controlled by the Runner.\nExample: The Runner steals Clone Retirement during a breach of HQ, causing the Corp to take bad publicity. The Runner must complete the current breach before beginning the breach granted from Raymond Flint’s first ability.\n[S2] (7 Accessing Cards and Breaching Servers > 7.1 Accessing Cards, p.50) 7.1.6. If, after resolving mid-access abilities, the Runner is still accessing an agenda, they must steal it.\na. Some abilities can create additional costs to steal an agenda. The Runner can decline to pay such costs and not steal the agenda. See section 1.16.10.\n7.1.7. If a card moves to another location while it is being accessed, the access ends immediately.\n7.1.8. An “end the run” effect that resolves while a card is being accessed can sometimes end that access. See section 6.1.4.\n[S3] (1 Game Concepts > 1.17 Score, Scoring and Stealing, p.19) 1.17.8. If an ability meets its trigger condition from an agenda being scored or stolen, the agenda’s last known number of advancement counters before being scored or stolen is used for any references to the number of advancement counters in the effects of that ability.\n\nQUESTION: If stealing an agenda would cause a breach of the same server during an ongoing breach, when does the second breach happen?\nANSWER:",
+    "answer": "If a server would be breached while a breach is already in progress, the new breach takes place when the current breach ends [S1]."
+  },
+  "timings_ms": {
+    "encode_ms": 4.236959008267149,
+    "search_ms": 0.0301659747492522,
+    "ce_ms": 35.740541003178805
+  }
+}

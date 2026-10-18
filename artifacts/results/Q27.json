@@ -1,0 +1,105 @@
+{
+  "qid": "Q27",
+  "query": "Can the Runner be forced to lose credits that are hosted on their cards?",
+  "category": "negation",
+  "gold": [
+    "C0032",
+    "C0049"
+  ],
+  "corpus_sha256": "abc68239ba744f8090f0b65269e7f540f49ac9998622952a44a5707a79d247b0",
+  "candidates": [
+    {
+      "chunk_id": "C0032",
+      "bi_rank": 1,
+      "bi_score": 0.6540663242340088,
+      "ce_score": 6.404845237731934,
+      "ce_rank": 2
+    },
+    {
+      "chunk_id": "C0033",
+      "bi_rank": 2,
+      "bi_score": 0.5726219415664673,
+      "ce_score": 4.439914226531982,
+      "ce_rank": 4
+    },
+    {
+      "chunk_id": "C0034",
+      "bi_rank": 3,
+      "bi_score": 0.5688552856445312,
+      "ce_score": -2.1694016456604004,
+      "ce_rank": 8
+    },
+    {
+      "chunk_id": "C0588",
+      "bi_rank": 4,
+      "bi_score": 0.5641593337059021,
+      "ce_score": 4.777033805847168,
+      "ce_rank": 3
+    },
+    {
+      "chunk_id": "C0035",
+      "bi_rank": 5,
+      "bi_score": 0.5608386993408203,
+      "ce_score": -5.364505767822266,
+      "ce_rank": 9
+    },
+    {
+      "chunk_id": "C0049",
+      "bi_rank": 6,
+      "bi_score": 0.5606369972229004,
+      "ce_score": 8.453340530395508,
+      "ce_rank": 1
+    },
+    {
+      "chunk_id": "C0589",
+      "bi_rank": 7,
+      "bi_score": 0.5462244749069214,
+      "ce_score": 0.8504999876022339,
+      "ce_rank": 5
+    },
+    {
+      "chunk_id": "C0591",
+      "bi_rank": 8,
+      "bi_score": 0.5320320129394531,
+      "ce_score": -6.133948802947998,
+      "ce_rank": 10
+    },
+    {
+      "chunk_id": "C0275",
+      "bi_rank": 9,
+      "bi_score": 0.5244095325469971,
+      "ce_score": -2.0077288150787354,
+      "ce_rank": 7
+    },
+    {
+      "chunk_id": "C0565",
+      "bi_rank": 10,
+      "bi_score": 0.5171213150024414,
+      "ce_score": -1.571041226387024,
+      "ce_rank": 6
+    }
+  ],
+  "baseline": {
+    "top3": [
+      "C0032",
+      "C0033",
+      "C0034"
+    ],
+    "prompt": "You answer questions about the Netrunner Comprehensive Rules using ONLY the numbered passages below.\n- Put the passage id after every claim, like [S2].\n- If the passages do not contain the answer, reply exactly: \"The provided passages do not cover this.\"\n- If a passage states an exception, condition or restriction that is relevant to the question, include it.\n- Do not use outside knowledge.\n\nPASSAGES:\n[S1] (1 Game Concepts > 1.10 Credits, p.9) 1.10.3. Credits enter and leave a player’s credit pool as that player gains, loses, or spends credits.\na. A player GAINS credits whenever credits enter their credit pool from any location.\nb. If a player is required to LOSE credits, that player is forced to move the specified number of credits from their credit pool to the bank. Players cannot lose credits from cards.\nExample: If a subroutine on DNA Tracker resolves, the Runner must lose 2 credit from their credit pool, or 1 credit if that is all they have. If the Runner’s credit pool is empty, the effect does nothing.\n[S2] (1 Game Concepts > 1.10 Credits, p.9) c. To SPEND or PAY credits, a player puts the specified number of credits back into the bank. By default, the credits must come from the player’s credit pool. Abilities can also allow players to spend credits hosted on their cards under certain conditions. If any such abilities apply, the player chooses how to divide the credits they are spending from among the allowed locations. The terms “spend” and “pay” are synonymous.\nExample: The Runner may use the credit from Cyberfeeder to pay for Atman’s first ability.\nExample: The Runner may use credits from Ghost Runner when secretly spending credits to resolve a Psi ability (such as The Future Perfect).\nExample: The Runner must use credits from Ghost Runner if this is the only way for them to pay 3 credit when resolving the “when encountered” ability on Tollbooth.\n[S3] (1 Game Concepts > 1.10 Credits, p.9) 1.10.4. Abilities can place credits on cards, as discussed in section 1.13. Credits on a player’s card are not in that player’s credit pool; the player can only interact with those credits as instructed by card abilities.\na. If a player is instructed to TAKE credits from a card, they remove that many credits from that card and gain those credits.\nb. If an ability specifies how a player is allowed to spend credits from a card, they can be spent from that card as if they were in the player’s credit pool for the specified actions or abilities.\nc. If an ability specifies a time period during which a player is allowed to spend credits from a card, they can be spent from that card as if they were in the player’s credit pool for any purpose (other than losing credits) as long as the specified time period is active or the specified duration has not expired.\n\nQUESTION: Can the Runner be forced to lose credits that are hosted on their cards?\nANSWER:",
+    "answer": "No. Players cannot lose credits from cards [S1]. If a player is required to lose credits, they are forced to move the specified number of credits from their credit pool to the bank [S1]."
+  },
+  "reranked": {
+    "top3": [
+      "C0049",
+      "C0032",
+      "C0588"
+    ],
+    "prompt": "You answer questions about the Netrunner Comprehensive Rules using ONLY the numbered passages below.\n- Put the passage id after every claim, like [S2].\n- If the passages do not contain the answer, reply exactly: \"The provided passages do not cover this.\"\n- If a passage states an exception, condition or restriction that is relevant to the question, include it.\n- Do not use outside knowledge.\n\nPASSAGES:\n[S1] (1 Game Concepts > 1.13 Host, Hosted, and Hosting, p.12) 1.13.3. Hosted counters do not count as “on” a player or as objects a player “has”. They are not counted by abilities that check the number of counters on a player and cannot be affected by abilities that remove counters from a player.\nExample: The Corp resolves the first subroutine on Whitespace, forcing the Runner to lose 3 credit. The Runner cannot lose credits hosted on their cards, even if they do not have 3 credit in their credit pool.\nExample: The Corp has a rezzed Superdeep Borehole with hosted bad publicity counters. When the Runner fills their bad publicity fund in step 6.9.1b, they do not receive credits for the hosted bad publicity.\nExample: The Corp plays Scapegoat to remove 2 bad publicity. They cannot remove bad publicity counters hosted on Superdeep Borehole.\n[S2] (1 Game Concepts > 1.10 Credits, p.9) 1.10.3. Credits enter and leave a player’s credit pool as that player gains, loses, or spends credits.\na. A player GAINS credits whenever credits enter their credit pool from any location.\nb. If a player is required to LOSE credits, that player is forced to move the specified number of credits from their credit pool to the bank. Players cannot lose credits from cards.\nExample: If a subroutine on DNA Tracker resolves, the Runner must lose 2 credit from their credit pool, or 1 credit if that is all they have. If the Runner’s credit pool is empty, the effect does nothing.\n[S3] (10 Additional Rules > 10.14 Bidding, p.95) 10.14.3. A player cannot bid a number of credits they are unable to spend. Players can always bid 0 credit.\nExample: The Runner has no credits in their credit pool and 1 credit hosted on Fencer Fueno when they make a successful run on a server with Adrian Seis rezzed in its root. When the ability on Adrian Seis resolves, the players play a Psi Game, which requires them both to bid 0, 1, or 2 credit. In this case, the Runner cannot bid 2 credit, as they are not able to spend that number of credits. They can, however, bid 1 credit, as they will be able to spend the credit from Fencer Fueno to pay for that bid.\n\nQUESTION: Can the Runner be forced to lose credits that are hosted on their cards?\nANSWER:",
+    "answer": "No. Players cannot lose credits from cards [S2]. When a player is required to lose credits, they are forced to move the specified number of credits from their credit pool to the bank [S2]. Furthermore, hosted counters (including credits) do not count as being \"on\" a player, and the Runner cannot lose credits hosted on their cards even if they do not have enough credits in their credit pool to satisfy a loss requirement [S1]."
+  },
+  "timings_ms": {
+    "encode_ms": 4.1009999986272305,
+    "search_ms": 0.03341698902659118,
+    "ce_ms": 33.10545900603756
+  }
+}

@@ -1,0 +1,104 @@
+{
+  "qid": "Q03",
+  "query": "What is the limit on region upgrades in one server?",
+  "category": "control",
+  "gold": [
+    "C0149"
+  ],
+  "corpus_sha256": "abc68239ba744f8090f0b65269e7f540f49ac9998622952a44a5707a79d247b0",
+  "candidates": [
+    {
+      "chunk_id": "C0149",
+      "bi_rank": 1,
+      "bi_score": 0.5534366369247437,
+      "ce_score": 5.540112495422363,
+      "ce_rank": 1
+    },
+    {
+      "chunk_id": "C0148",
+      "bi_rank": 2,
+      "bi_score": 0.4680543541908264,
+      "ce_score": 2.5168938636779785,
+      "ce_rank": 2
+    },
+    {
+      "chunk_id": "C0347",
+      "bi_rank": 3,
+      "bi_score": 0.43736475706100464,
+      "ce_score": -2.0477073192596436,
+      "ce_rank": 6
+    },
+    {
+      "chunk_id": "C0185",
+      "bi_rank": 4,
+      "bi_score": 0.38451647758483887,
+      "ce_score": 0.23035362362861633,
+      "ce_rank": 3
+    },
+    {
+      "chunk_id": "C0194",
+      "bi_rank": 5,
+      "bi_score": 0.36223986744880676,
+      "ce_score": -3.4834718704223633,
+      "ce_rank": 7
+    },
+    {
+      "chunk_id": "C0186",
+      "bi_rank": 6,
+      "bi_score": 0.33273041248321533,
+      "ce_score": -1.6710858345031738,
+      "ce_rank": 4
+    },
+    {
+      "chunk_id": "C0184",
+      "bi_rank": 7,
+      "bi_score": 0.3271002769470215,
+      "ce_score": -5.922585964202881,
+      "ce_rank": 10
+    },
+    {
+      "chunk_id": "C0349",
+      "bi_rank": 8,
+      "bi_score": 0.31848159432411194,
+      "ce_score": -1.8547344207763672,
+      "ce_rank": 5
+    },
+    {
+      "chunk_id": "C0341",
+      "bi_rank": 9,
+      "bi_score": 0.28567057847976685,
+      "ce_score": -4.489991664886475,
+      "ce_rank": 9
+    },
+    {
+      "chunk_id": "C0140",
+      "bi_rank": 10,
+      "bi_score": 0.26457732915878296,
+      "ce_score": -4.1814422607421875,
+      "ce_rank": 8
+    }
+  ],
+  "baseline": {
+    "top3": [
+      "C0149",
+      "C0148",
+      "C0347"
+    ],
+    "prompt": "You answer questions about the Netrunner Comprehensive Rules using ONLY the numbered passages below.\n- Put the passage id after every claim, like [S2].\n- If the passages do not contain the answer, reply exactly: \"The provided passages do not cover this.\"\n- If a passage states an exception, condition or restriction that is relevant to the question, include it.\n- Do not use outside knowledge.\n\nPASSAGES:\n[S1] (3 Card Types > 3.6 Upgrades, p.27-28) 3.6.5. Regions\na. Some upgrades have the subtype region. All regions have the text “Limit 1 region per server.”\nb. The region limitation applies only to cards with the subtype region that are installed or in the process of being installed in the root of a server. It does not apply to cards in central servers, and it does not apply to ice.\nc. The region limitation applies to all cards as specified in rule 3.6.5b, regardless of the active or inactive state of those cards.\nd. When the Corp installs a card with the subtype region into the root of a server that already has a region, they must trash the already-installed region. See section 8.5.\ne. The Corp cannot use an effect that swaps cards or moves an installed card between servers to put more than 1 region into the root of a server.\n[S2] (3 Card Types > 3.6 Upgrades, p.27) 3.6.1. The Corp may install upgrades in the root of any server. Upgrades are the only card type that can be installed in the root of a central server.\n3.6.2. There is no limit to the number of upgrades that can be installed in the root of a single server.\n3.6.3. Upgrades are among the card types that have rez costs. They are installed unrezzed and remain inactive until the Corp rezzes them by paying their rez costs during a paid ability window. See section 8.1.\n3.6.4. Upgrades are among the card types that have trash costs. If the Runner accesses an upgrade, they may pay the trash cost to trash that upgrade. See section 7.1.5.\n[S3] (8 Card Manipulation > 8.5 Installing and Uninstalling Cards, p.58) 8.5.12. Some upgrades have an ability that specifies “central server”, “remote server”, or 1 or more particular central servers followed by the word “only”. This is a restriction on the locations an upgrade can occupy that applies at all times, even if the upgrade is inactive. The Corp cannot choose the root of a non-specified server as the installation destination for such an upgrade, and such an upgrade cannot be moved or swapped into the root of a non-specified server.\n\nQUESTION: What is the limit on region upgrades in one server?\nANSWER:",
+    "answer": "All regions have the text “Limit 1 region per server” [S1a]. This limitation applies to cards with the subtype region that are installed or in the process of being installed in the root of a server, regardless of whether those cards are active or inactive [S1b, S1c]. This limit does not apply to cards in central servers or to ice [S1b]. When the Corp installs a region into a server that already has one, they must trash the already-installed region [S1d], and the Corp cannot use effects to swap or move cards to put more than 1 region into the root of a server [S1e]."
+  },
+  "reranked": {
+    "top3": [
+      "C0149",
+      "C0148",
+      "C0185"
+    ],
+    "prompt": "You answer questions about the Netrunner Comprehensive Rules using ONLY the numbered passages below.\n- Put the passage id after every claim, like [S2].\n- If the passages do not contain the answer, reply exactly: \"The provided passages do not cover this.\"\n- If a passage states an exception, condition or restriction that is relevant to the question, include it.\n- Do not use outside knowledge.\n\nPASSAGES:\n[S1] (3 Card Types > 3.6 Upgrades, p.27-28) 3.6.5. Regions\na. Some upgrades have the subtype region. All regions have the text “Limit 1 region per server.”\nb. The region limitation applies only to cards with the subtype region that are installed or in the process of being installed in the root of a server. It does not apply to cards in central servers, and it does not apply to ice.\nc. The region limitation applies to all cards as specified in rule 3.6.5b, regardless of the active or inactive state of those cards.\nd. When the Corp installs a card with the subtype region into the root of a server that already has a region, they must trash the already-installed region. See section 8.5.\ne. The Corp cannot use an effect that swaps cards or moves an installed card between servers to put more than 1 region into the root of a server.\n[S2] (3 Card Types > 3.6 Upgrades, p.27) 3.6.1. The Corp may install upgrades in the root of any server. Upgrades are the only card type that can be installed in the root of a central server.\n3.6.2. There is no limit to the number of upgrades that can be installed in the root of a single server.\n3.6.3. Upgrades are among the card types that have rez costs. They are installed unrezzed and remain inactive until the Corp rezzes them by paying their rez costs during a paid ability window. See section 8.1.\n3.6.4. Upgrades are among the card types that have trash costs. If the Runner accesses an upgrade, they may pay the trash cost to trash that upgrade. See section 7.1.5.\n[S3] (4 Game Zones > 4.6 Play Area, p.34) d. All servers can have ice installed protecting them. See section 4.6.9.\ne. All servers have a ROOT where cards can be installed. A central server’s root can contain any number of upgrades, while a remote server’s root can contain 1 asset or agenda and any number of upgrades. Assets and agendas cannot be installed in the root of a central server.\nf. All cards installed in the root of a server are kept in the same orientation and location together. The order in which the cards are installed is open information, but the type of cards installed in the root of a remote server should not be derivable from their orientation or location.\ng. Only 1 region upgrade can be installed in the root of a server at a time. See section 3.6.5.\nh. Some upgrades have restrictions limiting them to specific servers. See rule 8.5.12.\n\nQUESTION: What is the limit on region upgrades in one server?\nANSWER:",
+    "answer": "The limit is 1 region per server [S1a, S3g]. This limitation applies to cards with the subtype region that are installed or in the process of being installed in the root of a server [S1b]. It does not apply to cards in central servers, and it does not apply to ice [S1b]. This limitation applies regardless of whether the cards are in an active or inactive state [S1c]."
+  },
+  "timings_ms": {
+    "encode_ms": 4.533208993962035,
+    "search_ms": 0.025707995519042015,
+    "ce_ms": 35.31595799722709
+  }
+}

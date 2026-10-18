@@ -95,8 +95,8 @@
     "answer": "The Runner wins if the Corp is required to draw a card from R&D but cannot because R&D is empty [S1, S2]."
   },
   "timings_ms": {
-    "encode_ms": 60.80491698230617,
-    "search_ms": 0.054750009439885616,
-    "ce_ms": 50.15379100223072
+    "encode_ms": 3.886333986883983,
+    "search_ms": 0.029041024390608072,
+    "ce_ms": 36.21750001912005
   }
 }

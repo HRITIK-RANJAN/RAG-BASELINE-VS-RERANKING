@@ -1,0 +1,104 @@
+{
+  "qid": "Q02",
+  "query": "What basic actions can the Corp always take during their turn?",
+  "category": "control",
+  "gold": [
+    "C0210"
+  ],
+  "corpus_sha256": "abc68239ba744f8090f0b65269e7f540f49ac9998622952a44a5707a79d247b0",
+  "candidates": [
+    {
+      "chunk_id": "C0220",
+      "bi_rank": 1,
+      "bi_score": 0.572946310043335,
+      "ce_score": 3.534541606903076,
+      "ce_rank": 6
+    },
+    {
+      "chunk_id": "C0221",
+      "bi_rank": 2,
+      "bi_score": 0.5636191368103027,
+      "ce_score": 5.648040294647217,
+      "ce_rank": 3
+    },
+    {
+      "chunk_id": "C0213",
+      "bi_rank": 3,
+      "bi_score": 0.5344926118850708,
+      "ce_score": 5.207175254821777,
+      "ce_rank": 5
+    },
+    {
+      "chunk_id": "C0222",
+      "bi_rank": 4,
+      "bi_score": 0.5076417326927185,
+      "ce_score": 2.612745761871338,
+      "ce_rank": 8
+    },
+    {
+      "chunk_id": "C0208",
+      "bi_rank": 5,
+      "bi_score": 0.49631601572036743,
+      "ce_score": 7.8992414474487305,
+      "ce_rank": 2
+    },
+    {
+      "chunk_id": "C0594",
+      "bi_rank": 6,
+      "bi_score": 0.480760395526886,
+      "ce_score": 2.7317252159118652,
+      "ce_rank": 7
+    },
+    {
+      "chunk_id": "C0210",
+      "bi_rank": 7,
+      "bi_score": 0.47744426131248474,
+      "ce_score": 7.942521095275879,
+      "ce_rank": 1
+    },
+    {
+      "chunk_id": "C0595",
+      "bi_rank": 8,
+      "bi_score": 0.45936161279678345,
+      "ce_score": -2.1947264671325684,
+      "ce_rank": 10
+    },
+    {
+      "chunk_id": "C0202",
+      "bi_rank": 9,
+      "bi_score": 0.4469713270664215,
+      "ce_score": 5.416196823120117,
+      "ce_rank": 4
+    },
+    {
+      "chunk_id": "C0581",
+      "bi_rank": 10,
+      "bi_score": 0.43341848254203796,
+      "ce_score": -1.953779697418213,
+      "ce_rank": 9
+    }
+  ],
+  "baseline": {
+    "top3": [
+      "C0220",
+      "C0221",
+      "C0213"
+    ],
+    "prompt": "You answer questions about the Netrunner Comprehensive Rules using ONLY the numbered passages below.\n- Put the passage id after every claim, like [S2].\n- If the passages do not contain the answer, reply exactly: \"The provided passages do not cover this.\"\n- If a passage states an exception, condition or restriction that is relevant to the question, include it.\n- Do not use outside knowledge.\n\nPASSAGES:\n[S1] (5 Turns > 5.6 Steps of the Corp’s Turn, p.40) 5.6.1. During the draw phase, the following steps occur in order:\na. The Corp gains their allotted clicks (default click click click).\nb. A paid ability window occurs, in which players may use paid abilities, the Corp may rez non-ice cards, and the Corp may score agendas. (P) (R) (S)\nc. The Corp’s recurring credits ( recurring) refill.\nd. The Corp’s turn formally begins. Conditions related to the turn beginning are met.\ne. The Corp performs their mandatory draw.\nf. The Corp’s draw phase is complete. Play proceeds to the Corp’s action phase.\n[S2] (5 Turns > 5.6 Steps of the Corp’s Turn, p.40) 5.6.2. During the Corp’s action phase, the following steps occur in order:\na. A paid ability window occurs, in which players may use paid abilities, the Corp may rez non-ice cards, and the Corp may score agendas. (P) (R) (S)\nb. If the Corp has any unspent click, the Corp takes an action. Otherwise, skip to (d).\nc. Return to (a).\nd. The Corp’s action phase formally ends. Conditions related to the action phase ending are met.\ne. The Corp’s action phase is complete. Play proceeds to the Corp’s discard phase.\n[S3] (5 Turns > 5.4 Action Phase, p.39) 5.4.1. The action phase is the first phase of the Runner’s turn and the second phase of the Corp’s turn. It is the only timing structure in which players can take actions, as discussed in section 5.2.\n5.4.2. During a player’s action phase, they must continue to take actions until they have no more clicks or the phase is ended directly by a card ability. The player may take actions in any combination and order as long as they pay the appropriate costs. Once they have no remaining clicks, the action phase ends.\n\nQUESTION: What basic actions can the Corp always take during their turn?\nANSWER:",
+    "answer": "The provided passages do not cover this."
+  },
+  "reranked": {
+    "top3": [
+      "C0210",
+      "C0208",
+      "C0221"
+    ],
+    "prompt": "You answer questions about the Netrunner Comprehensive Rules using ONLY the numbered passages below.\n- Put the passage id after every claim, like [S2].\n- If the passages do not contain the answer, reply exactly: \"The provided passages do not cover this.\"\n- If a passage states an exception, condition or restriction that is relevant to the question, include it.\n- Do not use outside knowledge.\n\nPASSAGES:\n[S1] (5 Turns > 5.2 Actions, p.38) 5.2.6. Corp Actions\na. The following BASIC ACTIONS are always available to the Corp during their action phase, in addition to any actions provided by card abilities.\nb. “ click: Gain 1 credit.”\nc. “ click: Draw 1 card.”\nd. “ click: Install 1 agenda, asset, upgrade, or piece of ice from HQ.” See section 8.5.\ne. “ click: Play 1 operation from HQ.” See section 8.6.\nf. “ click, 1 credit: Advance 1 installed card.” See section 1.18.\ng. “ click, 2 credit: Trash 1 resource. Take this action only if the Runner is tagged.” See section 10.5.\nh. “ click click click: Purge virus counters.” See rule 10.1.2.\n[S2] (5 Turns > 5.2 Actions, p.38) 5.2.3. Each player has several basic actions they can always perform. The Corp’s basic actions are listed in section 5.2.6, and the Runner’s basic actions are listed in section 5.2.7.\na. If an ability has a trigger condition related to an effect being performed “with the basic action”, that trigger condition is met by any basic action that performs the indicated effect. If an ability imposes a cost on performing an effect “with the basic action”, that cost applies to any instance of the indicated effect that would occur as part of resolving a basic action.\n5.2.4. A player can only take actions during the action phase of their turn. If an effect directs a player to take an action outside of that player’s action phase, instead that player does nothing.\n[S3] (5 Turns > 5.6 Steps of the Corp’s Turn, p.40) 5.6.2. During the Corp’s action phase, the following steps occur in order:\na. A paid ability window occurs, in which players may use paid abilities, the Corp may rez non-ice cards, and the Corp may score agendas. (P) (R) (S)\nb. If the Corp has any unspent click, the Corp takes an action. Otherwise, skip to (d).\nc. Return to (a).\nd. The Corp’s action phase formally ends. Conditions related to the action phase ending are met.\ne. The Corp’s action phase is complete. Play proceeds to the Corp’s discard phase.\n\nQUESTION: What basic actions can the Corp always take during their turn?\nANSWER:",
+    "answer": "The Corp can always take the following basic actions during their action phase:\n* Gain 1 credit [S1b].\n* Draw 1 card [S1c].\n* Install 1 agenda, asset, upgrade, or piece of ice from HQ [S1d].\n* Play 1 operation from HQ [S1e].\n* Advance 1 installed card (costs 1 click and 1 credit) [S1f].\n* Trash 1 resource (costs 1 click and 2 credits; take this action only if the Runner is tagged) [S1g].\n* Purge virus counters (costs 3 clicks) [S1h].\n\nThese actions can only be taken during the Corp's action phase [S2b, S3b]."
+  },
+  "timings_ms": {
+    "encode_ms": 4.6334580110851675,
+    "search_ms": 0.024999986635521054,
+    "ce_ms": 33.27549999812618
+  }
+}

@@ -1,0 +1,104 @@
+{
+  "qid": "Q34",
+  "query": "While the Runner is breaching HQ, a new card enters the Corp's hand. Can the Runner access it?",
+  "category": "buried",
+  "gold": [
+    "C0311"
+  ],
+  "corpus_sha256": "abc68239ba744f8090f0b65269e7f540f49ac9998622952a44a5707a79d247b0",
+  "candidates": [
+    {
+      "chunk_id": "C0307",
+      "bi_rank": 1,
+      "bi_score": 0.6796231865882874,
+      "ce_score": 7.5445356369018555,
+      "ce_rank": 1
+    },
+    {
+      "chunk_id": "C0293",
+      "bi_rank": 2,
+      "bi_score": 0.6261732578277588,
+      "ce_score": 5.6983113288879395,
+      "ce_rank": 8
+    },
+    {
+      "chunk_id": "C0305",
+      "bi_rank": 3,
+      "bi_score": 0.6210230588912964,
+      "ce_score": 5.749794960021973,
+      "ce_rank": 7
+    },
+    {
+      "chunk_id": "C0311",
+      "bi_rank": 4,
+      "bi_score": 0.6148418188095093,
+      "ce_score": 6.640891075134277,
+      "ce_rank": 5
+    },
+    {
+      "chunk_id": "C0297",
+      "bi_rank": 5,
+      "bi_score": 0.6140109300613403,
+      "ce_score": 6.986234188079834,
+      "ce_rank": 4
+    },
+    {
+      "chunk_id": "C0286",
+      "bi_rank": 6,
+      "bi_score": 0.6091910004615784,
+      "ce_score": 5.594220161437988,
+      "ce_rank": 9
+    },
+    {
+      "chunk_id": "C0295",
+      "bi_rank": 7,
+      "bi_score": 0.5965322852134705,
+      "ce_score": 7.274419784545898,
+      "ce_rank": 3
+    },
+    {
+      "chunk_id": "C0310",
+      "bi_rank": 8,
+      "bi_score": 0.5956748723983765,
+      "ce_score": 5.79971981048584,
+      "ce_rank": 6
+    },
+    {
+      "chunk_id": "C0296",
+      "bi_rank": 9,
+      "bi_score": 0.5945838093757629,
+      "ce_score": 7.377054691314697,
+      "ce_rank": 2
+    },
+    {
+      "chunk_id": "C0172",
+      "bi_rank": 10,
+      "bi_score": 0.5830892324447632,
+      "ce_score": 2.640559196472168,
+      "ce_rank": 10
+    }
+  ],
+  "baseline": {
+    "top3": [
+      "C0307",
+      "C0293",
+      "C0305"
+    ],
+    "prompt": "You answer questions about the Netrunner Comprehensive Rules using ONLY the numbered passages below.\n- Put the passage id after every claim, like [S2].\n- If the passages do not contain the answer, reply exactly: \"The provided passages do not cover this.\"\n- If a passage states an exception, condition or restriction that is relevant to the question, include it.\n- Do not use outside knowledge.\n\nPASSAGES:\n[S1] (7 Accessing Cards and Breaching Servers > 7.4 Determining Candidates, p.52-53) Example: The Runner breaches HQ during a run on HQ while Flagship is rezzed in the root of HQ, and they have an installed copy of Docklands Pass, but they have previously accessed a card during that run because of Otoroshi’s ability. The random access limit is still set to 2, but since the Runner is not allowed to access any cards other than Flagship, none of the cards in the Corp’s hand will be candidates. If Flagship’s ability becomes inactive before the breach ends, the cards in the Corp’s hand will become candidates and the Runner will be able to access 2 of them.\n[S2] (7 Accessing Cards and Breaching Servers > 7.3 Breaching Servers, p.51) 7.3.1. BREACHING a server is the process of the Runner accessing a particular set of cards associated with that server. Most accesses occur during a breach. Step 6.9.5b of a run calls for the Runner to breach the attacked server, but card abilities can also directly instruct the Runner to breach a server.\na. After the Runner accesses a card during a breach, that object remains visible to the Runner for the remainder of the breach.\nExample: The Runner breaches HQ and accesses Scatter Field, Palisade, and Offworld Office, in that order. When the Runner steals Offworld Office, the Corp uses Poétrï Luxury Brands to install a card from HQ. The Runner will know whether the Corp installs the Scatter Field, the Palisade, or an unknown card from the rest of HQ.\n[S3] (7 Accessing Cards and Breaching Servers > 7.4 Determining Candidates, p.52-53) Example: The Runner breaches HQ during a run on HQ while Flagship is rezzed in the root of HQ. They have an installed copy of Docklands Pass, so the random access limit is set to 2. The Runner accesses a card in HQ, meaning that Flagship’s restriction applies and all the other cards in HQ cease to be candidates. The Runner then accesses Flagship and uses Cupellation’s ability to host Flagship on Cupellation, thereby uninstalling it without its persistent ability remaining active (see section 9.12.5). Since the restriction on accessing cards other than Flagship no longer applies, the cards in HQ become candidates again, except for the card the Runner previously accessed.\n\nQUESTION: While the Runner is breaching HQ, a new card enters the Corp's hand. Can the Runner access it?\nANSWER:",
+    "answer": "Yes, the Runner can access a new card that enters the Corp's hand during a breach, provided it becomes a candidate. After the Runner accesses a card during a breach, that object remains visible to the Runner for the remainder of the breach [S2]. If a card is installed from HQ during a breach, the Runner will know whether the Corp installs a previously accessed card or an unknown card from the rest of HQ [S2]. If a restriction (such as one imposed by Flagship) prevents the Runner from accessing cards other than a specific one, and that restriction becomes inactive before the breach ends, the cards in the Corp's hand (including those that were not previously candidates) become candidates and the Runner will be able to access them [S1, S3]."
+  },
+  "reranked": {
+    "top3": [
+      "C0307",
+      "C0296",
+      "C0295"
+    ],
+    "prompt": "You answer questions about the Netrunner Comprehensive Rules using ONLY the numbered passages below.\n- Put the passage id after every claim, like [S2].\n- If the passages do not contain the answer, reply exactly: \"The provided passages do not cover this.\"\n- If a passage states an exception, condition or restriction that is relevant to the question, include it.\n- Do not use outside knowledge.\n\nPASSAGES:\n[S1] (7 Accessing Cards and Breaching Servers > 7.4 Determining Candidates, p.52-53) Example: The Runner breaches HQ during a run on HQ while Flagship is rezzed in the root of HQ, and they have an installed copy of Docklands Pass, but they have previously accessed a card during that run because of Otoroshi’s ability. The random access limit is still set to 2, but since the Runner is not allowed to access any cards other than Flagship, none of the cards in the Corp’s hand will be candidates. If Flagship’s ability becomes inactive before the breach ends, the cards in the Corp’s hand will become candidates and the Runner will be able to access 2 of them.\n[S2] (7 Accessing Cards and Breaching Servers > 7.3 Breaching Servers, p.51) b. One card, Dedicated Neural Net, instructs the Corp to choose which cards the Runner accesses from HQ. While this effect applies, the Runner still chooses candidates that are not in the Corp’s hand as normal. Whenever the Runner chooses to access a candidate from the Corp’s hand, instead of a candidate being chosen at random, the Corp chooses 1 of those candidates for the Runner to access. The chosen card is still treated as though the Runner had chosen it.\n[S3] (7 Accessing Cards and Breaching Servers > 7.3 Breaching Servers, p.51) 7.3.4. During a breach, the Runner is presented with the current candidates. They choose 1 of those cards and access it. This process repeats until there are no longer any candidates.\na. When presented with candidates during a breach of HQ, the Runner chooses either a specific candidate that is not in the Corp’s hand or to access a random candidate from among the ones in the Corp’s hand. A card randomly chosen this way is treated as though the Runner had chosen it.\n\nQUESTION: While the Runner is breaching HQ, a new card enters the Corp's hand. Can the Runner access it?\nANSWER:",
+    "answer": "During a breach, the Runner is presented with the current candidates and chooses one to access, repeating this process until there are no longer any candidates [S3]. If a new card enters the Corp's hand, it becomes a candidate for the Runner to access, provided the Runner has not already exhausted their access limit or been restricted by other effects [S1, S3]."
+  },
+  "timings_ms": {
+    "encode_ms": 3.9383749826811254,
+    "search_ms": 0.026541994884610176,
+    "ce_ms": 35.14329099562019
+  }
+}

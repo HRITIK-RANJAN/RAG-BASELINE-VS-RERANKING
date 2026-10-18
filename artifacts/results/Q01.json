@@ -1,0 +1,106 @@
+{
+  "qid": "Q01",
+  "query": "How many agenda points does a player need to win the game?",
+  "category": "control",
+  "gold": [
+    "C0021",
+    "C0096",
+    "C0552"
+  ],
+  "corpus_sha256": "abc68239ba744f8090f0b65269e7f540f49ac9998622952a44a5707a79d247b0",
+  "candidates": [
+    {
+      "chunk_id": "C0096",
+      "bi_rank": 1,
+      "bi_score": 0.6364716291427612,
+      "ce_score": 6.42266845703125,
+      "ce_rank": 2
+    },
+    {
+      "chunk_id": "C0116",
+      "bi_rank": 2,
+      "bi_score": 0.609187126159668,
+      "ce_score": 6.569186210632324,
+      "ce_rank": 1
+    },
+    {
+      "chunk_id": "C0008",
+      "bi_rank": 3,
+      "bi_score": 0.6079331040382385,
+      "ce_score": 3.68387770652771,
+      "ce_rank": 4
+    },
+    {
+      "chunk_id": "C0177",
+      "bi_rank": 4,
+      "bi_score": 0.5549883842468262,
+      "ce_score": -0.20880787074565887,
+      "ce_rank": 6
+    },
+    {
+      "chunk_id": "C0097",
+      "bi_rank": 5,
+      "bi_score": 0.5320917367935181,
+      "ce_score": -0.14767026901245117,
+      "ce_rank": 5
+    },
+    {
+      "chunk_id": "C0138",
+      "bi_rank": 6,
+      "bi_score": 0.5275826454162598,
+      "ce_score": -1.266224980354309,
+      "ce_rank": 9
+    },
+    {
+      "chunk_id": "C0021",
+      "bi_rank": 7,
+      "bi_score": 0.5148121118545532,
+      "ce_score": 6.037129878997803,
+      "ce_rank": 3
+    },
+    {
+      "chunk_id": "C0100",
+      "bi_rank": 8,
+      "bi_score": 0.4721100926399231,
+      "ce_score": -0.25084421038627625,
+      "ce_rank": 7
+    },
+    {
+      "chunk_id": "C0178",
+      "bi_rank": 9,
+      "bi_score": 0.4651012420654297,
+      "ce_score": -0.4363325238227844,
+      "ce_rank": 8
+    },
+    {
+      "chunk_id": "C0328",
+      "bi_rank": 10,
+      "bi_score": 0.45945799350738525,
+      "ce_score": -4.882780075073242,
+      "ce_rank": 10
+    }
+  ],
+  "baseline": {
+    "top3": [
+      "C0096",
+      "C0116",
+      "C0008"
+    ],
+    "prompt": "You answer questions about the Netrunner Comprehensive Rules using ONLY the numbered passages below.\n- Put the passage id after every claim, like [S2].\n- If the passages do not contain the answer, reply exactly: \"The provided passages do not cover this.\"\n- If a passage states an exception, condition or restriction that is relevant to the question, include it.\n- Do not use outside knowledge.\n\nPASSAGES:\n[S1] (1 Game Concepts > 1.17 Score, Scoring and Stealing, p.18) 1.17.1. The sum of all agenda points on agendas in a player’s score area is that player’s SCORE.\na. The THREAT LEVEL is equal to the greatest score of any player. The “Threat N” ability flag makes use of the threat level (rule 9.3.6f).\nExample: If the Runner’s score is 4 agenda points, and the Corp’s score is 3 agenda points, the threat level is 4.\n1.17.2. If at any time a player’s score is greater than or equal to 7, they win the game at the next checkpoint. See section 1.7 regarding winning the game, and section 10.3 for details about checkpoints.\n[S2] (2 Parts of a Card > 2.5 Agenda Points, p.22) 2.5.1. The agenda point value appears only on agendas. It is the number in the center-left of the card, on top of a graphic depicting three pillars.\n2.5.2. The agenda points in a player’s score area contribute toward that player winning the game. See section 1.7.\n[S3] (1 Game Concepts > 1.4 Deck Construction, p.5) 1.4.6. A Corp deck must contain agendas totalling a certain number of agenda points, as determined by the total number of cards in the deck.\na. A deck with 40 to 44 cards must contain 18 or 19 agenda points.\nb. A deck with 45 to 49 cards must contain 20 or 21 agenda points.\nc. A deck with 50 to 54 cards must contain 22 or 23 agenda points.\nd. A deck with more than 54 cards must contain 22 or 23 agenda points, plus an additional 2 agenda points for every full 5 cards in the deck over 50.\nExample: A 66 card deck requires 6 additional agenda points, since it includes 3 sets of 5 cards beyond 50. This gives a final requirement of either 28 or 29 agenda points.\n1.4.7. The deck cannot contain more than 3 copies of any single card, by name. Some cards stipulate alternative copy limits in their card text.\n\nQUESTION: How many agenda points does a player need to win the game?\nANSWER:",
+    "answer": "A player wins the game if their score is greater than or equal to 7 [S1]."
+  },
+  "reranked": {
+    "top3": [
+      "C0116",
+      "C0096",
+      "C0021"
+    ],
+    "prompt": "You answer questions about the Netrunner Comprehensive Rules using ONLY the numbered passages below.\n- Put the passage id after every claim, like [S2].\n- If the passages do not contain the answer, reply exactly: \"The provided passages do not cover this.\"\n- If a passage states an exception, condition or restriction that is relevant to the question, include it.\n- Do not use outside knowledge.\n\nPASSAGES:\n[S1] (2 Parts of a Card > 2.5 Agenda Points, p.22) 2.5.1. The agenda point value appears only on agendas. It is the number in the center-left of the card, on top of a graphic depicting three pillars.\n2.5.2. The agenda points in a player’s score area contribute toward that player winning the game. See section 1.7.\n[S2] (1 Game Concepts > 1.17 Score, Scoring and Stealing, p.18) 1.17.1. The sum of all agenda points on agendas in a player’s score area is that player’s SCORE.\na. The THREAT LEVEL is equal to the greatest score of any player. The “Threat N” ability flag makes use of the threat level (rule 9.3.6f).\nExample: If the Runner’s score is 4 agenda points, and the Corp’s score is 3 agenda points, the threat level is 4.\n1.17.2. If at any time a player’s score is greater than or equal to 7, they win the game at the next checkpoint. See section 1.7 regarding winning the game, and section 10.3 for details about checkpoints.\n[S3] (1 Game Concepts > 1.7 Ending the Game, p.7) 1.7.2. Each player has two possible win conditions available.\na. Either player can win by collecting agenda points in their score area (usually done by scoring or stealing agendas; see section 1.17). A player with a score of 7 or more wins the game.\nb. The Corp wins if the Runner is FLATLINED. The Runner is flatlined immediately if they suffer more damage than they have cards in their grip. See section 10.4 for information about damage. The Runner is also flatlined if, at the beginning of their discard step, their maximum hand size is less than 0. See section 5.5 for information about maximum hand size and the discard step.\nc. The Runner wins if the Corp is required to draw a card from R&D but cannot because R&D is empty.\n\nQUESTION: How many agenda points does a player need to win the game?\nANSWER:",
+    "answer": "A player needs a score of 7 or more to win the game [S2, S3]. If a player's score is greater than or equal to 7, they win the game at the next checkpoint [S2]."
+  },
+  "timings_ms": {
+    "encode_ms": 6.0338750190567225,
+    "search_ms": 0.031790987122803926,
+    "ce_ms": 34.887874993728474
+  }
+}

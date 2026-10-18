@@ -1,0 +1,104 @@
+{
+  "qid": "Q31",
+  "query": "Is losing clicks the same thing as spending clicks?",
+  "category": "keyword_trap",
+  "gold": [
+    "C0039"
+  ],
+  "corpus_sha256": "abc68239ba744f8090f0b65269e7f540f49ac9998622952a44a5707a79d247b0",
+  "candidates": [
+    {
+      "chunk_id": "C0039",
+      "bi_rank": 1,
+      "bi_score": 0.6229037642478943,
+      "ce_score": 5.712510108947754,
+      "ce_rank": 1
+    },
+    {
+      "chunk_id": "C0038",
+      "bi_rank": 2,
+      "bi_score": 0.5388282537460327,
+      "ce_score": -2.7252187728881836,
+      "ce_rank": 4
+    },
+    {
+      "chunk_id": "C0205",
+      "bi_rank": 3,
+      "bi_score": 0.437877357006073,
+      "ce_score": 0.03692548722028732,
+      "ce_rank": 2
+    },
+    {
+      "chunk_id": "C0086",
+      "bi_rank": 4,
+      "bi_score": 0.41542571783065796,
+      "ce_score": -2.5866103172302246,
+      "ce_rank": 3
+    },
+    {
+      "chunk_id": "C0594",
+      "bi_rank": 5,
+      "bi_score": 0.3281151056289673,
+      "ce_score": -8.070751190185547,
+      "ce_rank": 7
+    },
+    {
+      "chunk_id": "C0596",
+      "bi_rank": 6,
+      "bi_score": 0.3037469685077667,
+      "ce_score": -7.105658531188965,
+      "ce_rank": 6
+    },
+    {
+      "chunk_id": "C0028",
+      "bi_rank": 7,
+      "bi_score": 0.2980278730392456,
+      "ce_score": -5.518016815185547,
+      "ce_rank": 5
+    },
+    {
+      "chunk_id": "C0355",
+      "bi_rank": 8,
+      "bi_score": 0.29661688208580017,
+      "ce_score": -11.478065490722656,
+      "ce_rank": 10
+    },
+    {
+      "chunk_id": "C0206",
+      "bi_rank": 9,
+      "bi_score": 0.279030978679657,
+      "ce_score": -10.644115447998047,
+      "ce_rank": 9
+    },
+    {
+      "chunk_id": "C0003",
+      "bi_rank": 10,
+      "bi_score": 0.26697227358818054,
+      "ce_score": -9.203052520751953,
+      "ce_rank": 8
+    }
+  ],
+  "baseline": {
+    "top3": [
+      "C0039",
+      "C0038",
+      "C0205"
+    ],
+    "prompt": "You answer questions about the Netrunner Comprehensive Rules using ONLY the numbered passages below.\n- Put the passage id after every claim, like [S2].\n- If the passages do not contain the answer, reply exactly: \"The provided passages do not cover this.\"\n- If a passage states an exception, condition or restriction that is relevant to the question, include it.\n- Do not use outside knowledge.\n\nPASSAGES:\n[S1] (1 Game Concepts > 1.11 Clicks, p.10) 1.11.3. Players can gain, lose, or spend clicks.\na. A player GAINS clicks whenever the number of clicks they have is increased.\nb. If a player LOSES or SPENDS clicks, the number of clicks they have is reduced by that amount. The terms “lose” and “spend” are not synonymous for the purposes of meeting conditions and restrictions of card abilities.\nc. Paid abilities that begin with clickare actions and have special timing rules (see section 5.2). Aside from taking actions, there are no special restrictions to how or when a player can spend their clicks during their turn.\n1.11.4. Some cards have the subtype priority and the text, “Play only as your first click.” A player can only play a priority card using the basic action to play an event or operation, and only if they have not spent any other clicks that turn. Losing clicks does not affect a player’s ability to play a priority card.\n[S2] (1 Game Concepts > 1.11 Clicks, p.10) Working a job, making connections, and especially jacking in—everything you do takes time, and it always goes by faster than you think. A click represents an abstract amount of time spent on a particular activity, either several hours all at once or scattered across the day.\n1.11.1. A CLICK ( click) is the basic unit of activity. Players spend their clicks to perform actions and trigger abilities. Each click counter represents 1 click.\n1.11.2. As the first step of a player’s turn, they gain an allotted number of clicks to spend during the action phase of that turn. See section 5 for details about the procedures of player turns.\na. The Corp receives 3 click on each of their turns.\nb. The Runner receives 4 click on each of their turns.\n[S3] (5 Turns > 5.2 Actions, p.37) 5.2.1. An ACTION is any paid ability where the cost begins with a clicksymbol.\na. Other costs can contain clicksymbols without denoting an action.\nExample: The ability “ click: Gain 1 credit and draw 1 card.” on Professional Contacts is an action. The ability “Lose click: Break 1 subroutine on this ice. Only the Runner can use this ability.” on Eli 1.0 is not an action and is used during a paid ability window.\n\nQUESTION: Is losing clicks the same thing as spending clicks?\nANSWER:",
+    "answer": "No, the terms “lose” and “spend” are not synonymous for the purposes of meeting conditions and restrictions of card abilities [S1]."
+  },
+  "reranked": {
+    "top3": [
+      "C0039",
+      "C0205",
+      "C0086"
+    ],
+    "prompt": "You answer questions about the Netrunner Comprehensive Rules using ONLY the numbered passages below.\n- Put the passage id after every claim, like [S2].\n- If the passages do not contain the answer, reply exactly: \"The provided passages do not cover this.\"\n- If a passage states an exception, condition or restriction that is relevant to the question, include it.\n- Do not use outside knowledge.\n\nPASSAGES:\n[S1] (1 Game Concepts > 1.11 Clicks, p.10) 1.11.3. Players can gain, lose, or spend clicks.\na. A player GAINS clicks whenever the number of clicks they have is increased.\nb. If a player LOSES or SPENDS clicks, the number of clicks they have is reduced by that amount. The terms “lose” and “spend” are not synonymous for the purposes of meeting conditions and restrictions of card abilities.\nc. Paid abilities that begin with clickare actions and have special timing rules (see section 5.2). Aside from taking actions, there are no special restrictions to how or when a player can spend their clicks during their turn.\n1.11.4. Some cards have the subtype priority and the text, “Play only as your first click.” A player can only play a priority card using the basic action to play an event or operation, and only if they have not spent any other clicks that turn. Losing clicks does not affect a player’s ability to play a priority card.\n[S2] (5 Turns > 5.2 Actions, p.37) 5.2.1. An ACTION is any paid ability where the cost begins with a clicksymbol.\na. Other costs can contain clicksymbols without denoting an action.\nExample: The ability “ click: Gain 1 credit and draw 1 card.” on Professional Contacts is an action. The ability “Lose click: Break 1 subroutine on this ice. Only the Runner can use this ability.” on Eli 1.0 is not an action and is used during a paid ability window.\n[S3] (1 Game Concepts > 1.16 Costs, p.17) d. When a player takes an action that plays or installs one or more cards and has no other effects, the play cost or install cost of each of those cards is considered to have been spent to take that action, even though other steps take place between initiating the action and paying that cost.\nExample: The Corp has Jeeves Model Bioroids rezzed, and uses the basic action “[Click]: Play an operation.” to play Blue Level Clearance. Both the click spent for the cost of the basic action and the click spent for Blue Level Clearance’s additional cost count as clicks spent to take the “[Click]: Play an operation.” action.\n\nQUESTION: Is losing clicks the same thing as spending clicks?\nANSWER:",
+    "answer": "No, the terms “lose” and “spend” are not synonymous for the purposes of meeting conditions and restrictions of card abilities [S1]."
+  },
+  "timings_ms": {
+    "encode_ms": 4.255167004885152,
+    "search_ms": 0.02187499194405973,
+    "ce_ms": 34.65545899234712
+  }
+}

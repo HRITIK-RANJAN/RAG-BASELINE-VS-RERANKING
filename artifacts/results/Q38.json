@@ -1,0 +1,104 @@
+{
+  "qid": "Q38",
+  "query": "When does a remote server stop existing?",
+  "category": "buried",
+  "gold": [
+    "C0193"
+  ],
+  "corpus_sha256": "abc68239ba744f8090f0b65269e7f540f49ac9998622952a44a5707a79d247b0",
+  "candidates": [
+    {
+      "chunk_id": "C0193",
+      "bi_rank": 1,
+      "bi_score": 0.6235353946685791,
+      "ce_score": 4.548755645751953,
+      "ce_rank": 1
+    },
+    {
+      "chunk_id": "C0579",
+      "bi_rank": 2,
+      "bi_score": 0.44411763548851013,
+      "ce_score": -4.930446624755859,
+      "ce_rank": 8
+    },
+    {
+      "chunk_id": "C0338",
+      "bi_rank": 3,
+      "bi_score": 0.4380130469799042,
+      "ce_score": -4.451319217681885,
+      "ce_rank": 7
+    },
+    {
+      "chunk_id": "C0343",
+      "bi_rank": 4,
+      "bi_score": 0.43728718161582947,
+      "ce_score": 1.0534435510635376,
+      "ce_rank": 2
+    },
+    {
+      "chunk_id": "C0192",
+      "bi_rank": 5,
+      "bi_score": 0.4286563992500305,
+      "ce_score": -2.165257453918457,
+      "ce_rank": 3
+    },
+    {
+      "chunk_id": "C0194",
+      "bi_rank": 6,
+      "bi_score": 0.4285435080528259,
+      "ce_score": -2.404679298400879,
+      "ce_rank": 4
+    },
+    {
+      "chunk_id": "C0505",
+      "bi_rank": 7,
+      "bi_score": 0.41675853729248047,
+      "ce_score": -7.788552284240723,
+      "ce_rank": 10
+    },
+    {
+      "chunk_id": "C0269",
+      "bi_rank": 8,
+      "bi_score": 0.4149300754070282,
+      "ce_score": -3.821934223175049,
+      "ce_rank": 6
+    },
+    {
+      "chunk_id": "C0184",
+      "bi_rank": 9,
+      "bi_score": 0.4071923494338989,
+      "ce_score": -7.062142372131348,
+      "ce_rank": 9
+    },
+    {
+      "chunk_id": "C0555",
+      "bi_rank": 10,
+      "bi_score": 0.3934857249259949,
+      "ce_score": -3.4540059566497803,
+      "ce_rank": 5
+    }
+  ],
+  "baseline": {
+    "top3": [
+      "C0193",
+      "C0579",
+      "C0338"
+    ],
+    "prompt": "You answer questions about the Netrunner Comprehensive Rules using ONLY the numbered passages below.\n- Put the passage id after every claim, like [S2].\n- If the passages do not contain the answer, reply exactly: \"The provided passages do not cover this.\"\n- If a passage states an exception, condition or restriction that is relevant to the question, include it.\n- Do not use outside knowledge.\n\nPASSAGES:\n[S1] (4 Game Zones > 4.6 Play Area, p.35) d. A remote server exists as long as there is at least one card in the root of or protecting it. A remote server can be made up of only ice protecting it, only cards installed in it, or a combination of both.\ne. During checkpoints, a remote server ceases to exist if there are no cards installed in its root and no cards installed protecting it. If a server ceases to exist during a run against it, then the run ends after any currently open paid ability window closes. Unless the run has already been declared either successful or unsuccessful, it is neither. See rule 8.5.8.\n[S2] (10 Additional Rules > 10.11 Mark, p.94) 10.11.4. The designation of a server as the mark is treated as a lingering effect that expires at the end of the turn. When the effect expires, there is no mark until another instruction to “identify your mark” resolves.\n[S3] (8 Card Manipulation > 8.5 Installing and Uninstalling Cards, p.57) 8.5.2. Corp cards are installed facedown, unrezzed, and remain inactive until rezzed. Corp cards are installed into specific locations. See section 4.6.6 for more information on servers and the locations of installed Corp cards.\na. As part of installing a card, the Corp chooses which server will be the destination for that card. The Corp can either choose an already existing server as the destination or announces that the card will create a new remote server.\nb. The Corp always installs an agenda or asset into the root of a remote server.\nc. The Corp always installs an upgrade into the root of a central or remote server.\nd. Unless otherwise indicated, the Corp always installs ice to the outermost position protecting the destination server. See section 6.2.2.\n\nQUESTION: When does a remote server stop existing?\nANSWER:",
+    "answer": "A remote server ceases to exist during checkpoints if there are no cards installed in its root and no cards installed protecting it [S1]."
+  },
+  "reranked": {
+    "top3": [
+      "C0193",
+      "C0343",
+      "C0192"
+    ],
+    "prompt": "You answer questions about the Netrunner Comprehensive Rules using ONLY the numbered passages below.\n- Put the passage id after every claim, like [S2].\n- If the passages do not contain the answer, reply exactly: \"The provided passages do not cover this.\"\n- If a passage states an exception, condition or restriction that is relevant to the question, include it.\n- Do not use outside knowledge.\n\nPASSAGES:\n[S1] (4 Game Zones > 4.6 Play Area, p.35) d. A remote server exists as long as there is at least one card in the root of or protecting it. A remote server can be made up of only ice protecting it, only cards installed in it, or a combination of both.\ne. During checkpoints, a remote server ceases to exist if there are no cards installed in its root and no cards installed protecting it. If a server ceases to exist during a run against it, then the run ends after any currently open paid ability window closes. Unless the run has already been declared either successful or unsuccessful, it is neither. See rule 8.5.8.\n[S2] (8 Card Manipulation > 8.5 Installing and Uninstalling Cards, p.58) 8.5.7. If the Corp trashes any cards during the installation process, the trashed cards are placed in Archives with the same faceup or facedown status they had while installed.\n8.5.8. If the last card protecting a remote server or in the root of that server is uninstalled outside of the process of installing another card, then the server ceases to exist during the next checkpoint. See section 10.3.\n8.5.9. The Corp cannot destroy a server by installing cards. While the Corp is installing a card with a remote server as its destination, that server does not cease to exist during any checkpoints that occur before the install effect is complete. Even if the last card installed in the root of or protecting a remote server is trashed during the installation process, it is still considered the same server after the new card has been installed.\n[S3] (4 Game Zones > 4.6 Play Area, p.35) 4.6.8. Remote Servers\na. A REMOTE SERVER is the only type of server that can contain an asset or agenda in its root.\nb. The Corp starts the game with no remote servers. The Corp creates a new remote server by declaring it as the destination server for a card they are about to install. There is usually no limit to the number of remote servers the Corp can have at any given time.\nc. Cards installed in the roots of separate remote servers are placed in a vertical orientation in a row extending away from the central servers to indicate the locations of the remote servers relative to other servers. The ice installed protecting each remote server are placed in a horizontal orientation in front of any cards in the root of that server, outwards towards the Runner.\n\nQUESTION: When does a remote server stop existing?\nANSWER:",
+    "answer": "A remote server ceases to exist during checkpoints if there are no cards installed in its root and no cards installed protecting it [S1]. Additionally, if the last card protecting a remote server or in the root of that server is uninstalled outside of the process of installing another card, the server ceases to exist during the next checkpoint [S2]. If a server ceases to exist during a run against it, the run ends after any currently open paid ability window closes [S1]. \n\nHowever, the Corp cannot destroy a server by installing cards; while the Corp is installing a card with a remote server as its destination, that server does not cease to exist during any checkpoints that occur before the install effect is complete [S2]."
+  },
+  "timings_ms": {
+    "encode_ms": 4.347332986071706,
+    "search_ms": 0.034249998861923814,
+    "ce_ms": 33.079042012104765
+  }
+}

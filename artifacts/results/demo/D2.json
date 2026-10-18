@@ -95,8 +95,8 @@
     "answer": "To rez an unrezzed card is to turn it faceup [S3]. To resolve rezzing a card, the Corp must pay the card's rez cost, accounting for any modifiers or additional costs [S1, S3]. After a checkpoint occurs, the Corp turns the card faceup, and the card is considered rezzed at the conclusion of this process [S1]. Agendas cannot be rezzed [S3]."
   },
   "timings_ms": {
-    "encode_ms": 85.88050000253133,
-    "search_ms": 0.048416986828669906,
-    "ce_ms": 46.43358400790021
+    "encode_ms": 6.165792001411319,
+    "search_ms": 0.03462500171735883,
+    "ce_ms": 37.09295901353471
   }
 }

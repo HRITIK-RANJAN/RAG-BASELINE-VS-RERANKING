@@ -1,0 +1,177 @@
+# Answer judgments for the 23 final queries (Stage 7).
+# judged_by: Claude, at the student's request. The student re-checks these labels before submission.
+#
+# answer1 = Pipeline 1 (baseline), answer2 = Pipeline 2 (re-ranked). Labels:
+#   correct       matches expected_answer for what the question asks, including the conditions that change the answer
+#   omits_clause  right in general, but misses an exception, restriction or penalty
+#   misstates     states the wrong rule (for example inverts a negation)
+#   hallucinated  makes a claim that none of its three passages supports
+#   refused       "The provided passages do not cover this."
+# Judging rule: details of expected_answer that the question does not ask about are written in `note`, not penalised.
+# citations1 / citations2: ok = every [S#] supports its claim; partly = some claims uncited or not supported by
+#   the cited passage; unsupported = the key claim is not supported by the cited passages; n/a = refused.
+# stage and diagnosis are given for every query whose mining result is not both_ok (Tutorial s16):
+#   chunking / retrieval_recall / ranking / generation.
+
+judged_by: Claude (judgment done at the student's request)
+labels:
+- qid: Q01
+  answer1: correct
+  answer2: correct
+  citations1: ok
+  citations2: ok
+  note: Answer 1 does not say that the win happens at the next checkpoint (it is in its passage S1); neither top 3 contains the draw rule.
+- qid: Q02
+  answer1: refused
+  answer2: correct
+  citations1: n/a
+  citations2: ok
+  note: Answer 2 lists all seven basic actions with their costs.
+  stage: ranking
+  diagnosis: The baseline top 3 were turn-structure rules (5.6.1 draw phase, 5.6.2 action phase, 5.4.1) that share the words Corp, turn and action. The list of basic actions (5.2.6) is mostly click symbols and short phrases, so its embedding is a weak match (rank 7). The cross-encoder reads "BASIC ACTIONS are always available to the Corp" together with the query and puts it at rank 1.
+- qid: Q03
+  answer1: correct
+  answer2: correct
+  citations1: ok
+  citations2: ok
+  note: Answer 2 does not mention that the old region is trashed when a second one is installed (in its passage S1). Both answers repeat the rule's wording "does not apply to cards in central servers" without explaining it.
+- qid: Q05
+  answer1: correct
+  answer2: correct
+  citations1: ok
+  citations2: ok
+  note: Both answers are identical (same passages). Neither says that influence is counted per copy or that neutral cards count as out-of-faction.
+- qid: Q07
+  answer1: correct
+  answer2: correct
+  citations1: ok
+  citations2: ok
+  note: ''
+- qid: Q09
+  answer1: correct
+  answer2: correct
+  citations1: ok
+  citations2: ok
+  note: Both answers also cover installing a program over the limit, which is correct and supported.
+- qid: Q12
+  answer1: refused
+  answer2: refused
+  citations1: n/a
+  citations2: n/a
+  note: A correct refusal for both, since neither top 3 contains rule 1.13.13.
+  stage: retrieval_recall
+  diagnosis: The gold rule 1.13.13 is not in the top 10. Its text is about a host card changing zones, and the query's words (score area, hosted, moves) match many general zone and hosting rules better. The re-ranker only reorders the 10 candidates, so it cannot help. Over all chunks the bi-encoder ranks it 20th, while a cross-encoder over all 602 chunks ranks it 1st (Section 10.3), so the miss is in the first stage.
+- qid: Q14
+  answer1: correct
+  answer2: correct
+  citations1: ok
+  citations2: ok
+  note: ''
+- qid: Q15
+  answer1: correct
+  answer2: correct
+  citations1: ok
+  citations2: ok
+  note: Answer 1 states the rule for operations in general (1.13.6d); Answer 2 states it for condition operations (3.5.1a). Both answer the question.
+- qid: Q18
+  answer1: refused
+  answer2: refused
+  citations1: n/a
+  citations2: n/a
+  note: A correct refusal for both, since the golden rule 1.2.2 is at rank 6 in both lists.
+  stage: ranking
+  diagnosis: The answer is one line in the Golden Rules chunk (1.2.1-1.2.4), which also covers card text vs. rules and "if able". The baseline preferred rules about players' choices and costs; the cross-encoder preferred the rules on "must" (9.12.3) and replacement effects, which share the word "must" with the query. Neither model ranked the short general rule above these more specific ones.
+- qid: Q19
+  answer1: correct
+  answer2: correct
+  citations1: ok
+  citations2: ok
+  note: Answer 1 adds that searching temporarily allows looking (from 8.7.1a), which is correct and supported.
+- qid: Q23
+  answer1: correct
+  answer2: refused
+  citations1: ok
+  citations2: n/a
+  note: Answer 2's passages included 3.8.4 "There is no limit to the number of hardware", a misleading passage; the model refused instead of answering "yes".
+  stage: ranking
+  diagnosis: The re-ranker pushed the console rule 3.8.5 from rank 1 to rank 7. It preferred an Aggressive Secretary example about two installed programs being trashed, a rule about installing more than one card, and the general hardware rules. These match the words "two", "installed" and "at the same time" but not the console limit. A re-ranker error, so Answer 2 is worse.
+- qid: Q27
+  answer1: correct
+  answer2: correct
+  citations1: ok
+  citations2: ok
+  note: Answer 2 is more complete (it adds the Whitespace example from 1.13.3).
+- qid: Q28
+  answer1: correct
+  answer2: correct
+  citations1: ok
+  citations2: ok
+  note: Neither says outright that the first ice is free, but both give the rule that implies it.
+- qid: Q29
+  answer1: refused
+  answer2: correct
+  citations1: n/a
+  citations2: ok
+  note: Answer 2 explains how rezzing works (pay the rez cost, checkpoint, turn faceup) but not when the Corp may rez or that agendas cannot be rezzed; that is in 8.1.2a-d, which was not in its top 3.
+  stage: ranking
+  diagnosis: A keyword trap. The query says "flip face up" while the rule calls this "rez". The baseline top 3 matched the words install, faceup and facedown (install-and-rez, hosted facedown cards, Runner cards turned faceup). The cross-encoder moved 8.1.2e (pay the rez cost, then turn the card faceup) from rank 4 to rank 1.
+- qid: Q31
+  answer1: correct
+  answer2: correct
+  citations1: ok
+  citations2: ok
+  note: Neither gives the priority-card example.
+- qid: Q32
+  answer1: correct
+  answer2: refused
+  citations1: ok
+  citations2: n/a
+  note: ''
+  stage: ranking
+  diagnosis: The answer (4.2.7b, the Runner wins) is the last line of a chunk that is mostly about other deck rules (open information, R&D definition). The cross-encoder pushed it from rank 3 to 4 and preferred a mandatory-draw example and the R&D breach order, which share the words draw, deck and R&D. A re-ranker error, made easier by a chunk where the answer is one sentence among unrelated rules (chunking).
+- qid: Q34
+  answer1: hallucinated
+  answer2: hallucinated
+  citations1: partly
+  citations2: unsupported
+  note: Both answers say "yes" although no passage they were given states the rule (7.4.6b is at rank 4 and 5). Answer 2's condition (access limit not reached) matches the real rule but is attributed to passages that do not say it; Answer 1 adds an overreaching claim about cards that were not previously candidates.
+  stage: ranking
+  diagnosis: Both top 3s are Flagship examples and general breach rules, which share many words with the query (breach, HQ, Corp's hand, access). The specific rule 7.4.6 is ranked 4 by the bi-encoder and 5 by the cross-encoder. The generation step then filled the gap with an inference instead of refusing (a generation failure on top of a ranking failure).
+- qid: Q35
+  answer1: refused
+  answer2: correct
+  citations1: n/a
+  citations2: ok
+  note: Answer 2 also mentions the Showing Off exception (bottom-up), which is correct and supported.
+  stage: ranking
+  diagnosis: The baseline top 3 were the R&D definition (4.2.7), the breach steps (7.5) and an example about objects in R&D, all on-topic but without the order of candidates. The cross-encoder moved 7.4.7 ("working down from the top of the deck") from rank 4 to rank 1, and the next two places went to its example and the Showing Off exception.
+- qid: Q36
+  answer1: correct
+  answer2: refused
+  citations1: ok
+  citations2: n/a
+  note: Answer 2's passage 7.3.4 says the process repeats "until there are no longer any candidates" but not what happens then, so the refusal is faithful.
+  stage: ranking
+  diagnosis: The re-ranker pushed the breach step list 7.5 from rank 1 to rank 9. The step list is terse ("If they cannot, skip to step 7.5.7"), while 7.3.4 and 7.4.3 talk about candidates in full sentences that match "no more cards left to choose from". A re-ranker error.
+- qid: Q38
+  answer1: correct
+  answer2: correct
+  citations1: ok
+  citations2: ok
+  note: Answer 1 leaves out that a run on the server ends; Answer 2 includes it, plus the related rules 8.5.8 and 8.5.9.
+- qid: Q41
+  answer1: refused
+  answer2: correct
+  citations1: n/a
+  citations2: ok
+  note: ''
+  stage: ranking
+  diagnosis: The baseline top 3 were general agenda and stealing rules (3.2, 1.17), matched on "stealing an agenda". The cross-encoder connected "breach ... during an ongoing breach" with 7.3.8 ("If a server would be breached while a breach is already in progress") and moved it from rank 4 to rank 1.
+- qid: Q42
+  answer1: refused
+  answer2: refused
+  citations1: n/a
+  citations2: n/a
+  note: A correct refusal for both.
+  stage: retrieval_recall
+  diagnosis: A keyword trap. The query says "diamond symbol"; the rulebook calls these cards "unique" (the symbol is a glyph). The baseline found 2.2.1, which defines the unique symbol but only points to rule 10.1.1 for the rule itself. The gold chunks (10.1.1, 10.3.1d) are not in the top 10, so the re-ranker cannot help. Over all chunks the bi-encoder ranks the best one 63rd, and even a cross-encoder over all 602 chunks only reaches 23rd (Section 10.3), so both models miss the link between "diamond" and "unique".

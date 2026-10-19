@@ -74,5 +74,5 @@ report/                        the report (written by the student)
 
 ## Notes
 
-- The gold labels, expected answers and answer judgments were drafted by Claude at the student's request and are being re-checked by the student (`verified_by` / `judged_by` fields).
+- The gold labels, expected answers and answer judgments retain their drafting provenance; Hritik Ranjan independently reviewed and confirmed all final labels against the rule text on 19 October 2026.
 - The PDF is © Null Signal Games and is downloaded from their site, not redistributed here.

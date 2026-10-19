@@ -98,8 +98,8 @@
     "answer": "No, the Runner cannot trash or pay the trash cost of a card in the Corp’s discard pile, either with the basic trash ability or with other mid-access abilities [S1, S2]."
   },
   "timings_ms": {
-    "encode_ms": 3.882832999806851,
-    "search_ms": 0.022541993530467153,
-    "ce_ms": 30.5019999796059
+    "encode_ms": 4.857291001826525,
+    "search_ms": 0.0477090070489794,
+    "ce_ms": 30.7773330132477
   }
 }

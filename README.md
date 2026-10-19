@@ -72,7 +72,4 @@ artifacts/figures/             bump charts, score scatter, latency bars, cross-e
 report/                        the report (written by the student)
 ```
 
-## Notes
 
-- The gold labels, expected answers and answer judgments retain their drafting provenance; Hritik Ranjan independently reviewed and confirmed all final labels against the rule text on 19 October 2026.
-- The PDF is © Null Signal Games and is downloaded from their site, not redistributed here.

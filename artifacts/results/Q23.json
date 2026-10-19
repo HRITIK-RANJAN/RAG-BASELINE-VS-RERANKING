@@ -98,8 +98,8 @@
     "answer": "The provided passages do not cover this."
   },
   "timings_ms": {
-    "encode_ms": 4.458375013200566,
-    "search_ms": 0.020374980522319674,
-    "ce_ms": 33.300875016720966
+    "encode_ms": 4.579500004183501,
+    "search_ms": 0.030041992431506515,
+    "ce_ms": 33.107750001363456
   }
 }

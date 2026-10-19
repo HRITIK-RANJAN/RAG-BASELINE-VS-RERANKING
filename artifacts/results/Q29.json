@@ -98,8 +98,8 @@
     "answer": "To resolve rezzing a card, the Corp pays its rez cost (accounting for any modifiers or additional costs), a checkpoint occurs, then the Corp turns the card faceup [S1]. For purposes of meeting trigger conditions, the card is considered to be rezzed at the conclusion of this process [S1]."
   },
   "timings_ms": {
-    "encode_ms": 3.9172499964479357,
-    "search_ms": 0.023582979338243604,
-    "ce_ms": 35.19166700425558
+    "encode_ms": 4.756832990096882,
+    "search_ms": 0.03370898775756359,
+    "ce_ms": 35.062833019765094
   }
 }

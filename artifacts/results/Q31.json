@@ -97,8 +97,8 @@
     "answer": "No, the terms “lose” and “spend” are not synonymous for the purposes of meeting conditions and restrictions of card abilities [S1]."
   },
   "timings_ms": {
-    "encode_ms": 4.255167004885152,
-    "search_ms": 0.02187499194405973,
-    "ce_ms": 34.65545899234712
+    "encode_ms": 5.245000007562339,
+    "search_ms": 0.036999990697950125,
+    "ce_ms": 35.22120797424577
   }
 }

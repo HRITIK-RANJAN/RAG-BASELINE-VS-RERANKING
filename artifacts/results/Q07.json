@@ -97,8 +97,8 @@
     "answer": "Yes, after drawing their starting hand, the Corp may choose to take a mulligan, followed by the Runner [S1]. To take a mulligan, the player shuffles their starting hand back into their deck and draws a new starting hand, which they must keep [S1]."
   },
   "timings_ms": {
-    "encode_ms": 3.888542007189244,
-    "search_ms": 0.025999994250014424,
-    "ce_ms": 34.655541996471584
+    "encode_ms": 4.06529099564068,
+    "search_ms": 0.0314170029014349,
+    "ce_ms": 34.77762499824166
   }
 }

@@ -97,8 +97,8 @@
     "answer": "A remote server ceases to exist during checkpoints if there are no cards installed in its root and no cards installed protecting it [S1]. Additionally, if the last card protecting a remote server or in the root of that server is uninstalled outside of the process of installing another card, the server ceases to exist during the next checkpoint [S2]. If a server ceases to exist during a run against it, the run ends after any currently open paid ability window closes [S1]. \n\nHowever, the Corp cannot destroy a server by installing cards; while the Corp is installing a card with a remote server as its destination, that server does not cease to exist during any checkpoints that occur before the install effect is complete [S2]."
   },
   "timings_ms": {
-    "encode_ms": 4.347332986071706,
-    "search_ms": 0.034249998861923814,
-    "ce_ms": 33.079042012104765
+    "encode_ms": 5.006541992770508,
+    "search_ms": 0.03333299537189305,
+    "ce_ms": 33.73558298335411
   }
 }

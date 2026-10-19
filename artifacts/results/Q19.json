@@ -97,8 +97,8 @@
     "answer": "No. Decks must be kept facedown with their cards hidden, and neither player may look at the cards in any deck without being explicitly directed to do so by a rule or card ability [S1]."
   },
   "timings_ms": {
-    "encode_ms": 3.9861659752205014,
-    "search_ms": 0.02300000051036477,
-    "ce_ms": 34.69816700089723
+    "encode_ms": 4.760957992402837,
+    "search_ms": 0.03500000457279384,
+    "ce_ms": 34.93954200530425
   }
 }

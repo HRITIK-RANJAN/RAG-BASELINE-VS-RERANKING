@@ -98,8 +98,8 @@
     "answer": "No. Players cannot lose credits from cards [S2]. When a player is required to lose credits, they are forced to move the specified number of credits from their credit pool to the bank [S2]. Furthermore, hosted counters (including credits) do not count as being \"on\" a player, and the Runner cannot lose credits hosted on their cards even if they do not have enough credits in their credit pool to satisfy a loss requirement [S1]."
   },
   "timings_ms": {
-    "encode_ms": 4.1009999986272305,
-    "search_ms": 0.03341698902659118,
-    "ce_ms": 33.10545900603756
+    "encode_ms": 4.61766601074487,
+    "search_ms": 0.03374999505467713,
+    "ce_ms": 32.770207995781675
   }
 }

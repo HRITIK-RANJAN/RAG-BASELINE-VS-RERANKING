@@ -97,8 +97,8 @@
     "answer": "During a breach of R&D, the Runner is presented with candidates from the Corp’s deck one at a time, working down from the top of the deck [S1]. If the card Showing Off is active, candidates are presented working up from the bottom of the deck [S3]."
   },
   "timings_ms": {
-    "encode_ms": 3.8820419867988676,
-    "search_ms": 0.02841599052771926,
-    "ce_ms": 34.946917003253475
+    "encode_ms": 4.193834000034258,
+    "search_ms": 0.03245798870921135,
+    "ce_ms": 34.69200001563877
   }
 }

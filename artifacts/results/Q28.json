@@ -98,8 +98,8 @@
     "answer": "The install cost of a piece of ice is a number of credits equal to the number of pieces of ice already protecting the server that ice will be installed protecting [S3]. This install cost must be paid to install the card [S3]."
   },
   "timings_ms": {
-    "encode_ms": 3.9964159950613976,
-    "search_ms": 0.023874978069216013,
-    "ce_ms": 33.1644999969285
+    "encode_ms": 4.765457997564226,
+    "search_ms": 0.042333005694672465,
+    "ce_ms": 34.1488329868298
   }
 }

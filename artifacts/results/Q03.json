@@ -97,8 +97,8 @@
     "answer": "The limit is 1 region per server [S1a, S3g]. This limitation applies to cards with the subtype region that are installed or in the process of being installed in the root of a server [S1b]. It does not apply to cards in central servers, and it does not apply to ice [S1b]. This limitation applies regardless of whether the cards are in an active or inactive state [S1c]."
   },
   "timings_ms": {
-    "encode_ms": 4.533208993962035,
-    "search_ms": 0.025707995519042015,
-    "ce_ms": 35.31595799722709
+    "encode_ms": 4.820000001927838,
+    "search_ms": 0.034083001082763076,
+    "ce_ms": 35.084292001556605
   }
 }

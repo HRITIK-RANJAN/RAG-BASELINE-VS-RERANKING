@@ -99,8 +99,8 @@
     "answer": "A player needs a score of 7 or more to win the game [S2, S3]. If a player's score is greater than or equal to 7, they win the game at the next checkpoint [S2]."
   },
   "timings_ms": {
-    "encode_ms": 6.0338750190567225,
-    "search_ms": 0.031790987122803926,
-    "ce_ms": 34.887874993728474
+    "encode_ms": 7.687333010835573,
+    "search_ms": 0.03945900243707001,
+    "ce_ms": 36.25287499744445
   }
 }

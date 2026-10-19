@@ -97,8 +97,8 @@
     "answer": "If the Runner’s memory limit decreases below the total memory cost of installed programs, or if the total memory cost of installed programs increases above the memory limit for any reason other than installing another program, the Runner must trash one or more installed programs such that the total memory cost of the remaining programs does not exceed their memory limit [S1]. This occurs during the next checkpoint after the memory limit is exceeded [S1]. \n\nIf the Runner is installing a program that would cause the total memory cost to exceed the memory limit, they must trash one or more installed programs such that the total memory cost including the new program does not exceed the limit [S2, S3]."
   },
   "timings_ms": {
-    "encode_ms": 4.00212500244379,
-    "search_ms": 0.021334009943529963,
-    "ce_ms": 34.517374995630234
+    "encode_ms": 4.0152080182451755,
+    "search_ms": 0.031208008294925094,
+    "ce_ms": 34.69266599859111
   }
 }

@@ -97,8 +97,8 @@
     "answer": "If a server would be breached while a breach is already in progress, the new breach takes place when the current breach ends [S1]."
   },
   "timings_ms": {
-    "encode_ms": 4.236959008267149,
-    "search_ms": 0.0301659747492522,
-    "ce_ms": 35.740541003178805
+    "encode_ms": 4.585832997690886,
+    "search_ms": 0.03600001218728721,
+    "ce_ms": 35.93116698903032
   }
 }

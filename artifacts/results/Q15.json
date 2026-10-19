@@ -98,8 +98,8 @@
     "answer": "No. A condition operation cannot be installed by an install effect; it can only be installed through its own conversion ability [S1a]."
   },
   "timings_ms": {
-    "encode_ms": 4.589499993016943,
-    "search_ms": 0.022459018509835005,
-    "ce_ms": 35.00770899700001
+    "encode_ms": 5.226875015068799,
+    "search_ms": 0.03662498784251511,
+    "ce_ms": 35.20516699063592
   }
 }

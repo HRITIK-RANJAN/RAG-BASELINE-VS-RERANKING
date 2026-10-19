@@ -97,8 +97,8 @@
     "answer": "During a breach, the Runner is presented with the current candidates and chooses one to access, repeating this process until there are no longer any candidates [S3]. If a new card enters the Corp's hand, it becomes a candidate for the Runner to access, provided the Runner has not already exhausted their access limit or been restricted by other effects [S1, S3]."
   },
   "timings_ms": {
-    "encode_ms": 3.9383749826811254,
-    "search_ms": 0.026541994884610176,
-    "ce_ms": 35.14329099562019
+    "encode_ms": 4.6001250157132745,
+    "search_ms": 0.03429100615903735,
+    "ce_ms": 35.192750015994534
   }
 }

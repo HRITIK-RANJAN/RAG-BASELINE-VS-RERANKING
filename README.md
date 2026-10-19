@@ -42,7 +42,7 @@ cp .env.example .env          # then paste a free Gemini API key into .env
 Open `rag_baseline_vs_rerank.ipynb` with the `.venv` kernel and choose **Restart kernel and Run All**. The notebook:
 - downloads the PDF and checks its SHA-256 (the PDF is not committed);
 - rebuilds the chunks and checks that they are identical to the frozen `artifacts/chunks.jsonl`;
-- reads LLM answers from `artifacts/llm_cache.jsonl` and LLM timings from `artifacts/llm_latency.csv`, so a re-run needs no Gemini calls (delete these files to call Gemini again).
+- reads LLM answers from `artifacts/llm_cache.jsonl` and LLM timings from `artifacts/llm_latency.csv`, so a re-run makes no Gemini request and needs no Gemini key. To deliberately create a missing answer or timing, set `CONFIG["allow_live_llm_calls"] = True`; a Gemini key is then required.
 
 Model weights download into `.cache/huggingface` inside the project.
 

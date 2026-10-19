@@ -38,3 +38,5 @@ data/*.pdf
 # Working documents (the review sheet for the query labels, and evidence notes for writing the report)
 queries/REVIEW_SHEET.md
 report/evidence_notes.md
+report/report.pdf
+report/report.tex
